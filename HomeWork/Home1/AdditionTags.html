@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=UTF-8>
+    <title>AdditionTags</title>
+  </head>
+  <body>
+  <h1 align="center">Полезные теги HTML и их описание</h1>
+  <p style='font-size: 20px'><strong>1) HTML-элемент</strong> <code><<code><code>dl></code><em> (от англ. Description List)</em> представляет 
+    собой список описаний. Этот элемент служит контейнером для списка пар терминов (определяемых элементом <code><<code><code>dt></code>) 
+    и их описаний (определяемых элементами <code><</code><code>dd></code>). Этот элемент обычно используют при создании глоссария или для 
+    отображения метаданных (списка пар ключ-значение).</p>
+    <p style='font-size: 20px'>Пример реализации описанных тегов:</p> <p><code><</code>p> Cryptids of Cornwall:<code><</code><code>/p></code></p>
+      <code><</code><code>dl></code>
+          <p><code><</code><code>dt>Beast of Bodmin<</code><code>/dt></code></p>
+          <p><code><</code><code>dd>A large feline inhabiting Bodmin Moor.<</code><code>/dd></code>
+          <p><code><</code><code>dt>Morgawr<</code><code>/dt></code></p>
+          <p><code><</code><code>dd>A sea serpent.<</code><code>/dd></code>
+          <p><code><</code><code>dt>Owlman<</code><code>/dt></code></p>
+          <p><code><</code><code>dd>A giant owl-like creature.<</code><code>/dd></code>
+      <p><code><</code><code>dl></code></p>
+    <p style='font-size: 20px'>На странице с таким кодом всё будет выглядеть так:</p>
+    <p><strong>Cryptids of Cornwall:</strong></p>
+
+  <dl>
+    <dt><strong>Beast of Bodmin</strong></dt>
+    <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+    <dt><strong>Morgawr</strong></dt>
+    <dd>A sea serpent.</dd>
+
+    <dt><strong>Owlman</strong></dt>
+    <dd>A giant owl-like creature.</dd>
+  </dl>
+  <p style='font-size: 20px'><strong>2) Элемент HTML</strong><code><<code><code>pre></code> 
+    представляет собой предварительно отформатированный текст, который должен быть представлен 
+    точно так, как написано в HTML-файле. Текст обычно отображается с использованием непропорционального 
+    ("monospace") шрифта. Пробелы внутри этого элемента отображаются как записанные.</p>
+  <p style='font-size: 20px'>Пример реализации с данным тегом:</p>
+    <p><code><</code><code>pre></code></p>
+    <pre>
+      L          TE
+        A       A
+          C    V
+           R A
+           DOU
+           LOU
+          REUSE
+          QUE TU
+          PORTES
+        ET QUI T'
+        ORNE O CI
+         VILISÉ
+        OTE-  TU VEUX
+         LA    BIEN
+        SI      RESPI
+                RER       - Apollinaire
+    </pre></p>
+    <code><</code><code>pre></code>
+    <p style='font-size: 20px'>На странице с таким кодом всё будет выглядеть так:</p>
+    <p><pre>
+      L          TE
+        A       A
+          C    V
+           R A
+           DOU
+           LOU
+          REUSE
+          QUE TU
+          PORTES
+        ET QUI T'
+        ORNE O CI
+         VILISÉ
+        OTE-  TU VEUX
+         LA    BIEN
+        SI      RESPI
+                RER       - Apollinaire
+    </pre></p>
+    <p style='font-size: 20px'><strong>3) Элемент HTML </strong><code><</code><code>code></code> отображает 
+      его содержимое в стиле, предназначенном для указания на то, что текст является коротким фрагментом 
+      компьютерного кода. По умолчанию текст содержимого отображается с использованием шрифта монопространства по умолчанию</p>
+    <p style='font-size: 20px'>Пример реализации с данным тегом:</p>
+    <p><code><</code><code>p>The <</code><code>code>push()</</code><code>code></code> method adds one or more elements to the end 
+      of an array and returns the new length of the array.<code><</code><code>/p></code></p>
+    <p style='font-size: 20px'>На странице с таким кодом всё будет выглядеть так:</p>
+    <p>The <code>push()</code> method adds one or more elements to the end of an array and returns the new length of the array.</p>
+  </body>
+</html>
