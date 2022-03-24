@@ -4,17 +4,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>frame</title>
+  <title>1tag</title>
 </head>
+<style> 
+.frame {
+              background: url('ramka_topLeftCorner.png') left top no-repeat,
+                          url('ramka_buttomLeftCorner.png') left bottom no-repeat,
+                          url('ramka_topRightCorner.png') right top no-repeat,
+                          url('ramka_buttomRightCorner.png') right bottom no-repeat,
+                          url(ramka_vertical.png) left top repeat-y,
+                          url(ramka_vertical.png) right top repeat-y,
+                          url(ramka_horizontal.png) top repeat-x,
+                          url('ramka_horizontal.png') bottom repeat-x;
+
+}
+   
+</style>
 <body>
-  <div style="background: url('ramka_vertical.png') left top repeat-y">
-    <div style="background: url('ramka_vertical.png') right top repeat-y">
-        <div style="background: url('ramka_horizontal.png') top repeat-x">
-          <div style="background: url('ramka_horizontal.png') bottom repeat-x">
-            <div style="background: url('ramka_topLeftCorner.png') left top no-repeat">
-              <div style="background: url('ramka_buttomLeftCorner.png') left bottom no-repeat">
-                <div style="background: url('ramka_topRightCorner.png') right top no-repeat">
-                  <div style="background: url('ramka_buttomRightCorner.png') right bottom no-repeat">
+  <div class ="frame">
                     <h3 style="padding: 70px; padding-bottom: 0px;">​Специалист по выживанию</h3>
                     <p style="padding: 70px; padding-top: 0px">От дома до места моей учебы всего ночь пути на скором поезде. Я - студент, стараюсь уснуть на нижней боковушке недалеко от выхода . На одной из остановок слышу, как какая-то бабуся уговаривает проводницу пустить её в вагон. Та отказывается, говорит нет мест. Бабка жалостливо просит, мол очень надо, да ехать не долго, она в тамбуре постоять готова, только пусти!
 
@@ -51,13 +58,7 @@
                       - Сынок, можно я тут с краешку на уголочке присяду…
                       
                     </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> 
-        </div>
-    </div> 
+                  
   </div>
 </body>
 </html>
