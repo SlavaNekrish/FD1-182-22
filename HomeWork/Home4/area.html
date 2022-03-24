@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>area</title>
+</head>
+<body>
+  <h2 style="color: chartreuse">HTML тег <code><</code><code>area></code></h2>
+  <hr>
+  <h3>Поддержка браузерами</h3>
+  <p>Тег поддерживается следующими браузерами: Edge, Internet Explorer, Firefox, Chrome, Opera, Safari.</p>
+  <h3>Описание</h3>
+  <p>HTML тег <area> определяет активные области на изображении, которые являются ссылками, эти области могут 
+    отличаться формой и размером. Картинка (изображение) с активными областями, называется картой-изображением. 
+    Такая картинка ничем не отличается от обычной, за исключением того, что содержит активные области (ссылки). 
+    Области могут перекрывать друг друга, сверху окажется та, которая в коде располагается первее (выше).<br>
+    Элемент <code><</code><code>area></code> используется только совместно с  
+    <a href="https://puzzleweb.ru/html/tag_map.php"><code>тегом <</code><code>map></code></a> в качестве его дочернего элемента.</p>
+  <h3>Атрибуты</h3>
+  <h4 style="color: crimson; font-weight: bold; margin-bottom: 0px;">alt:</h4>  
+  <p style="padding-left: 10px; margin-top: 5px">Определяет альтернативный текст, который будет виден вместо изображения, если оно не может быть отображено 
+    (из-за медленной связи, ошибки в атрибуте src и тд).</p>
+    <h4 style="color: crimson; font-weight: bold; margin-bottom: 0px;">coords:</h4>
+  <p style="padding-left: 10px; margin-top: 5px">Атрибут coords указывает координаты активной области на карте-изображения. Он используется вместе с атрибутом
+     shape для указания размера, формы и размещения активной области. Возможные значения атрибута:</p>
+     <ul style="list-style-type: disc">
+       <li><span style="font-weight: bold">x1,y1,x2,y2</span> - указывает координаты верхнего левого и правого нижнего угла прямоугольника (shape="rect").<br>
+        Определение координат для прямоугольника (shape="rect"):<br> <img src="area_rect.png"></li>
+       <li><span style="font-weight: bold">x, y, радиус</span> - определяет координаты центра окружности и радиус (shape="circle").<br>
+        Определение координат для окружности (shape="circle"):<br><img src="area_circle.png"></li>
+       <li><span style="font-weight: bold">x1,y1,x2,y2,...,xn,yn</span> - определяет координаты вершин полигона (многоугольника) (shape="poly").<br>
+        Определение координат для многоугольника (shape="poly"):<br><img src="area_poly.png"></li>
+     </ul>
+  <hr><p><span style="font-weight: bold">Примечание:</span> координаты верхнего левого угла области - 0,0.</p><hr>
+  <h4 style="color: crimson; font-weight: bold; margin-bottom: 0px;">href:</h4>  
+  <p style="padding-left: 10px; margin-top: 5px">Атрибут href указывает адрес страницы, на которую ведет ссылка с активной области изображения, если 
+    он не указан или пропущен, то тег <area> не будет являться гиперссылкой. (адрес может быть либо абсолютным либо относительным)</p>
+  <h4 style="color: crimson; font-weight: bold; margin-bottom: 0px;">hreflang:</h4> 
+  <p style="padding-left: 10px; margin-top: 5px">Указывает двухбуквенный код языка, определяющий язык страницы, доступной по ссылке. Используется только 
+    совместно с атрибутом href и имеет исключительно информативный характер.</p>
+  <h4 style="color: crimson; font-weight: bold; margin-bottom: 0px;">media:</h4> 
+  <p style="padding-left: 10px; margin-top: 5px">Атрибут media определяет тип документа, на который ведет ссылка или указывает, тип устройства, для которого 
+    предназначается ссылка (пример: мобильный телефон, принтер и тд.). Атрибут может принимать несколько значений и используется только совместно с атрибутом href.</p>
+  <h4 style="color: crimson; font-weight: bold; margin-bottom: 0px;">rel:</h4> 
+  <p style="padding-left: 10px; margin-top: 5px">Атрибут rel определяет отношение между текущим документом и связанным. Возможные значения атрибута:</p>
+  <ul>
+    <li><span style="font-weight: bold">alternate</span> - ссылка на альтернативную версию документа (страница для печати, страница на другом языке и тд.).</li>
+    <li><span style="font-weight: bold">author</span> - ссылка на автора документа.</li>
+    <li><span style="font-weight: bold">bookmark</span> - постоянный URL-адрес, используемый для закладок.</li>
+    <li><span style="font-weight: bold">help</span> - ссылка на документ-справку.</li>
+    <li><span style="font-weight: bold">license</span> - ссылки на сведения об авторских правах для документа.</li>
+    <li><span style="font-weight: bold">next</span> - следующий документ в выделенной области.</li>
+    <li><span style="font-weight: bold">nofollow</span> - ссылка на неиндексируемый документ («nofollow» используется в Google, чтобы указать, что поисковый бот не должен переходить по этой ссылке).</li>
+    <li><span style="font-weight: bold">noreferrer</span> - указание браузеру не посылать HTTP-заголовок если пользователь перешел по ссылке.</li>
+    <li><span style="font-weight: bold">prefetch</span> - указывает, что следует кэшировать целевой документ.</li>
+    <li><span style="font-weight: bold">prev</span> - предыдущий документ в выделенной области.</li>
+    <li><span style="font-weight: bold">search</span> - ссылка на поиск для документа.</li>
+    <li><span style="font-weight: bold">tag</span> - тег (ключевое слово) для текущего документа.</li>
+  </ul>
+  <p>Атрибут rel используется только совместно с атрибутом href.</p>
+  <h4 style="color: crimson; font-weight: bold; margin-bottom: 0px;">shape:</h4> 
+  <p style="padding-left: 10px; margin-top: 5px">Атрибут shape указывает форму области. Он используется совместно с атрибутом coords для указания размера, формы и размещения активной области. 
+    Возможные значения атрибута:</p>
+    <ul>
+      <li><span style="font-weight: bold">default</span> - определяет весь регион.</li>
+      <li><span style="font-weight: bold">rect</span> - определяет прямоугольную область.</li>
+      <li><span style="font-weight: bold">circle</span> - определяет круглую область.</li>
+      <li><span style="font-weight: bold">poly</span> - определяет многоугольную область.</li>
+    </ul>
+  <h4 style="color: crimson; font-weight: bold; margin-bottom: 0px;">target:</h4> 
+  <p style="padding-left: 10px; margin-top: 5px">Атрибут target определяет, где будет открыт документ, при переходе по ссылке. Используется только вместе с атрибутом href. 
+    Возможные значения атрибута:</p>
+    <ul>
+      <li><span style="font-weight: bold">_blank</span> - открывает документ в новом окне или вкладке.</li>
+      <li><span style="font-weight: bold">_parent</span> - открывает документ в родительском фрейме.</li>
+      <li><span style="font-weight: bold">_self</span> - открывает документ в той же директории, где располагается ссылка (значение по умолчанию).</li>
+      <li><span style="font-weight: bold">_top</span> - открывает документ во всю ширину окна.</li>
+      <li><span style="font-weight: bold">имя_фрейма</span> - открывает документ в iframe, имя которого было указано в качестве значения.</li>
+  </ul>
+  <h4 style="color: crimson; font-weight: bold; margin-bottom: 0px;">type:</h4> 
+  <p style="padding-left: 10px; margin-top: 5px">Атрибут type указывает MIME-тип (спецификация форматирования сообщений и кодирования информации для 
+    передачи по интернету) документа, на который ведет ссылка. Используется только совместно с атрибутом href.</p>
+    <hr><p><span style="font-weight: bold">Примечание:</span> атрибут usemap в теге <code><</code><code>img></code> связан с атрибутом name элемента 
+      <code><</code><code>map></code>, и создает связь между картинкой и картой..</p><hr>
+  <h3>Пример:</h3>
+
+<code><</code><code>!DOCTYPE html></code><br> 
+<code><</code><code>html></code><br> 
+<code><</code><code>body></code><br> 
+  <code><</code><code>p></code>Кликните на солнце или на одну из планет, чтобы посмотреть их поближе:<code><</code><code>p></code><br>
+ 
+  <code><</code><code>img src="planets.gif" width="146" height="126" alt="Планеты" usemap="#planetmap"></code><br>
+ 
+<code><</code><code>map name="planetmap"></code><br>
+  <code style="padding: 10px;"><</code><code>area shape="rect" coords="0,0,82,126" alt="Солнце" href="sun.gif" type="image/gif"></code><br>
+  <code style="padding: 10px;"><</code><code>area shape="circle" coords="90,58,3" alt="Меркурий" href="merglobe.gif" type="image/gif"></code><br>
+  <code style="padding: 10px;"><</code><code>area shape="circle" coords="124,58,8" alt="Венера" href="venglobe.gif" type="image/gif"></code><br>
+<code><</code><code>/map></code><br>    
+
+<code><</code><code>/body></code><br> 
+<code><</code><code>/html></code><br> 
+
+
+
+
+  <p>Кликните на солнце или на одну из планет, чтобы посмотреть их поближе:</p>
+ 
+  <img src="planets.gif" width="146" height="126" alt="Планеты" usemap="#planetmap">
+ 
+  <map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" alt="Солнце" href="sun.gif" type="image/gif">
+  <area shape="circle" coords="90,58,3" alt="Меркурий" href="merglobe.gif" type="image/gif">
+  <area shape="circle" coords="124,58,8" alt="Венера" href="venglobe.gif" type="image/gif">
+</map>
+
+
+</body>
+</html>
