@@ -29,13 +29,6 @@ padding-left: 30px;
 float: left;
 }
 
-.lupa{
- width: 30px;
- height: 30px; 
- margin-top: 5px;
- margin-left: 10px;
-}
-
 .wolf_house{
 
 font-family: 'Open Sans';
@@ -45,10 +38,24 @@ font-size: 18px;
 line-height: 25px;
 padding-left: 10px;
 padding-top: 15px;
-/* identical to box height */
-
-
 float: left;
+}
+
+.search {
+background-color: white; 
+border-radius: 31px;
+margin-left: 70px;
+margin-top: 10px;
+width: 540px;
+height: 40px;
+float: left;
+}
+
+.lupa{
+ width: 30px;
+ height: 30px; 
+ margin-top: 5px;
+ margin-left: 10px;
 }
 
 .menu{
@@ -64,17 +71,23 @@ margin-top: 20px;
 
 .menu li{
     list-style-type: none;
+    padding-left: 5px;
     float: left;
 }
 
-.search {
-background-color: white; 
-border-radius: 31px;
-padding-left: 600px;
-margin-top: 10px;
-width: 540px;
-height: 40px;
-float: left;
+.otstup_v_menu { 
+    padding-left: 10px;
+    
+}
+
+.BritishFlag {
+width: 15px;
+height: 15px;
+margin-top: 2px;
+}
+
+.cart {
+margin-top: -3px;
 }
 
 </style>
@@ -87,10 +100,13 @@ float: left;
         <div class="wolf_house">Wolf House</div>
         <div class="search"><img src="search.png" class="lupa"></div>
         <ul class="menu">
+            <li>En</li>
+            <li><img src="BritishFlag.PNG" alt="Flag" class="BritishFlag"></li>
+            <li><span class="otstup_v_menu">My account</span></li>
             <li><img src="Vector.png" alt="Vector"></li>
-            <li><img src="cart.png" alt="cart"></li>
-            <li></li>
-            <li></li>
+            <li><span class="otstup_v_menu">USD</span></li>
+            <li><img src="Vector.png" alt="Vector"></li>
+            <li><img src="cart.png" alt="cart" class="otstup_v_menu cart"></li>
         </ul> 
         <div style="clear: both"></div>
     </div>
