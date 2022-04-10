@@ -14,7 +14,7 @@
 box-sizing: border-box;
 }
    
-.header {
+.headerTop {
 background: #C4C4C4;
 
 }
@@ -58,7 +58,7 @@ float: left;
  margin-left: 10px;
 }
 
-.menu{
+.menuTop{
 float: right;
 font-family: 'Open Sans';
 font-style: normal;
@@ -69,13 +69,13 @@ margin-right: 20px;
 margin-top: 20px;
 }
 
-.menu li{
+.menuTop li{
     list-style-type: none;
     padding-left: 5px;
     float: left;
 }
 
-.otstup_v_menu { 
+.otstup_v_menuTop { 
     padding-left: 10px;
     
 }
@@ -90,25 +90,86 @@ margin-top: 2px;
 margin-top: -3px;
 }
 
+.headerMiddle {
+ background: #E5E5E5;
+
+}
+
+
+.menuMiddle {
+float: left;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21,79px; 
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.menuMiddle li{
+    list-style-type: none;
+    padding-left: 5px;
+    float: left;
+}
+
+ul li.first{
+    color: #FFFFFF;
+    list-style-type: none;
+    padding-left: 40px;
+    margin-right: 5px;
+}
+
+.blueButton{
+    background: url(Frame14.png) 55px no-repeat,
+                url(Frame8.png) 40px no-repeat;
+}
+
+.otstup_v_menuMiddle { 
+    padding-left: 32px;
+    
+}
+
+ul li.last{
+    color: #FF0C0C;
+    list-style-type: none;
+    margin-right: 5px;
+}
 </style>
 </head>
 
 <body>
-    <div class="header">
+    <div class="headerTop">
     <div class="conteiner">
         <img class="logo" src="Wolf-removebg-preview.png" alt="Wolf">
         <div class="wolf_house">Wolf House</div>
         <div class="search"><img src="search.png" class="lupa"></div>
-        <ul class="menu">
+        <ul class="menuTop">
             <li>En</li>
             <li><img src="BritishFlag.PNG" alt="Flag" class="BritishFlag"></li>
-            <li><span class="otstup_v_menu">My account</span></li>
+            <li><span class="otstup_v_menuTop">My account</span></li>
             <li><img src="Vector.png" alt="Vector"></li>
-            <li><span class="otstup_v_menu">USD</span></li>
+            <li><span class="otstup_v_menuTop">USD</span></li>
             <li><img src="Vector.png" alt="Vector"></li>
-            <li><img src="cart.png" alt="cart" class="otstup_v_menu cart"></li>
+            <li><img src="cart.png" alt="cart" class="otstup_v_menuTop cart"></li>
         </ul> 
         <div style="clear: both"></div>
+    </div>
+    </div>
+    <div class="headerMiddle">
+    <div class="blueButton conteiner">
+        <ul class="menuMiddle">
+            <li class="first">Categories</li>
+            <li><span class="otstup_v_menuMiddle">Ski boots</span></li>
+            <li><span class="otstup_v_menuMiddle">Ski accessories</span></li>
+            <li><span class="otstup_v_menuMiddle">Apparel</span></li>
+            <li><span class="otstup_v_menuMiddle">Snowboard shop</span></li>
+            <li><span class="otstup_v_menuMiddle">Brands</span></li>
+            <li class="last"><span class="otstup_v_menuMiddle">Sale</span></li>
+           
+           
+    </ul> 
+    <div style="clear: both"></div>
     </div>
     </div>
 </body>
