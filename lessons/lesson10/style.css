@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+  }
+     
+  .headerTop {
+  background: white;
+  
+  }
+  
+  .conteinerTop {
+  width: 1140px;
+  margin: 0 auto;
+  background: #C4C4C4;
+  }
+  
+  .logo {
+  padding-left: 30px;
+  float: left;
+  }
+  
+  .wolf_house{
+  
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  padding-left: 10px;
+  padding-top: 15px;
+  float: left;
+  }
+  
+  .search {
+  background-color: white; 
+  border-radius: 31px;
+  margin-left: 70px;
+  margin-top: 10px;
+  width: 540px;
+  height: 40px;
+  float: left;
+  }
+  
+  .lupa{
+   width: 30px;
+   height: 30px; 
+   margin-top: 5px;
+   margin-left: 10px;
+  }
+  
+  .menuTop{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px; 
+  margin-right: 50px;
+  margin-top: 20px;
+  float: right;
+  }
+  
+  .menuTop li{
+  list-style-type: none;
+  padding-left: 5px;
+  float: left;
+  }
+  
+  .otstup_v_menuTop { 
+  padding-left: 10px;
+      
+  }
+  
+  .BritishFlag {
+  width: 15px;
+  height: 15px;
+  margin-top: 2px;
+  }
+  
+  .cart {
+  margin-top: -3px;
+  }
+  
+  .headerMiddle {
+   background: white;
+  
+  }
+  
+  .conteinerMiddle {
+  width: 1140px;
+  margin: 0 auto;
+  background: #E5E5E5;
+  }
+  
+  
+  .menuMiddle {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21,79px; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  float: left;
+  }
+  
+  .menuMiddle li{
+  list-style-type: none;
+  padding-left: 5px;
+  float: left;
+  }
+  
+  ul li.first{
+  color: #FFFFFF;
+  list-style-type: none;
+  padding-left: 40px;
+  margin-right: 5px;
+  }
+  
+  .blueButton{
+  background: url(Frame14.png) 55px no-repeat,
+              url(Frame8.png) 40px no-repeat;
+  }
+  
+  .otstup_v_menuMiddle { 
+  padding-left: 32px;
+      
+  }
+  
+  ul li.last{
+  color: #FF0C0C;
+  list-style-type: none;
+  margin-right: 5px;
+  }
+  
+  .headerButtom {
+  background: white;
+  }
+  
+  .conteinerButtom {
+  width: 1140px;
+  height: 464px;
+  margin: 0 auto;
+  background: url('st_banner1.png') no-repeat;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+  
+  .whiteButton{
+  background: url('Frame15.png') 120px 250px no-repeat;        
+  }
+  
+  .newAtomicCollection {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  padding-top: 128px;
+  padding-left: 120px;
+  color: #FFFFFF;
+  float: left;
+  }
+  
+  .checkOur {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+  
+  letter-spacing: 0.01em;
+  padding-top: 12px;
+  padding-left: 120px;
+  padding-bottom: 100px;
+  color: #FFFFFF;
+  float: left;
+  }
+
+  .content {
+  background: white;
+  }
+
+  .conteinerContent {
+  width: 1140px;
+  margin: 0 auto;
+  background: #E5E5E5;
+  }
+
+  .Snowboards {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px; 
+  letter-spacing: 0.03em; 
+  padding-top: 61px;
+  padding-left: 120px;
+  float: left;
+  }
