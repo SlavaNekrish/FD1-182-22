@@ -217,7 +217,7 @@
 
   .menuContent li.otstup_view { 
   margin-top: -9px;  
-  padding-left: 160px;  
+  padding-left: 200px;  
  
   }
   
@@ -283,5 +283,35 @@
   }
 
   .leftContent li.ViewmoreMargin {
-    margin-top: 10px;
-    }
+  margin-top: 10px;
+  }
+
+  .card {
+  width: 273px;
+  height: 380px;
+  border: solid 1px red;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  margin-left: 50px;
+  display: inline-block;
+  text-align: center;
+  padding-left: 0px;
+  float: left;
+  }
+
+  .card li{
+  list-style-type: none;
+  }
+
+  .card li.leftCard{
+  margin-top: 50px;
+  }
+
+  .bold{
+  font-weight: bold;
+  }
+
