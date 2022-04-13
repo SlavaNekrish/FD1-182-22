@@ -116,8 +116,8 @@
   }
   
   .blueButton{
-  background: url(Frame14.png) 55px no-repeat,
-              url(Frame8.png) 40px no-repeat;
+  background: url(img/Frame14.png) 55px no-repeat,
+              url(img/Frame8.png) 40px no-repeat;
   }
   
   .otstup_v_menuMiddle { 
@@ -139,13 +139,13 @@
   width: 1140px;
   height: 464px;
   margin: 0 auto;
-  background: url('st_banner1.png') no-repeat;
+  background: url('img/st_banner1.png') no-repeat;
   padding-top: 10px;
   padding-bottom: 10px;
   }
   
   .whiteButton{
-  background: url('Frame15.png') 120px 250px no-repeat;        
+  background: url('img/Frame15.png') 120px 250px no-repeat;        
   }
   
   .newAtomicCollection {
@@ -196,4 +196,45 @@
   padding-top: 61px;
   padding-left: 120px;
   float: left;
+  }
+
+  .menuContent {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21,79px; 
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-left: 366px;
+  margin: 0 auto;
+  float: left;
+  }
+
+  .menuContent li{
+  list-style-type: none;
+  padding-left: 5px;
+  float: left;
+  }
+
+  .menuContent li.otstup_view { 
+  margin-top: -9px;  
+  padding-left: 160px;  
+ 
+  }
+  
+  .menuContent li.view{
+  margin-left: -120px;  
+  }
+
+  .menuContent li.view9{
+  margin-left: -50px;  
+  }
+ 
+  .menuContent li.vector{
+  margin-left: -30px;  
+  }
+ 
+  .menuContent li.mostPopular{
+  margin-top: -5px;
   }
