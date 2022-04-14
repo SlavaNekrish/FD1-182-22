@@ -7,6 +7,10 @@
   
   }
   
+  .clearboth{
+    clear: both;
+  }
+
   .conteinerTop {
   width: 1140px;
   margin: 0 auto;
@@ -141,7 +145,6 @@
   margin: 0 auto;
   background: url('img/st_banner1.png') no-repeat;
   padding-top: 10px;
-  padding-bottom: 10px;
   }
   
   .whiteButton{
@@ -182,6 +185,7 @@
   width: 1140px;
   margin: 0 auto;
   background: #E5E5E5;
+  border-bottom: solid 2px lightgrey;
   }
 
   .Snowboards {
@@ -206,6 +210,7 @@
   padding-bottom: 10px;
   margin-left: 366px;
   margin: 0 auto;
+  margin-bottom: 20px;
   float: left;
   }
 
@@ -286,32 +291,133 @@
   margin-top: 10px;
   }
 
-  .card {
-  width: 273px;
-  height: 380px;
-  border: solid 1px red;
+  .cards > ul > li{
+  width: 260px;
+  height: 380px;  
+  background: #E5E5E5;
+  border-right: solid 1px lightgrey;
+  list-style-type: none;
+  text-align: center;
+  float: left;
+  }
+
+  .cards > ul > li p{
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
   letter-spacing: 0.03em;
-  margin-left: 50px;
-  display: inline-block;
-  text-align: center;
-  padding-left: 0px;
+  text-align: left;
+  padding-left: 20px;
+  padding-right:10px;
+  margin: 0 auto;
   float: left;
   }
 
-  .card li{
-  list-style-type: none;
-  }
-
-  .card li.leftCard{
-  margin-top: 50px;
-  }
-
-  .bold{
+  .cards > ul > li p > span{
   font-weight: bold;
+  color: black;
   }
 
+  .cards ul li p.fadeText1 {
+  color: #BFBEBE;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  }
+
+  .cards ul li p.fadeText2 {
+   color: #BFBEBE;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  }
+
+  .cards ul li p.fadeText3 {
+  color: #BFBEBE;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  }
+
+  .cards ul li.goodPhoto {
+  padding-top: 30px;
+  }
+  
+  .cards ul li p.price {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  }
+
+  .cards ul li p.discountPrice {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  padding-left: 0px;
+  color: #BFBEBE;
+  text-decoration: line-through;
+  }
+
+  .cards ul img.stars {
+  padding-top: 5px;
+  padding-right: 10px;
+  float: right;
+  }
+
+  .cards ul li.last{
+  border-style: hidden;
+  color: black;
+  }
+
+  .cards ul li img.panorama {
+  width: 258px;
+  height: 220px;
+  padding-top: 25px;
+  }
+
+  .cards > ul > li h3{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 0px;
+  }
+
+  .cards > ul > li h4{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  }
+
+  .cards > ul > li h5{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  margin-top: 0;
+  }
+
+  .button_View{
+  width: 1140px;
+  display: inline-block;
+  text-align: center;
+  margin: 32px 0px 32px 140px;
+  }
