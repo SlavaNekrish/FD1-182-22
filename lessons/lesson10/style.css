@@ -1,7 +1,59 @@
-div > ul li:first-child p a{
+div > ul > li:first-child p a {
 color: red;
 }
 
-div > ul li span em a{
-    color: red;
-    }
+ul > li > span > em > a:first-child {
+color: green;
+}
+
+div > ul > li:nth-child(3) p a {
+color: blue;
+}
+
+div > ul > li > a {
+color: yellow;
+}
+
+div > p > span > em {
+color: violet;
+}
+
+p > strong > a {
+color: aqua;
+}
+
+p > i > a {
+color: gray;
+}
+
+ul > li > span > em > a:last-child {
+color: indigo;
+}
+
+ul > li > em > a {
+color: orange;
+}
+
+ul > li > strong{
+color: chocolate;
+}
+
+tr:first-child > td:nth-child(1){
+color: brown;
+}
+
+tr:first-child > td:nth-child(2){
+color:lightblue
+}
+
+tr:nth-child(2) > td:nth-child(1){
+color:chartreuse;
+}
+
+tr:nth-child(2) > td:nth-child(2){
+color:coral;
+}
+
+tr:nth-child(3){
+color: crimson;
+}
