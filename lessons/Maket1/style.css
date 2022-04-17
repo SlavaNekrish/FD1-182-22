@@ -1,485 +1,512 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
   }
      
   .headerTop {
-  background: white;
-  
+    background: #C4C4C4;
   }
-  
-  .clearboth{
+   
+  .clearboth {
     clear: both;
   }
 
-  .conteinerTop {
-  width: 1140px;
-  margin: 0 auto;
-  background: #C4C4C4;
+  .conteiner {
+    width: 1140px;
+    margin: 0 auto;
   }
   
   .logo {
-  padding-left: 30px;
-  float: left;
+    padding-left: 30px;
+    float: left;
   }
   
-  .wolf_house{
-  
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
-  padding-left: 10px;
-  padding-top: 15px;
-  float: left;
+  .wolf_house {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    padding-left: 10px;
+    padding-top: 15px;
+    float: left;
   }
   
   .search {
-  background-color: white; 
-  border-radius: 31px;
-  margin-left: 70px;
-  margin-top: 10px;
-  width: 540px;
-  height: 40px;
-  float: left;
+    background-color: white; 
+    border-radius: 31px;
+    margin-left: 70px;
+    margin-top: 10px;
+    width: 540px;
+    height: 40px;
+    float: left;
   }
   
-  .lupa{
-   width: 30px;
-   height: 30px; 
-   margin-top: 5px;
-   margin-left: 10px;
+  .lupa {
+    width: 30px;
+    height: 30px; 
+    margin-top: 5px;
+    margin-left: 10px;
   }
   
-  .menuTop{
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px; 
-  margin-right: 50px;
-  margin-top: 20px;
-  float: right;
+  .menuTop {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px; 
+    margin-right: 50px;
+    margin-top: 20px;
+    float: right;
   }
   
-  .menuTop li{
-  list-style-type: none;
-  padding-left: 5px;
-  float: left;
+  .menuTop li {
+    list-style-type: none;
+    padding-left: 5px;
+    float: left;
   }
   
   .otstup_v_menuTop { 
-  padding-left: 10px;
-      
+    padding-left: 10px;   
   }
   
   .BritishFlag {
-  width: 15px;
-  height: 15px;
-  margin-top: 2px;
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
   }
   
   .cart {
-  margin-top: -3px;
+    margin-top: -3px;
   }
-  
-  .headerMiddle {
-   background: white;
-  
-  }
-  
-  .conteinerMiddle {
-  width: 1140px;
-  margin: 0 auto;
-  background: #E5E5E5;
-  }
-  
-  
+
   .menuMiddle {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21,79px; 
-  padding-top: 10px;
-  padding-bottom: 10px;
-  float: left;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21,79px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
   }
   
-  .menuMiddle li{
-  list-style-type: none;
-  padding-left: 5px;
-  float: left;
+  .menuMiddle li {
+    list-style-type: none;
+    padding-left: 5px;
+    float: left;
   }
   
-  ul li.first{
-  color: #FFFFFF;
-  list-style-type: none;
-  padding-left: 40px;
-  margin-right: 5px;
+  ul li.first {
+    color: #FFFFFF;
+    list-style-type: none;
+    padding-left: 40px;
+    margin-right: 5px;
   }
   
-  .blueButton{
+  .blueButton {
   background: url(img/Frame14.png) 55px no-repeat,
               url(img/Frame8.png) 40px no-repeat;
   }
   
   .otstup_v_menuMiddle { 
-  padding-left: 32px;
-      
+  padding-left: 32px;   
   }
   
-  ul li.last{
-  color: #FF0C0C;
-  list-style-type: none;
-  margin-right: 5px;
+  ul li.last {
+    color: #FF0C0C;
+    list-style-type: none;
+    margin-right: 5px;
   }
   
   .headerButtom {
-  background: white;
+    background: url('img/st_banner1.png') no-repeat 50%;
   }
   
   .conteinerButtom {
-  width: 1140px;
-  height: 464px;
-  margin: 0 auto;
-  background: url('img/st_banner1.png') no-repeat;
-  padding-top: 10px;
+    width: 1140px;
+    height: 464px;
+    margin: 0 auto;
+    padding-top: 10px;
   }
   
   .whiteButton{
-  background: url('img/Frame15.png') 120px 250px no-repeat;        
+    background: url('img/Frame15.png') 120px 250px no-repeat;        
   }
   
   .newAtomicCollection {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  padding-top: 128px;
-  padding-left: 120px;
-  color: #FFFFFF;
-  float: left;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    padding-top: 128px;
+    padding-left: 120px;
+    color: #FFFFFF;
+    float: left;
   }
   
   .checkOur {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: 0.01em;
-  padding-top: 12px;
-  padding-left: 120px;
-  padding-bottom: 100px;
-  color: #FFFFFF;
-  float: left;
-  }
-
-  .content {
-  background: white;
-  }
-
-  .conteinerContent {
-  width: 1140px;
-  margin: 0 auto;
-  background: #E5E5E5;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    padding-top: 12px;
+    padding-left: 120px;
+    padding-bottom: 100px;
+    color: #FFFFFF;
+    float: left;
   }
 
   .Snowboards {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px; 
-  letter-spacing: 0.03em; 
-  padding-top: 61px;
-  padding-left: 40px;
-  float: left;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px; 
+    letter-spacing: 0.03em; 
+    padding-top: 61px;
+    padding-left: 40px;
+    float: left;
+  }
+
+  .conteinerContent {
+    width: 1140px;
+    margin: 0 auto 0 auto;
+    margin-top: -17px;
+  
   }
 
   .menuContent {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21,79px; 
-  padding-top: 17px;
-  padding-bottom: 10px;
-  margin-left: 366px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  float: left;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21,79px; 
+    padding-top: 17px;
+    padding-bottom: 10px;
+    margin-left: 366px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    float: left;
   }
 
   .menuContent li{
-  list-style-type: none;
-  padding-left: 5px;
-  float: left;
+    list-style-type: none;
+    padding-left: 5px;
+    float: left;
   }
 
   .menuContent li.otstup_view { 
-  margin-top: -9px;  
-  padding-left: 200px;  
- 
+    margin-top: -9px;  
+    padding-left: 200px;  
   }
   
   .menuContent li.view{
-  margin-left: -120px;  
+    margin-left: -120px;  
   }
 
   .menuContent li.view9{
-  margin-left: -50px;  
+    margin-left: -50px;  
   }
  
   .menuContent li.vector{
-  margin-left: -30px;  
+    margin-left: -30px;  
   }
  
   .menuContent li.mostPopular{
-  margin-top: -5px;
+    margin-top: -5px;
   }
 
   .leftMenu {
-  width: 340px;
-  float: left;
-  clear: both;
+    width: 340px;
+    float: left;
+    clear: both;
   }
 
   .leftContent {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: 0.03em;
-  padding-left:40px;
-  
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    padding-left:40px; 
   }
 
   .leftContent li{
-  list-style-type: none;
-  padding-left: 5px;
-  padding-bottom: 5px;
-  float: left;
+    list-style-type: none;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    float: left;
   }
 
   .leftContent li.leftVector {
-  float: right;
+    float: right;
   }
 
   .leftContent li.fadeText {
-  color: #BFBEBE;
+    color: #BFBEBE;
   }
 
   .leftContent li.square {
-  clear: both;
+    clear: both;
   }
 
   .leftContent li.squareText {
-  margin-left: 10px;
-  margin-top: -1px;
+    margin-left: 10px;
+    margin-top: -1px;
   }
 
   .leftContent li.lineMargin {
-  margin-top: -10px;
+    margin-top: -10px;
   }
 
   .leftContent li.ViewmoreMargin {
-  margin-top: 10px;
+    margin-top: 10px;
   }
 
   .cards > ul > li{
-  width: 260px;
-  height: 380px;  
-  background: #E5E5E5;
-  border-right: solid 1px lightgrey;
-  list-style-type: none;
-  text-align: center;
-  float: left;
+    width: 260px;
+    height: 380px;  
+    border-right: solid 1px lightgrey;
+    list-style-type: none;
+    text-align: center;
+    float: left;
   }
 
   .cards > ul > li p{
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  padding-left: 20px;
-  padding-right:10px;
-  margin: 0 auto;
-  float: left;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    padding-left: 20px;
+    padding-right:10px;
+    margin: 0 auto;
+    float: left;
   }
 
   .cards > ul > li p > span{
-  font-weight: bold;
-  color: black;
+    font-weight: bold;
+    color: black;
   }
 
   .cards ul li p.fadeText1 {
-  color: #BFBEBE;
-  padding-top: 15px;
-  padding-bottom: 10px;
+    color: #BFBEBE;
+    padding-top: 15px;
+    padding-bottom: 10px;
   }
 
   .cards ul li p.fadeText2 {
-   color: #BFBEBE;
-  padding-top: 12px;
-  padding-bottom: 10px;
+    color: #BFBEBE;
+    padding-top: 12px;
+    padding-bottom: 10px;
   }
 
   .cards ul li p.fadeText3 {
-  color: #BFBEBE;
-  padding-top: 0px;
-  padding-bottom: 10px;
+    color: #BFBEBE;
+    padding-top: 0px;
+    padding-bottom: 10px;
   }
 
   .cards ul li.goodPhoto {
-  padding-top: 30px;
+    padding-top: 30px;
   }
   
   .cards ul li p.price {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: 0.03em;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
   }
 
   .cards ul li p.discountPrice {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 22px;
-  letter-spacing: 0.03em;
-  padding-left: 0px;
-  color: #BFBEBE;
-  text-decoration: line-through;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    padding-left: 0px;
+    color: #BFBEBE;
+    text-decoration: line-through;
   }
 
   .cards ul img.stars {
-  padding-top: 5px;
-  padding-right: 10px;
-  float: right;
+    padding-top: 5px;
+    padding-right: 10px;
+    float: right;
   }
 
   .cards ul li.last{
-  border-style: hidden;
-  color: black;
+    border-style: hidden;
+    color: black;
   }
 
   .cards ul li img.panorama {
-  width: 258px;
-  height: 220px;
-  padding-top: 25px;
+    width: 258px;
+    height: 220px;
+    padding-top: 25px;
   }
 
   .cards > ul > li h3{
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 33px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 0px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 0px;
   }
 
   .cards > ul > li h4{
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 33px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-top: 0px;
-  margin-bottom: 0px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .cards > ul > li h5{
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-decoration-line: underline;
-  margin-top: 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    margin-top: 0;
   }
 
   .button_View{
-  width: 1140px;
-  display: inline-block;
-  text-align: center;
-  margin: 32px 0px 32px 140px;
+    width: 1140px;
+    display: inline-block;
+    text-align: center;
+    margin: 32px 0px 32px 140px;
   }
 
   .gorizontalLine{
-  width: 1070px;
-  margin: 10px 0px 10px 40px;
+    width: 1070px;
+    margin: 10px 0px 10px 40px;
   }
 
   .BestSellers {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 30px;
-  text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+    text-align: center;
   }
 
   .cardBestSellers > ul > li{
-  width: 260px;
-  height: 260px;  
-  background: #E5E5E5;
-  border: solid 1px lightgrey;
-  list-style-type: none;
-  text-align: center;
-  margin-bottom: 40px;
-  margin-right: 10px;
-  float: left;
+    width: 260px;
+    height: 260px;  
+    border: solid 1px lightgrey;
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    float: left;
   }
 
   .cardBestSellers > ul > li p{
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: 0.01em;
-  text-align: left;
-  padding-left: 20px;
-  padding-right:10px;
-  margin: 0 auto;
-  float: left;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    padding-left: 20px;
+    padding-right:10px;
+    margin: 0 auto;
+    float: left;
   }
 
   .cardBestSellers ul li p.bestSellersText1 {
-  padding-top: 25px;
-  padding-bottom: 10px;
+    padding-top: 25px;
+    padding-bottom: 10px;
   }
 
   .cardBestSellers ul li p.bestSellersText2 {
     padding-top: 10px;
     padding-bottom: 2px;
-    }
+  }
 
   .cardBestSellers ul li p.price {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: 0.03em;
-  clear: both;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    clear: both;
+  }
+
+  .Feedback {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  .Feedback > ul > li {
+    width: 570px;
+    height: 203px;    
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 29px;
+    margin-right: 10px;
+    float: left;
+  }
+
+  .Feedback > ul > li p {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  .Feedback > ul > li p:first-child {
+    font-weight: bold;
+  }
+
+  .Feedback > ul > li .blueButton {
+    width: 136px;
+    height: 36px;
+    background: url(img/Rectangle5.png);
+    margin: 0 auto;
+    color: white;
+  }
+
+  .Feedback > ul > li >div >p {
+   padding-top: 6px;
+  }
+
+  .Feedback > ul > li p:last-child {
+    font-weight: bold;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.03em;
   }
