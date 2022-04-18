@@ -469,18 +469,16 @@
     letter-spacing: 0.03em;
   }
 
-  .Feedback > ul > li {
-    width: 570px;
+  .Feedback > ul li {
+    width: 550px;
     height: 203px;    
     list-style-type: none;
     text-align: center;
     margin-bottom: 29px;
-    margin-right: 10px;
     float: left;
   }
 
-  .Feedback > ul > li p {
-    list-style-type: none;
+   .Feedback > ul > li p {
     text-align: center;
   }
 
@@ -488,7 +486,7 @@
     font-weight: bold;
   }
 
-  .Feedback > ul > li .blueButton {
+  .Feedback > ul li .blueButton {
     width: 136px;
     height: 36px;
     background: url(img/Rectangle5.png);
@@ -496,7 +494,7 @@
     color: white;
   }
 
-  .Feedback > ul > li >div >p {
+  .Feedback > ul > li >div > p {
    padding-top: 6px;
   }
 
@@ -510,3 +508,30 @@
     text-align: center;
     letter-spacing: 0.03em;
   }
+
+  .Feedback > ul li p.littleText {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    letter-spacing: 0.03em;
+    padding-left: 100px;
+    margin-top: -10px;
+  }
+
+  .Feedback > ul li > img {
+    margin-top: -10px;
+    padding-left: 100px;
+    float: left;
+  }
+
+  .Feedback > ul li:last-child > div {
+    margin-top: -10px;
+    float: left;
+  }
+
+  .Feedback > ul li:last-child div p {
+    margin-top: 0px;
+   }
