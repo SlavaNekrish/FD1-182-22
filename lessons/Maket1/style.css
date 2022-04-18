@@ -13,6 +13,7 @@
   .conteiner {
     width: 1140px;
     margin: 0 auto;
+    overflow: hidden;
   }
   
   .logo {
@@ -119,7 +120,8 @@
   }
   
   .headerButtom {
-    background: url('img/st_banner1.png') no-repeat 50%;
+    background: url('img/st_banner1.png') no-repeat;
+    background-size: 100%;
   }
   
   .conteinerButtom {
@@ -174,8 +176,7 @@
   .conteinerContent {
     width: 1140px;
     margin: 0 auto 0 auto;
-    margin-top: -17px;
-  
+    overflow: hidden;
   }
 
   .menuContent {
@@ -474,7 +475,7 @@
     height: 203px;    
     list-style-type: none;
     text-align: center;
-    margin-bottom: 29px;
+    margin-bottom: 10px;
     float: left;
   }
 
@@ -535,3 +536,31 @@
   .Feedback > ul li:last-child div p {
     margin-top: 0px;
    }
+
+   .footerTop {
+    background: #1977DA;
+  }
+
+  .menuFooter {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+  }
+  
+  .menuFooter li {
+    list-style-type: none;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    float: left;
+  }
+
+  .menuFooter li:first-child {
+    padding-left: 120px;
+  }
+
