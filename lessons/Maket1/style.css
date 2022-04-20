@@ -411,8 +411,7 @@
     line-height: 44px;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 30px;
-    text-align: center;
+    margin-bottom: 20px;
   }
 
   .cardBestSellers > ul > li{
@@ -541,7 +540,7 @@
     background: #1977DA;
   }
 
-  .menuFooter {
+  .menuFooterTop {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -551,7 +550,7 @@
     color: #FFFFFF;
   }
   
-  .menuFooter li {
+  .menuFooterTop li {
     list-style-type: none;
     padding-right: 50px;
     padding-bottom: 10px;
@@ -560,7 +559,75 @@
     float: left;
   }
 
-  .menuFooter li:first-child {
+  .menuFooterTop li:first-child {
     padding-left: 120px;
   }
+
+  .menuFooterButtom {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    padding-top: 36px;
+    float: left;
+  }
+
+  .menuFooterButtom li:first-child {
+    font-weight: bold;
+    padding-bottom: 15px;
+  }
+
+  ul.menuFooterButtom:first-child li:last-child {
+    padding-top: 8px;
+  }
+
+  .menuFooterButtom li {
+    list-style-type: none;
+  }
+
+  ul.menuFooterButtom:first-child {
+    padding-right: 120px;
+    padding-left: 80px;
+  }
+
+  ul.menuFooterButtom:nth-child(2) li {
+    padding-bottom: 6px;
+  }
+
+  ul.menuFooterButtom:nth-child(2) li:first-child {
+    padding-bottom: 15px;
+  }
+
+  ul.menuFooterButtom:nth-child(2) {
+    padding-right: 60px;
+  }
+
+  ul.menuFooterButtom:nth-child(3) li {
+    padding-bottom: 6px;
+  }
+
+  ul.menuFooterButtom:nth-child(3) li:first-child {
+    padding-bottom: 15px;
+  }
+
+  ul.menuFooterButtom:nth-child(3) {
+    padding-right: 50px;
+  }
+
+  ul.menuFooterButtom:nth-child(4) li:first-child {
+    word-spacing: 6px;
+    padding-bottom: 29px;
+  }
+
+  ul.menuFooterButtom:nth-child(4) li:last-child {
+    padding-top: 14px;
+  }
+
+  .M_Sport_logo {
+    text-align: center;
+  }
+  
+  
 
