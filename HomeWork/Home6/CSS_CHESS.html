@@ -15,69 +15,44 @@
 
   }
 
-  
   table.CHESS tr:first-child td {
     height: 25px;
+    background-color: greenyellow;
   }
 
   table.CHESS tr:last-child td {
     height: 25px;
+    background-color: greenyellow;
   }
   table.CHESS td:first-child {
     width: 25px;
+    background-color: greenyellow;
   }
 
   table.CHESS td:last-child {
     width: 25px;
+    background-color: greenyellow;
   }
-
-  table.CHESS tr:nth-of-type(even) td:nth-of-type(odd) {
+  
+  table.CHESS tr:nth-of-type(even):not(:first-child):not(:last-child) td:nth-of-type(odd):not(:first-child):not(:last-child) {
     background-color: black;
   }
 
-  table.CHESS tr:nth-of-type(even) td:nth-of-type(even) {
+  table.CHESS tr:nth-of-type(even):not(:first-child):not(:last-child) td:nth-of-type(even):not(:first-child):not(:last-child) {
     background-color: white;
   }
 
-  table.CHESS tr:nth-of-type(odd) td:nth-of-type(odd) {
+  table.CHESS tr:nth-of-type(odd):not(:first-child):not(:last-child) td:nth-of-type(odd):not(:first-child):not(:last-child) {
     background-color: white;
   }
 
-  table.CHESS tr:nth-of-type(odd) td:nth-of-type(even) {
+  table.CHESS tr:nth-of-type(odd):not(:first-child):not(:last-child) td:nth-of-type(even):not(:first-child):not(:last-child) {
     background-color: black;
   }
+  
 
-  table.CHESS tr:nth-of-type(even) td:first-child {
-    background-color: greenyellow;
-  }
 
-  table.CHESS tr:nth-of-type(even) td:last-child {
-    background-color: greenyellow;
-  }
-
-  table.CHESS tr:nth-of-type(odd) td:first-child {
-    background-color: greenyellow;
-  }
-
-  table.CHESS tr:nth-of-type(odd) td:last-child {
-    background-color: greenyellow;
-  }
- 
-  table.CHESS tr:first-child td:nth-of-type(even) {
-    background-color: greenyellow;
-  }
-
-  table.CHESS tr:first-child td:nth-of-type(odd) {
-    background-color: greenyellow;
-  }
-
-  table.CHESS tr:last-child td:nth-of-type(even) {
-    background-color: greenyellow;
-  }
-
-  table.CHESS tr:last-child td:nth-of-type(odd) {
-    background-color: greenyellow;
-  }
+  
 
 </style>
 
