@@ -47,9 +47,14 @@ div.menuUlli ul li:nth-child(4) {
 }
 
 div.menuInline ul li {
-  padding: 15px 20px;
   display: inline-block;
-  border-right: solid 5px red;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+
+div.menuInline ul li:not(:last-child)::after {
+  content: url(redLine.jpg);
+  vertical-align: middle;
 }
 
 div.clearfix::before {
@@ -58,12 +63,7 @@ div.clearfix::before {
 
 div.menuInline ul {
  padding-left: 0px;
-}
-
-div.menuInline ul li {
-  padding: 15px 20px;
-  display: inline;
-  border-right: solid 5px red;
+ margin-top: 5px;
 }
 
 div.menuInline ul li:last-child {
@@ -74,13 +74,22 @@ div.menuInline ul li:first-child {
   padding-left: 9px;
 }
 
-div.menuInline ul li:not(:first-child) {
-  padding-right: 18px;
+div.menuInline ul li:after {
+   padding-left: 10px;
 }
 
-div.menuInline ul li:nth-child(4) {
-  padding-right: 21px;
+div.menuInline ul li:first-child:after {
+   padding-left: 8px;
 }
+
+div.menuInline ul li:after {
+   padding-left: 10px;
+}
+
+div.menuInline ul li:nth-child(4):after {
+   padding-left: 13px;
+}
+
 
 </style>
 <body>
@@ -115,7 +124,8 @@ div.menuInline ul li:nth-child(4) {
   </div>
   <!-- Третий способ - выполнить вёрстку однострочного меню при помощи Inline-block и clearfix. Правда, тут я использовал псевдоэлемент before. 
     Float-ы в данном способе не используются. Способ запомнил с лекции на занятии.
-  При сужении экрана объекты меню меняют положение не так, как при float. Плюсы-минусы пока до конца не изучены :) -->
+  При сужении экрана объекты меню меняют положение не так, как при float. Плюсы-минусы пока до конца не изучены :)
+  Красный разделитель - специально подготовленная картинка в формате .jpg., которая вставлена в псевдоэлемент after. -->
   <div class="menuInline clearfix">
     <ul>
       <li><a href="https://catalog.onliner.by/" title="первая ссылка">первая ссылка</a></li>
