@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LINKS</title>
+</head>
+<style>
+table {
+  width: 700px;
+  height: 50px;
+  border-collapse:collapse;
+  text-align: center;
+}
+
+a:hover {
+  color: red;
+}
+
+div.menuUlli ul {
+  float: left;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+div.menuUlli ul li {
+  padding: 15px 20px;
+  float: left;
+  border-right: solid 5px red;
+}
+
+div.menuUlli ul li:last-child {
+  border-right: none;
+}
+
+div.menuUlli ul li:first-child {
+  padding-left: 9px;
+}
+
+div.menuUlli ul li:not(:first-child) {
+  padding-right: 22px;
+}
+
+div.menuUlli ul li:nth-child(4) {
+  padding-right: 25px;
+}
+
+div.menuInline ul li {
+  padding: 15px 20px;
+  display: inline-block;
+  border-right: solid 5px red;
+}
+
+div.clearfix::before {
+  content: ""; display: block; clear: both;
+}
+
+div.menuInline ul {
+ padding-left: 0px;
+}
+
+div.menuInline ul li {
+  padding: 15px 20px;
+  display: inline;
+  border-right: solid 5px red;
+}
+
+div.menuInline ul li:last-child {
+  border-right: none;
+}
+
+div.menuInline ul li:first-child {
+  padding-left: 9px;
+}
+
+div.menuInline ul li:not(:first-child) {
+  padding-right: 18px;
+}
+
+div.menuInline ul li:nth-child(4) {
+  padding-right: 21px;
+}
+
+</style>
+<body>
+  <!-- Первый способ выполнить меню при помощи таблицы. Красный разделитель - специально подготовленная картинка в формате .jpg. 
+    Вёрстка табличным способом удобна в написании. Однако, она устарела и не предназначена для кроссплатформенности. -->
+  <div class="menuTable">
+    <table border="0">
+      <tr> 
+        <td><a href="https://catalog.onliner.by/" title="первая ссылка">первая ссылка</a></td>
+        <td><img src="redLine.jpg" alt="line"></td>
+        <td><a href="https://money.onliner.by/" title="вторая ссылка">вторая ссылка</a></td>
+        <td><img src="redLine.jpg" alt="line"></td>
+        <td><a href="https://people.onliner.by/opinions" title="третья ссылка">третья ссылка</a></td>
+        <td><img src="redLine.jpg" alt="line"></td>
+        <td><a href="https://auto.onliner.by/" title="четвёртая ссылка">четвёртая ссылка</a></td>
+        <td><img src="redLine.jpg" alt="line"></td>
+        <td><a href="https://tech.onliner.by/" title="пятая ссылка">пятая ссылка</a></td>
+      </tr>
+    </table>
+  </div>
+   <!-- Второй способ выполнить меню при помощи тега <ul> c тегами <li> со стилевым свойством "float". Красный разделитель - это border-right.
+     Вёрстка float-ами современнее табличной. Она позволяет хорошо отображать сайт на разных устройствах. Т.к. при сужении экрана за-float-ченные 
+    блоки перетекают ниже, и полосы прокрутки не появляются. Однако, такая вёрстка тоже устаревает. Сейчас верстают на flex и grid.  -->
+  <div class="menuUlli">
+    <ul>
+      <li><a href="https://catalog.onliner.by/" title="первая ссылка">первая ссылка</a></li>
+      <li><a href="https://money.onliner.by/" title="вторая ссылка">вторая ссылка</a></li>
+      <li><a href="https://people.onliner.by/opinions" title="третья ссылка">третья ссылка</a></li>
+      <li><a href="https://auto.onliner.by/" title="четвёртая ссылка">четвёртая ссылка</a></li>
+      <li><a href="https://tech.onliner.by/" title="пятая ссылка">пятая ссылка</a></li>
+    </ul>
+  </div>
+  <!-- Третий способ - выполнить вёрстку однострочного меню при помощи Inline-block и clearfix. Правда, тут я использовал псевдоэлемент before. 
+    Float-ы в данном способе не используются. Способ запомнил с лекции на занятии.
+  При сужении экрана объекты меню меняют положение не так, как при float. Плюсы-минусы пока до конца не изучены :) -->
+  <div class="menuInline clearfix">
+    <ul>
+      <li><a href="https://catalog.onliner.by/" title="первая ссылка">первая ссылка</a></li>
+      <li><a href="https://money.onliner.by/" title="вторая ссылка">вторая ссылка</a></li>
+      <li><a href="https://people.onliner.by/opinions" title="третья ссылка">третья ссылка</a></li>
+      <li><a href="https://auto.onliner.by/" title="четвёртая ссылка">четвёртая ссылка</a></li>
+      <li><a href="https://tech.onliner.by/" title="пятая ссылка">пятая ссылка</a></li>
+    </ul>
+  </div>
+
+</body>
+</html>
