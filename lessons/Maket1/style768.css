@@ -1,0 +1,26 @@
+@media all and (max-width: 1170px) {
+    .conteiner, .conteinerButtom, .conteinerContent, .button_View {
+        width: 768px;
+    }
+    
+    .search {
+        margin-left: 30px;
+        width: 250px;
+    }
+    
+    .menuTop {
+        margin-right: 10px;
+    }
+
+    .otstup_v_menuMiddle { 
+        padding-left: 20px;   
+        }
+        
+    .Snowboards {
+        padding-left: 35px;
+    }
+    
+    .leftContent {
+        padding-left:30px;
+    }
+}
