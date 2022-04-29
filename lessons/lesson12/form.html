@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://fe.it-academy.by/TestForm.php" method="GET">
+    <p>Фамилия:<input type="text" name="firstname"></p>
+    <p>Имя:<input type="text" name="name"></p>
+    <p>Отчество:<input type="text" name="lastname"></p>
+    <p>E-mail для связи:<input type="email" name="email"></p>
+    <p>Согласен с правилами сайта:<input type="checkbox" value="yes"></p>
+    <p>Вид деятельности:
+       <label>
+           <input type="radio" name="act">пенсионер
+       </label> 
+       <label>
+        <input type="radio" name="act">студент
+        </label> 
+        <label>
+        <input type="radio" name="act">бизнесмен
+        </label> 
+        <label>
+        <input type="radio" name="act">бюджетник
+        </label> 
+    <p>Категории прав:</p>
+    <p>A<input type="checkbox" name="cat[]" value="1"></p>
+    <p>B<input type="checkbox" name="cat[]" value="1"></p>
+    <p>C<input type="checkbox" name="cat[]" value="1"></p>
+    <select name="money">
+        <option value="first money">100$</option>
+        <option value="second money">300$</option>
+        <option value="third money">500$</option>
+        <option value="fours money">800$</option>
+        <option value="fifth money">1000$</option>
+        <option value="sixth money">1300$</option>
+        <option value="sventh money">1600$</option>
+    </select>
+    <textarea name="long text"></textarea>
+
+    </p><input type="submit" value="Голосовать"></p>
+
+
+    </form>
+</body>
+</html>
