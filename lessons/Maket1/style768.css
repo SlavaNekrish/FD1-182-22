@@ -79,6 +79,13 @@
         float: right;
     }
 
+    .cardBestSellers > ul > li:first-child{
+        margin-left: 90px;
+    }
+
+    .cardBestSellers > ul > li:nth-child(3){
+        margin-left: 90px;
+    }
    
     
 }
