@@ -14,13 +14,71 @@
 
     .otstup_v_menuMiddle { 
         padding-left: 20px;   
-        }
+    }
         
+    .conteinerButtom {
+        height: 430px;
+    } 
+          
     .Snowboards {
         padding-left: 35px;
+        padding-top: 10px;
+    }
+
+    .leftMenu {
+        width: 260px;
+       
     }
     
     .leftContent {
-        padding-left:30px;
+        padding-left:1px;
     }
+
+   
+    .menuContent {
+        padding-top: 17px;
+        padding-bottom: 10px;
+        margin-left: 0px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        float: right;
+      }
+
+    ul.menuContent {
+        padding-left: 0px;
+    }
+
+    .menuContent li {
+        padding-left: 0px;
+        font-size: 15px;
+    }
+
+    .menuContent li.otstup_view { 
+        margin-top: -9px;  
+        padding-left: 5px;  
+    }
+   
+    .menuContent span.mostPopular{
+        padding-left: 2px;
+      }
+
+    .cards > ul > li{
+        width: 251px; 
+    }
+
+   
+    .cards > ul > li:last-child{
+        float: right;
+    }
+  
+    div.cards > ul > li:nth-of-type(2){
+        float: right;
+    }
+
+    div.cards > ul > li:first-child {
+        float: right;
+    }
+
+   
+    
 }
