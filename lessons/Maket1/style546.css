@@ -1,0 +1,58 @@
+@media all and (max-width: 880px) {
+  .conteiner, .conteinerButtom, .conteinerContent, .button_View {
+      width: 546px;
+  }
+
+  .logo {
+    padding-left: 10px;
+  }
+  .search {
+    margin-left: 20px;
+    width: 90px;
+  }
+  .menuTop {
+    margin-right: 10px;
+    padding-left: 0px;
+  }
+  .otstup_v_menuMiddle { 
+    padding-left: 4px;   
+  }
+
+  .blueButton {
+    background: url(img/Frame14.png) 30px no-repeat,
+                url(img/Frame88.png) 20px no-repeat;
+    }
+  ul li.first {
+    padding-left: 10px;
+    margin-right: 6px;
+  }
+
+  .menuMiddle {
+    font-size: 13px;
+    line-height: 21,79px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+  }
+    
+  .conteinerButtom {
+    height: 264px;
+  }
+
+  .newAtomicCollection {
+    padding-top: 50px;
+    padding-left: 60px;
+  }
+
+  .checkOur {
+    padding-left: 60px;
+    padding-bottom: 120px;
+    color: #FFFFFF;
+    float: left;
+  }
+
+  .whiteButton{
+    background: url('img/Frame15.png') 60px 190px no-repeat;        
+  }
+  
+}

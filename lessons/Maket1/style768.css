@@ -62,23 +62,33 @@
         padding-left: 2px;
       }
 
+    div.cards {
+        margin-left: 220px;
+    }
+
     .cards > ul > li{
         width: 251px; 
     }
 
+    .cards ul li.last{
+        border-style:unset;
+        border-right: none;
+    }
    
-    .cards > ul > li:last-child{
-        float: right;
-    }
-  
-    div.cards > ul > li:nth-of-type(2){
-        float: right;
+
+    .cards > ul > li{
+        border-right: none;
     }
 
-    div.cards > ul > li:first-child {
-        float: right;
-    }
+    .cards li.greyline {
+        border-right: solid 1px lightgrey;
+   }
+ 
+   .cards li.last.greyline {
+    border-right: solid 1px lightgrey;
+   }
 
+ 
     .cardBestSellers > ul > li:first-child{
         margin-left: 90px;
     }
@@ -86,6 +96,43 @@
     .cardBestSellers > ul > li:nth-child(3){
         margin-left: 90px;
     }
-   
+
+    .Feedback > ul li {
+        width: 360px;
+        padding-left: 0px;
+    }
+
+    .Feedback > ul li > img {
+        padding-left: 0px;
+    }
+
+    .Feedback > ul li p.littleText {
+        padding-left: 0px;
+      }
+
+    .menuFooterTop li {
+        padding-right: 22px;
+        padding-bottom: 10px;
+        margin-top: 10px;
+        margin-bottom: 8px;
+        float: left;
+    }
+
+    .menuFooterTop li:first-child {
+        padding-left: 2px;
+    }
+
+    ul.menuFooterButtom:first-child {
+        padding-right: 2px;
+        padding-left: 2px;
+      }
+    
+      ul.menuFooterButtom:nth-child(2) {
+        padding-right: 2px;
+      }
+    
+      ul.menuFooterButtom:nth-child(3) {
+        padding-right: 2px;
+      }
     
 }
