@@ -1,5 +1,5 @@
-@media all and (max-width: 380px) {
-  .conteiner, .conteinerButtom, .conteinerContent, .button_View, .footerTop {
+@media all and (max-width: 550px) {
+  .conteiner, .conteinerButtom, .conteinerContent, .button_View {
       width: 320px;
       
   }
