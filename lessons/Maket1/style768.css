@@ -10,6 +10,8 @@
     
     ul.menuTop {
         margin-right: 8px;
+        padding-left: 0px;
+        margin-left: 0px;
     }
 
     .otstup_v_menuMiddle { 
@@ -136,6 +138,6 @@
       }
 
       ul.menuFooterButtom:nth-child(4) {
-        padding-left: 35px;
+        padding-left: 30px;
       }
 }
