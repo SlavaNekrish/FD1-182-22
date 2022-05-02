@@ -85,7 +85,7 @@
    }
  
    .cards li.last.greyline {
-    border-right: solid 1px lightgrey;
+        border-right: solid 1px lightgrey;
    }
 
  

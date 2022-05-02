@@ -40,7 +40,7 @@
   }
 
   .newAtomicCollection {
-    padding-top: 50px;
+    padding-top: 30px;
     padding-left: 60px;
   }
 
@@ -55,4 +55,126 @@
     background: url('img/Frame15.png') 60px 190px no-repeat;        
   }
   
+  .Snowboards {
+    padding-left: 10px;
+    padding-top: 0px;
+  }
+
+  .menuContent {
+    width: 280px;
+
+  }
+
+  .menuContent li {
+    list-style-type: none;
+    padding-left: 10px;
+    float: left;
+  }
+
+  .menuContent li:nth-child(2) {
+    padding-left: 7px;
+  }
+
+  .menuContent li:last-child {
+    float: right;
+  }
+
+  .cards > ul > li{
+    width: 260px;
+    margin-left: -10px;
+    padding-left: 0px;
+    border-right: none;
+  }
+
+  .cards li.greyline {
+    border-right: none;
+  }
+
+  .cards li.last.greyline {
+    border-right: none;
+  }
+
+  div.cards {
+    margin-left: 0px;
+  }
+
+  .button_View{
+    
+    text-align: center;
+    margin: 0px;
+  }
+
+   
+  .cardBestSellers > ul > li:first-child{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .cardBestSellers > ul > li:nth-child(2){
+    margin-left: 0px;
+    margin-right: 0px;
+  } 
+  .cardBestSellers > ul > li:nth-child(3){
+    margin-left: 0px;
+    margin-right: 0px;
+  } 
+
+  .cardBestSellers > ul > li:last-child{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .cardBestSellers > ul > li{
+    width: 250px;
+    height: 250px;  
+  }
+
+  .Feedback > ul > li {
+    width: 546px;
+    margin: 0 auto;
+  }
+
+  .Feedback > ul li p.littleText {
+   margin-left: 100px
+  }
+
+  .Feedback > ul li > img {
+    padding-left: 100px;
+    float: left;
+  }
+
+  .menuFooterTop {
+    font-size: 13px;
+  }
+
+  .menuFooterTop li {
+    padding-right: 6px;
+  }
+
+  .menuFooterTop li:first-child {
+    padding-left: 0px;
+    margin-left: 5px;
+  }
+
+  ul.menuFooterButtom:nth-child(4) {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  
+  ul.menuFooterButtom:nth-child(4) li:first-child {
+    word-spacing: 6px;
+    padding-bottom: 29px;
+    margin-left: 320px;
+  }
+
+  ul.menuFooterButtom:nth-child(4) li:nth-child(2) {
+    margin-left: 230px;
+  }
+
+
+  ul.menuFooterButtom:nth-child(4) li:last-child {
+    padding-top: 14px;
+    margin-left: 230px;
+  }
+
 }

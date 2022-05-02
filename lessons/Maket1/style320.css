@@ -1,0 +1,232 @@
+@media all and (max-width: 380px) {
+  .conteiner, .conteinerButtom, .conteinerContent, .button_View, .footerTop {
+      width: 320px;
+      
+  }
+
+  .menuTop {
+    margin-right: 50px;
+    margin-top: 5px;
+  }
+
+  .blueButton {
+    background: url(img/Frame14.png) 30px 18px no-repeat,
+                url(img/Frame888.png) 20px 15px no-repeat;
+  }
+
+  .menuMiddle {
+    font-size: 13px;
+    line-height: 25px;
+  }
+
+  ul.menuMiddle {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .conteinerButtom {
+    height: 130px;
+  }
+
+  .newAtomicCollection {
+    padding-top: 5px;
+    padding-left: 50px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .checkOur {
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 0.01em;
+    padding-top: 6px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    }
+
+    .whiteButton{
+      background: url('img/Frame155.png') 50px 80px no-repeat;        
+    }
+
+    .Snowboards {
+      font-size: 20px;
+      margin-left: 40px;
+    }
+
+    .menuContent {
+      width: 250px;
+    }
+
+    .menuContent li{
+     padding-left: 5px; 
+     padding-bottom: 20px;
+    }
+
+    .menuContent li:first-child{
+      padding-bottom: 25px;
+    }
+
+    .menuContent li:last-child{
+      padding-right: 60px;
+    }
+
+    .BestSellers {
+      font-size: 20px;
+      margin-bottom: 0px;
+    }
+
+    .Feedback {
+      font-size: 13px;
+      line-height: 15px;
+    }
+
+    .Feedback > ul { 
+      margin-left: -10px;
+    }
+  
+    .Feedback > ul li {
+      width: 290px;
+      height: 170px;    
+      margin-left: -10px;
+      margin-bottom: 10px;
+    }
+
+    .Feedback > ul > li >div > p {
+     padding-top: 6px;
+    }
+  
+    .Feedback > ul > li p:last-child {
+      font-weight: bold;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+  
+    .Feedback > ul li p.littleText {
+      padding-left: 0px;
+    }
+  
+    .Feedback > ul li > img {
+      margin-top: -10px;
+      padding-left: 40px;
+      float: left;
+    }
+  
+    .Feedback > ul li:last-child > div {
+      margin-top: 10px;
+      margin-left: 80px;
+    }
+  
+    .Feedback > ul li:last-child div p {
+      margin-top: 0px;
+     }
+
+    .menuFooterTop li {
+     margin-top: 0px; 
+     padding-bottom: 0px;
+    }
+
+    .menuFooterButtom {
+      width: 320px;
+    }
+
+    .menuFooterButtom li:first-child {
+      font-weight: bold;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+  
+    ul.menuFooterButtom:first-child li:last-child {
+      padding-top: 8px;
+      text-align: center;
+    }
+  
+    ul.menuFooterButtom:first-child {
+      padding-right: 0px;
+      padding-left: 0px;
+      padding-top: 15px;
+      text-align: center;
+    }
+  
+    ul.menuFooterButtom:nth-child(2) {
+      padding-top: 5px;
+      padding-right: 0px;
+      padding-left: 0px;
+      text-align: center;
+    }
+
+    ul.menuFooterButtom:nth-child(3) {
+      padding-right: 0px;
+      padding-left: 0px;
+      text-align: center;
+    }
+
+    ul.menuFooterButtom:nth-child(2) li {
+      padding-bottom: 8px;
+      text-align: center;
+    }
+  
+    ul.menuFooterButtom:nth-child(2) li:first-child {
+      padding-bottom: 10px;
+    }
+  
+    ul.menuFooterButtom:nth-child(2) {
+      padding-right: 0px;
+      padding-right: 0px;
+      text-align: center;
+    }
+
+    ul.menuFooterButtom:nth-child(3) {
+      padding-right: 0px;
+      padding-right: 0px;
+      padding-top: 5px;
+      text-align: center;
+    }
+  
+    ul.menuFooterButtom:nth-child(3) li {
+      padding-bottom: 6px;
+    }
+  
+    ul.menuFooterButtom:nth-child(3) li:first-child {
+      padding-bottom: 15px;
+    }
+  
+    ul.menuFooterButtom:nth-child(3) {
+      padding-right: 00px;
+    }
+
+    ul.menuFooterButtom:nth-child(4) {
+      padding-right: 0px;
+      padding-left: 0px;
+      padding-top: 5px;
+      text-align: center;
+    }
+  
+    ul.menuFooterButtom:nth-child(4) li:first-child {
+      word-spacing: 6px;
+      padding-bottom: 29px;
+      margin-left: 0px;
+
+    }
+  
+    ul.menuFooterButtom:nth-child(4) li:last-child {
+      padding-top: 14px;
+      padding-left: 0px;
+    }
+  
+    ul.menuFooterButtom:nth-child(4) li:nth-child(2) {
+      margin-left: 0px;
+    }
+  
+  
+    ul.menuFooterButtom:nth-child(4) li:last-child {
+      padding-top: 14px;
+      margin-left: 0px;
+    }
+     
+
+}
