@@ -8,8 +8,8 @@
         width: 250px;
     }
     
-    .menuTop {
-        margin-right: 10px;
+    ul.menuTop {
+        margin-right: 8px;
     }
 
     .otstup_v_menuMiddle { 
@@ -134,5 +134,8 @@
       ul.menuFooterButtom:nth-child(3) {
         padding-right: 2px;
       }
-    
+
+      ul.menuFooterButtom:nth-child(4) {
+        padding-left: 35px;
+      }
 }
