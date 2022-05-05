@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+</head>
+<style>
+  body {
+    margin-left: 10px;
+  }
+
+  ul{
+    padding-left: 0px;
+  }
+
+  li {
+    list-style-type: none;
+    float: left;
+  }
+
+  li > p {
+    margin: 0px;
+  }
+
+ 
+  ul:nth-of-type(1)  p{
+    margin-right: 67px;
+  }
+
+  ul:nth-of-type(2)  p{
+    padding-right: 140px;
+  }
+
+  ul:nth-of-type(3)  p{
+    padding-right: 100px;
+  }
+
+  ul:nth-of-type(4)  p{
+    padding-right: 27px;
+  }
+  
+  select {
+    width: 250px;
+  }
+
+  li input[type = "radio"] {
+    margin-left: 15px;
+  }
+
+  textarea {
+    width: 500px;
+    height: 200px;
+  }
+  form > p:first-child{
+    margin-bottom: 5px;
+  }
+
+
+  form > p {
+    margin-bottom: 5px;
+  }
+
+  textarea.first {
+    width: 100%;
+    height: 30px;
+    margin-right: 10px;
+    box-sizing: border-box;
+  }
+
+  p + textarea {
+    width: 100%;
+    margin-right: 10px;
+    box-sizing: border-box;
+  }
+
+  @media all and (max-width: 560px) {
+    
+    li {
+      float: none;
+    }
+
+    
+    li input[type = "radio"] {
+    margin-left: 0px;
+    }
+
+    ul:last-of-type li {
+      float: left;
+    }
+
+    ul:nth-of-type(2) {
+      margin-top: -10px;
+    }
+
+    ul:nth-of-type(3) {
+      margin-top: -20px;
+    }
+
+    ul:nth-of-type(4) {
+      margin-top: -30px;
+    }
+
+    ul:nth-of-type(4)  p{
+    padding-right: 5px;
+    }
+
+    ul:nth-of-type(2)  p{
+    padding-right: 140px;
+    }
+
+    form > p {
+    margin-bottom: 5px;
+    margin-top: -10px;
+  }
+  }
+
+</style>
+<body>
+  <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
+  <form action="https://fe.it-academy.by/TestForm.php" method="GET">
+    <ul>
+    <li><p>Название статьи:</p></li>
+    </li><textarea name="articleTitle" class="first">Название...</textarea></li>
+    </ul>
+    <ul>
+    <li><p>Рубрика:</p></li>                      
+    <li><select name="rubric" >
+      <option value="astr">астрономия</option>
+      <option value="arkh">архиология</option>
+      <option value="progr" selected>программирование</option>
+      <option value="math">математика</option>
+      <option value="philo">архиология</option>
+    </select></li>
+  </ul><br>
+  <ul>
+    <li><p>Публикация</p></li>
+    <li><input type="radio" name="sourse" value="site">на сайте</li>
+    <li><input type="radio" name="sourse" value="journal">в журнале</li>
+    <li><input type="radio" name="sourse" value="site&journal">на сайте и в журнале</li>
+  </ul><br>
+  <ul>
+    <li><p>Разрешить комментарии</p></li>
+    <li><input type="checkbox" name="comments"></li>
+  </ul><br>
+  <p>Текст статьи:</p>
+  <textarea name="article">Моя статья...</textarea><br><br>
+  <input type="submit" value="Опубликовать">
+  </form>
+
+</body>
+</html>
