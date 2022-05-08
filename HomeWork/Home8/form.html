@@ -11,6 +11,18 @@
     margin-left: 10px;
   }
 
+  label > p{
+    margin: 0px;
+    margin-right: 53px;
+    float: left;
+
+  }
+
+  label > div{
+    margin-left: 200px;
+    margin-right: 5px;
+  }
+
   ul{
     padding-left: 0px;
   }
@@ -24,17 +36,21 @@
     margin: 0px;
   }
 
+  ul:nth-of-type(1) li:first-child {
+    width: 200px;
+    margin-right: 0px;
+  }
  
   ul:nth-of-type(1)  p{
-    margin-right: 67px;
+    margin-right: 0px;
   }
 
   ul:nth-of-type(2)  p{
-    padding-right: 140px;
+    padding-right: 100px;
   }
 
   ul:nth-of-type(3)  p{
-    padding-right: 100px;
+    padding-right: 28px;
   }
 
   ul:nth-of-type(4)  p{
@@ -65,22 +81,27 @@
   textarea.first {
     width: 100%;
     height: 30px;
-    margin-right: 10px;
-    box-sizing: border-box;
   }
 
   p + textarea {
     width: 100%;
-    margin-right: 10px;
+    margin-right: 0px;
     box-sizing: border-box;
   }
 
-  @media all and (max-width: 560px) {
+  @media all and (max-width: 600px) {
     
     li {
       float: none;
     }
 
+    label > p{
+    float: none;
+    }
+
+    label > div{
+    margin-left: 0px;
+    }
     
     li input[type = "radio"] {
     margin-left: 0px;
@@ -89,6 +110,11 @@
     ul:last-of-type li {
       float: left;
     }
+
+    ul:nth-of-type(1) {
+      margin-top: -5px;
+    }
+
 
     ul:nth-of-type(2) {
       margin-top: -10px;
@@ -120,19 +146,21 @@
 <body>
   <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
   <form action="https://fe.it-academy.by/TestForm.php" method="GET">
+    
+    <label>
+      <p>Название статьи:</p>
+      <div><textarea name="articleTitle" class="first">Название...</textarea></div>
+    </label>
+    <br>
     <ul>
-    <li><p>Название статьи:</p></li>
-    </li><textarea name="articleTitle" class="first">Название...</textarea></li>
-    </ul>
-    <ul>
-    <li><p>Рубрика:</p></li>                      
+    <label><li><p>Рубрика:</p></li>                      
     <li><select name="rubric" >
       <option value="astr">астрономия</option>
       <option value="arkh">архиология</option>
       <option value="progr" selected>программирование</option>
       <option value="math">математика</option>
       <option value="philo">архиология</option>
-    </select></li>
+    </select></li></label>
   </ul><br>
   <ul>
     <li><p>Публикация</p></li>
@@ -143,9 +171,9 @@
   <ul>
     <li><p>Разрешить комментарии</p></li>
     <li><input type="checkbox" name="comments"></li>
-  </ul><br>
-  <p>Текст статьи:</p>
-  <textarea name="article">Моя статья...</textarea><br><br>
+  </ul><br><br>
+  <label><p>Текст статьи:</p>
+  <textarea name="article">Моя статья...</textarea></label><br><br>
   <input type="submit" value="Опубликовать">
   </form>
 
