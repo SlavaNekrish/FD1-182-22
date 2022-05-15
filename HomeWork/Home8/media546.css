@@ -1,0 +1,33 @@
+@media all and (max-width: 546px) {
+* {
+    box-sizing: border-box;
+}
+ 
+div.mainBack, div.header, div.footer, div.leftMenu, div.fadeBall, div.content {
+  width: 500px;
+}
+
+
+div.leftMenu{
+height: 260px;
+padding-top: 1px;
+padding-left: 150px;
+padding-bottom: 5px;
+float: none;
+background: url('Footballbackground400.png');
+}
+
+div.content{
+  margin: 0px; 
+  padding: 0px;
+}
+
+div.mainBack{
+  background: none;
+}
+
+img.position{
+  margin-left: 10px
+}
+
+}
