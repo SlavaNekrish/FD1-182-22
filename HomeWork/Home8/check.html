@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+   * {
+   user-select: none;
+  }
+  body{
+    margin-left: 50px;
+  }
+
+  [type="checkbox"]{
+    display: none;
+  }
+
+  input + label{
+    background: url("Icons.jpg") no-repeat -28px 0px;
+    background-size: 59px;
+    width: 30px;
+    height: 23px;
+    display: inline-block;
+  }
+
+  input:checked + label{
+    background-position: 2px 0px;
+  }
+ 
+</style>
+<body>
+  <h2>Стилизация checkbox</h2>
+  <form action="https://fe.it-academy.by/TestForm.php">
+    <input type="checkbox" id="check" name="test">
+    <label for="check"></label>
+    <button type="submit">send</button>
+  </form>
+</body>
+</html>
