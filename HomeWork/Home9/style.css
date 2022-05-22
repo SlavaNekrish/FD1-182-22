@@ -1,0 +1,48 @@
+
+
+div.mainBack{
+  background: url('ProzrBall.png') top right repeat-y,
+              url('Footballbackground.png') repeat-y;
+  display: flex;
+}
+
+div.header{
+  text-align: center; 
+  padding: 20px; 
+  background-color: lightskyblue;
+}
+
+div.leftMenu{
+  width: 150px; 
+  padding: 10px; 
+  margin-right: 10px;
+}
+
+ol.disc{
+  list-style-type: disc;
+}
+
+h3.footballTitle{
+  text-align: center; 
+}
+
+img.position{
+  width: 199px;
+  height: 130px; 
+  padding: 5px; 
+  margin-right: 20px;
+  margin-left: 35px;
+  float: left;
+}
+
+div.content{
+  padding: 0px 20px 20px 40px;
+}
+
+div.footer{
+  text-align: center; 
+  padding: 20px; 
+  background-color: lightskyblue;
+}
+
+
