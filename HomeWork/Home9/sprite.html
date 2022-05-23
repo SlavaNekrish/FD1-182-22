@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+
+  @keyframes MyAnimation1
+  {
+      from { background: url('warriorSprite.jpg') 0 0; }
+      to { background: url('warriorSprite.jpg') 500px 0; } 
+  }
+  
+  .ex1
+  {
+      width: 100px;
+      height: 100px;
+      animation: MyAnimation1 1.2s steps(5) infinite;
+      
+  }
+
+  @keyframes MyAnimation2
+  {
+      from { background: url('warriorSprite.jpg') 0 -100px; }
+      to { background: url('warriorSprite.jpg') 500px -100px; } 
+  }
+  
+  .ex2
+  {
+      width: 100px;
+      height: 100px;
+      animation: MyAnimation2 1.2s steps(5) infinite;
+  }
+
+  @keyframes MyAnimation3
+  {
+      from { background: url('warriorSprite.jpg') 0 -200px; }
+      to { background: url('warriorSprite.jpg') 500px -200px; } 
+  }
+  
+  .ex3
+  {
+      width: 100px;
+      height: 100px;
+      animation: MyAnimation3 1.2s steps(5) infinite;
+  }
+
+  body {
+    margin-left: 100px;
+  }
+  
+  </style>
+<body>
+  <h3>Анимашный воин</h3>
+  <div class='ex1'></div>
+  <div class='ex2'></div>
+  <div class='ex3'></div>
+</body>
+</html>
