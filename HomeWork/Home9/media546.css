@@ -14,6 +14,7 @@ div.mainBack{
 div.leftMenu{
 height: 260px;
 padding-top: 1px;
+margin-right: 0px;
 padding-left: 150px;
 padding-bottom: 5px;
 background-color: #EEDD82;
