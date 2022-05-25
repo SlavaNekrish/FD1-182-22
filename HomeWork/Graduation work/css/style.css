@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -16,26 +17,32 @@ menu, nav, output, ruby, section, summary, time, mark, audio, video {
   vertical-align: baseline; }
 
 body {
-  line-height: 1; }
+  line-height: 1;
+  font-family: 'Noto Sans', sans-serif;
+  height: 10000px; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
 
 .conteiner {
-  width: 1140px;
+  width: 1200px;
   margin: 0 auto; }
 
 .menuTopHeader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 29px;
-  margin-bottom: 36px; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 81px; }
   .menuTopHeader div {
-    font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    padding-right: 26px;
-    margin-top: 5px; }
+    padding-right: 26px; }
   .menuTopHeader div:first-child {
     margin-left: 40px; }
   .menuTopHeader div:nth-child(5) {
@@ -44,8 +51,7 @@ body {
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
-    padding-right: 90px;
-    margin-top: 2px; }
+    padding-right: 90px; }
   .menuTopHeader img {
     width: 25px;
     height: 25px; }
@@ -57,8 +63,7 @@ body {
     margin-right: 8px; }
   .menuTopHeader div:nth-of-type(7) {
     padding-right: 0px;
-    margin-right: -10px;
-    margin-top: 0px; }
+    margin-right: -10px; }
     .menuTopHeader div:nth-of-type(7) img:last-child {
       width: 8px;
       height: 8px;
@@ -68,7 +73,18 @@ body {
   .menuTopHeader div:last-child {
     font-weight: 600;
     font-size: 16px;
-    line-height: 22px;
-    margin-top: 2px; }
+    line-height: 22px; }
+
+.searchHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 82px; }
+  .searchHeader div:first-child {
+    margin-left: 40px;
+    margin-right: 45px; }
 
 /*# sourceMappingURL=style.css.map */
