@@ -48,9 +48,6 @@ a {
       line-height: 16px;
       padding-right: 26px;
     }
-    div:first-child {
-      margin-left: 40px;
-    }
     div:nth-child(5) {
       padding-right: 106px;
     }
@@ -58,13 +55,14 @@ a {
       font-weight: 600;
       font-size: $fz;
       line-height: 22px;
-      padding-right: 90px;
+      padding-right: 130px;
     }
     img {
       width: 25px;
       height: 25px; 
     }
     img:nth-of-type(2) {
+      margin-left: 10px;
       margin-right: 24px;
     }
     img:nth-of-type(3) {
@@ -75,14 +73,13 @@ a {
     }
       div:nth-of-type(7) {
         padding-right: 0px;
-        margin-right: -10px;
-       
+        margin-left: 10px;
         img:last-child {
           width: 8px;
           height: 8px;
           position: relative;
           top: -17px;
-          right: 9px;
+          right: 19px;
         }
       }
       div:last-child {
@@ -95,14 +92,41 @@ a {
 .searchHeader {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 82px;
-  div:first-child {
-    margin-left: 40px;
-    margin-right: 45px;
+  div:nth-child(2) {
+   margin-left: -40px;
+  } 
+  input {
+    width: 610px;
+    height: 48px;
+    border:hidden;
+    border-radius: 10px;
+    margin-left: -100px;
+   }
+  .GreenButton {
+    width: 156px;
+    height: 52px;
+    background-color: $green;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+    a {
+      span {
+        margin: 0px 2px;
+        color: $white;
+      }
+    }
   }
- 
 
-}
+
+
+ }
+
+
+
     
 
 
