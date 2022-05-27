@@ -125,8 +125,26 @@ a {
 
  }
 
-
-
+.menuMiddleHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 83px;
+  div {
+    font-style: normal;
+    font-weight: 500;
+    font-size: $fz;
+    line-height: 22px;
+    padding-right: 24px;
+  }
+  div:last-child {
+    color: $red;
+  } 
+}
     
-
+.headerBanner {
+  height: 381px;
+  background: url('img/BigPicture.png') no-repeat;
+  background-size: 100%;
+}
 
