@@ -250,4 +250,15 @@ a {
     color: rgba(0, 0, 0, 0.5);
     margin-right: 770px; }
 
+.card a div button.btn {
+  width: 200px;
+  height: 50px;
+  background: #81B43F;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF; }
+
 /*# sourceMappingURL=style.css.map */

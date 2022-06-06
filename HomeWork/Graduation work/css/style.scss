@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap");
 @import "variables";
+@import "mixins";
 
 * {
   box-sizing: border-box;
@@ -264,4 +265,14 @@ a {
  
  
   
+}
+
+.card {
+  a {
+    div {
+      button.btn {
+        @include btn(200px, $green, none, $white);
+      }
+    }
+  }
 }
