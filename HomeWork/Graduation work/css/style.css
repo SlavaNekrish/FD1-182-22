@@ -194,9 +194,10 @@ a {
     padding-right: 37px;
     margin-right: 25px; }
   .menuBottomHeader div:first-child {
-    margin-left: 60px; }
+    margin-left: 80px;
+    padding-right: 0px; }
   .menuBottomHeader div:nth-child(2) {
-    margin-right: 129px; }
+    margin-right: 147px; }
   .menuBottomHeader div:last-child {
     margin-right: 0px;
     padding-right: 0px;
@@ -250,7 +251,94 @@ a {
     color: rgba(0, 0, 0, 0.5);
     margin-right: 770px; }
 
-.card a div button.btn {
+.cards ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap; }
+.cards li {
+  width: 1200px;
+  height: 273px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .cards li img[class="imgURL"] {
+    width: 210px;
+    height: 210px;
+    margin: 20px 56px 20px 20px; }
+  .cards li div.cardInfo {
+    width: 600px;
+    margin-left: -120px; }
+    .cards li div.cardInfo h2 {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 160%; }
+    .cards li div.cardInfo p.artcl {
+      color: rgba(0, 0, 0, 0.2);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 160%; }
+    .cards li div.cardInfo p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 160%; }
+      .cards li div.cardInfo p span {
+        font-weight: 600; }
+    .cards li div.cardInfo div.Delivery {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: 25px; }
+      .cards li div.cardInfo div.Delivery img {
+        margin-right: 20px; }
+    .cards li div.cardInfo .stars {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 20px 0px; }
+      .cards li div.cardInfo .stars p {
+        color: rgba(0, 0, 0, 0.5);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+        margin-right: 10px; }
+      .cards li div.cardInfo .stars img {
+        width: 16px;
+        height: 16px; }
+      .cards li div.cardInfo .stars img[alt="stYellowLight"] {
+        margin-right: 20px; }
+  .cards li div:last-child {
+    width: 250px;
+    margin-top: 15px;
+    margin-right: 20px;
+    position: relative; }
+    .cards li div:last-child div {
+      position: absolute;
+      right: 30px; }
+    .cards li div:last-child img {
+      position: absolute;
+      right: 2px; }
+    .cards li div:last-child h2 {
+      margin-top: 140px;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 160%; }
+    .cards li div:last-child button {
+      margin-top: 5px; }
+.cards button.btn {
   width: 200px;
   height: 50px;
   background: #81B43F;
@@ -260,5 +348,11 @@ a {
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF; }
+.cards .like {
+  width: 25px;
+  height: 25px;
+  background: url("../img/FavoriteIconGrey.png") no-repeat; }
+  .cards .like.active {
+    background: url("../img/FavoriteIconGreyRed.png") no-repeat; }
 
 /*# sourceMappingURL=style.css.map */
