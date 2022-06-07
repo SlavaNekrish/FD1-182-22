@@ -92,6 +92,16 @@ var list = document.getElementById('cards-list');
 var  htmlElems = '';
 
 for (var i = 0; i<cards.length; i++) {
+  if (i == 3) {
+    var Adv = '';
+    Adv = `
+    <div class="advertBanner">
+    <h1>Новогодние игрушки</h1>
+    <a href="#"><button class="btn">Посмотреть товары</button></a>
+    </div>
+    `
+    htmlElems += Adv;
+    }
   htmlElems += `
     <li>
     <img src="${cards[i].imgURL}" alt="Tree" class="imgURL">
@@ -121,9 +131,7 @@ for (var i = 0; i<cards.length; i++) {
       <button class="btn"><img src="img/Basket.png" alt="Basket">Добавить в корзину</button>
     </div>
   </a></li>
-  
   `
 }
-
 list.innerHTML = htmlElems;
 
