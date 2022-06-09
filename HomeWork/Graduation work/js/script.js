@@ -128,7 +128,7 @@ for (var i = 0; i<cards.length; i++) {
       <div class="like ${cards[i].isLike?"active":null}"></div>
       <img src="img/shareIcon.png" alt="Share">
       <h2 class="price">${cards[i].price}</h2>
-      <button class="btn"><img src="img/Basket.png" alt="Basket">Добавить в корзину</button>
+      <button class="btn" onclick=""><img src="img/Basket.png" alt="Basket"><span>Добавить в корзину</span></button>
     </div>
   </a></li>
   `

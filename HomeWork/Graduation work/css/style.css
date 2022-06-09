@@ -61,13 +61,41 @@ a {
     margin-right: 8px; }
   .menuTopHeader div:nth-of-type(7) {
     padding-right: 0px;
-    margin-left: 10px; }
-    .menuTopHeader div:nth-of-type(7) img:last-child {
+    margin-left: 10px;
+    position: relative;
+    cursor: pointer; }
+    .menuTopHeader div:nth-of-type(7) img[alt="Eclipse1"] {
       width: 8px;
       height: 8px;
       position: relative;
       top: -17px;
       right: 19px; }
+    .menuTopHeader div:nth-of-type(7) div.menuLevel2 {
+      width: 410px;
+      height: 150px;
+      background: url("../img/alarmBack.png") no-repeat;
+      display: none;
+      cursor: pointer; }
+      .menuTopHeader div:nth-of-type(7) div.menuLevel2 img[alt="Eclipse2"] {
+        width: 8px;
+        height: 8px;
+        position: relative;
+        top: 49px;
+        left: 55px; }
+      .menuTopHeader div:nth-of-type(7) div.menuLevel2 div {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        width: 296px;
+        height: 66px;
+        margin-left: 70px;
+        margin-top: 30px; }
+  .menuTopHeader div:nth-of-type(7):hover div.menuLevel2 {
+    display: block;
+    position: absolute;
+    right: -43%;
+    top: 60%;
+    z-index: 1; }
   .menuTopHeader div:last-child {
     font-weight: 600;
     font-size: 16px;
@@ -105,10 +133,72 @@ a {
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    position: relative;
+    cursor: pointer; }
+    .searchHeader .GreenButton ul.menuLevel2 {
+      width: 450px;
+      height: 380px;
+      background: url("../img/basketBack.png") no-repeat;
+      display: none;
+      cursor: pointer; }
+      .searchHeader .GreenButton ul.menuLevel2 li {
+        list-style-type: none;
+        width: 400px;
+        margin-left: 45px;
+        margin-top: 50px;
+        position: relative; }
+        .searchHeader .GreenButton ul.menuLevel2 li div:nth-of-type(1) {
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 16px;
+          width: 168px;
+          position: absolute;
+          left: 33%;
+          top: 0%; }
+        .searchHeader .GreenButton ul.menuLevel2 li div:nth-of-type(2) {
+          color: rgba(0, 0, 0, 0.5);
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 16px;
+          position: absolute;
+          left: 23%;
+          top: 70%; }
+        .searchHeader .GreenButton ul.menuLevel2 li div:nth-of-type(3) {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 22px;
+          position: absolute;
+          left: 72%;
+          top: 80%; }
+        .searchHeader .GreenButton ul.menuLevel2 li [alt="trash"] {
+          width: 25px;
+          height: 25px;
+          position: absolute;
+          left: 80%;
+          top: 0%; }
+      .searchHeader .GreenButton ul.menuLevel2 li:last-child {
+        margin-top: 40px; }
+        .searchHeader .GreenButton ul.menuLevel2 li:last-child div {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 22px; }
+        .searchHeader .GreenButton ul.menuLevel2 li:last-child div:first-child {
+          position: absolute;
+          left: 1%; }
+        .searchHeader .GreenButton ul.menuLevel2 li:last-child div:last-child {
+          color: #FF715B;
+          position: absolute;
+          left: 82%; }
     .searchHeader .GreenButton a span {
       margin: 0px 2px;
       color: #FFFFFF; }
+  .searchHeader div.GreenButton:hover ul.menuLevel2 {
+    display: block;
+    position: absolute;
+    right: -18%;
+    top: 100%;
+    z-index: 1; }
 
 .menuMiddleHeader {
   display: -webkit-box;
@@ -132,7 +222,8 @@ a {
 
 .headerBanner {
   background: url("../img/Banner.png") no-repeat;
-  background-size: 100%; }
+  background-size: 100%;
+  margin: 0px; }
   .headerBanner .conteiner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -160,23 +251,47 @@ a {
             flex-direction: column;
     width: 511px;
     height: 226px;
-    background: #FF715B 80% no-repeat; }
+    background: #FF715B 80% no-repeat;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s; }
     .headerBanner .redBanner div {
       color: #FFFFFF; }
     .headerBanner .redBanner div:first-child {
       font-size: 22px;
       font-weight: 600;
-      line-height: 30px; }
+      line-height: 30px;
+      -webkit-transition-duration: 1s;
+              transition-duration: 1s; }
     .headerBanner .redBanner div:nth-child(2) {
       font-size: 44px;
       font-weight: 700;
       line-height: 60px;
       margin-top: 5px;
-      margin-bottom: 10px; }
-    .headerBanner .redBanner div:last-child {
+      margin-bottom: 10px;
+      -webkit-transition-duration: 1s;
+              transition-duration: 1s; }
+    .headerBanner .redBanner div:nth-child(3) {
       font-size: 22px;
       font-weight: 500;
-      line-height: 30px; }
+      line-height: 30px;
+      -webkit-transition-duration: 1s;
+              transition-duration: 1s; }
+  .headerBanner .redBanner:hover {
+    background-color: #81B43F;
+    width: 600px;
+    height: 300px; }
+    .headerBanner .redBanner:hover div:first-child {
+      font-size: 28px;
+      -webkit-transition-duration: 1s;
+              transition-duration: 1s; }
+    .headerBanner .redBanner:hover div:nth-child(2) {
+      font-size: 50px;
+      -webkit-transition-duration: 1s;
+              transition-duration: 1s; }
+    .headerBanner .redBanner:hover div:nth-child(3) {
+      font-size: 28px;
+      -webkit-transition-duration: 1s;
+              transition-duration: 1s; }
 
 .menuBottomHeader {
   display: -webkit-box;
@@ -194,7 +309,88 @@ a {
     margin-right: 25px; }
   .menuBottomHeader div:first-child {
     margin-left: 80px;
-    padding-right: 0px; }
+    padding-right: 0px;
+    position: relative;
+    cursor: pointer; }
+    .menuBottomHeader div:first-child ul.menuLevel2 {
+      width: 328px;
+      height: 450px;
+      background: url("../img/filterBack.png") no-repeat;
+      display: none;
+      cursor: pointer; }
+      .menuBottomHeader div:first-child ul.menuLevel2 li {
+        list-style-type: none; }
+        .menuBottomHeader div:first-child ul.menuLevel2 li div {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 22px;
+          margin-left: 60px;
+          margin-bottom: 15px; }
+        .menuBottomHeader div:first-child ul.menuLevel2 li img {
+          position: absolute;
+          left: 15%; }
+        .menuBottomHeader div:first-child ul.menuLevel2 li p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+          color: rgba(0, 0, 0, 0.5); }
+          .menuBottomHeader div:first-child ul.menuLevel2 li p span {
+            font-weight: 500;
+            color: #000000; }
+      .menuBottomHeader div:first-child ul.menuLevel2 li:first-child {
+        margin-top: 70px; }
+        .menuBottomHeader div:first-child ul.menuLevel2 li:first-child p:nth-of-type(1) {
+          position: absolute;
+          left: 17%;
+          top: 33%; }
+        .menuBottomHeader div:first-child ul.menuLevel2 li:first-child p:nth-of-type(2) {
+          position: absolute;
+          left: 60%;
+          top: 33%; }
+      .menuBottomHeader div:first-child ul.menuLevel2 li:nth-child(2) {
+        margin-top: 80px; }
+        .menuBottomHeader div:first-child ul.menuLevel2 li:nth-child(2) button.btn1 {
+          width: 85px;
+          height: 24px;
+          background: #81B43F;
+          border-radius: 15px;
+          border: none;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+          color: #FFFFFF;
+          position: absolute;
+          left: 17%;
+          top: 50%; }
+        .menuBottomHeader div:first-child ul.menuLevel2 li:nth-child(2) button.btn2 {
+          width: 85px;
+          height: 24px;
+          background: #FFFFFF;
+          border-radius: 15px;
+          border: none;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+          color: #000000;
+          position: absolute;
+          left: 45%;
+          top: 50%; }
+      .menuBottomHeader div:first-child ul.menuLevel2 li:nth-child(3) {
+        margin-top: 70px; }
+        .menuBottomHeader div:first-child ul.menuLevel2 li:nth-child(3) p:nth-of-type(1) {
+          position: absolute;
+          left: 17%;
+          top: 75%; }
+        .menuBottomHeader div:first-child ul.menuLevel2 li:nth-child(3) p:nth-of-type(2) {
+          position: absolute;
+          left: 50%;
+          top: 75%; }
+  .menuBottomHeader div:first-child:hover ul.menuLevel2 {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -145px;
+    z-index: 1; }
   .menuBottomHeader div:nth-child(2) {
     margin-right: 147px; }
   .menuBottomHeader div:last-child {
@@ -267,7 +463,11 @@ a {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s; }
   .cards li img[class="imgURL"] {
     width: 210px;
     height: 210px;
@@ -322,14 +522,15 @@ a {
   .cards li div:last-child {
     width: 250px;
     margin-top: 15px;
-    margin-right: 20px;
+    margin-right: 5px;
+    margin-left: 15px;
     position: relative; }
     .cards li div:last-child div {
       position: absolute;
-      right: 30px; }
+      right: 40px; }
     .cards li div:last-child img {
       position: absolute;
-      right: 2px; }
+      right: 7px; }
     .cards li div:last-child h2 {
       margin-top: 140px;
       font-weight: 700;
@@ -337,8 +538,11 @@ a {
       line-height: 160%; }
     .cards li div:last-child button {
       margin-top: 5px; }
+.cards li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1); }
 .cards button.btn {
-  width: 200px;
+  width: 240px;
   height: 50px;
   background: #81B43F;
   border-radius: 8px;
@@ -346,7 +550,13 @@ a {
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  position: relative; }
+  .cards button.btn img {
+    position: absolute;
+    left: 20px; }
+  .cards button.btn span {
+    margin-left: 30px; }
 .cards .like {
   width: 25px;
   height: 25px;
@@ -364,7 +574,8 @@ a {
           flex-direction: column;
   width: 1200px;
   height: 209px;
-  background: url("../img/AdvertBanner.png") no-repeat; }
+  background: url("../img/AdvertBanner.png") no-repeat;
+  background-size: 100%; }
   .advertBanner h1 {
     margin: 41px 0px 0px 136px;
     font-weight: 600;
@@ -419,6 +630,9 @@ a {
   text-align: center;
   margin-top: 30px;
   text-align: center; }
+
+.footerColor {
+  background-color: #F0F0F0; }
 
 .footerTop {
   margin-top: 90px;

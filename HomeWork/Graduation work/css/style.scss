@@ -74,14 +74,54 @@ a {
       div:nth-of-type(7) {
         padding-right: 0px;
         margin-left: 10px;
-        img:last-child {
+        position: relative;
+        cursor: pointer;
+        
+        img[alt="Eclipse1"] {
           width: 8px;
           height: 8px;
           position: relative;
           top: -17px;
           right: 19px;
         }
+
+        div.menuLevel2 {
+          width: 410px;
+          height: 150px;
+          background: url('../img/alarmBack.png') no-repeat;
+          display: none;
+          cursor: pointer;
+
+          img[alt="Eclipse2"] {
+            width: 8px;
+            height: 8px;
+            position: relative;
+            top: 49px;
+            left: 55px;
+
+          }
+
+          div {
+            font-weight: 400;
+            font-size: $fz14;
+            line-height: 22px;
+            width: 296px;
+            height: 66px;
+            margin-left: 70px;
+            margin-top: 30px;
+          }
+        }
+        
       }
+      div:nth-of-type(7):hover div.menuLevel2 {
+        display: block; 
+        position: absolute; 
+        right: -43%; 
+        top: 60%; 
+        z-index: 1;
+      }
+     
+
       div:last-child {
         font-weight: 600;
         font-size: $fz;
@@ -112,7 +152,76 @@ a {
     display: flex;
     justify-content: center;
     align-items:center;
-    
+    position: relative;
+    cursor: pointer;
+
+    ul.menuLevel2 {
+      width: 450px;
+      height: 380px;
+      background: url('../img/basketBack.png') no-repeat;
+      display: none;
+      cursor: pointer;
+      
+      li {
+        list-style-type: none;
+        width: 400px;
+        margin-left: 45px;
+        margin-top: 50px;
+        position: relative;
+        div:nth-of-type(1) {
+          font-weight: 600;
+          font-size: $fz12;
+          line-height: 16px;
+          width: 168px;
+          position: absolute;
+          left: 33%;
+          top: 0%;
+        }
+        div:nth-of-type(2) {
+          color: rgba(0, 0, 0, 0.5);
+          font-weight: 500;
+          font-size: $fz12;
+          line-height: 16px;
+          position: absolute;
+          left: 23%;
+          top: 70%;
+        }
+        div:nth-of-type(3) {
+          font-weight: 700;
+          font-size: $fz;
+          line-height: 22px;
+          position: absolute;
+          left: 72%;
+          top: 80%;
+        }
+        [alt="trash"] {
+          width: 25px;
+          height: 25px; 
+          position: absolute;
+          left: 80%;
+          top: 0%;
+        }
+      }
+      li:last-child {
+        margin-top: 40px;
+        div {
+          font-weight: 600;
+          font-size: $fz;
+          line-height: 22px;
+        }
+        div:first-child {
+          position: absolute;
+          left: 1%;
+         
+        }
+        div:last-child {
+          color: $red;
+          position: absolute;
+          left: 82%;
+        }
+      }
+    }
+
     a {
       span {
         margin: 0px 2px;
@@ -120,8 +229,13 @@ a {
       }
     }
   }
-
-
+  div.GreenButton:hover ul.menuLevel2 {
+    display: block; 
+    position: absolute; 
+    right: -18%; 
+    top: 100%; 
+    z-index: 1;
+  }
 
  }
 
@@ -145,6 +259,7 @@ a {
 .headerBanner {
   background: url('../img/Banner.png') no-repeat;
   background-size: 100%;
+  margin: 0px;
   
   .conteiner {
     display: flex;
@@ -161,6 +276,8 @@ a {
     width: 511px;
     height: 226px;
     background: $red 80% no-repeat;  
+    transition-duration: 1s;
+
     div {
       color: $white;
     }
@@ -168,6 +285,7 @@ a {
       font-size: $fz22;
       font-weight: 600;
       line-height: 30px;
+      transition-duration: 1s;
     }
     div:nth-child(2) {
       font-size: $fz44;
@@ -175,14 +293,34 @@ a {
       line-height: 60px;
       margin-top: 5px;
       margin-bottom: 10px;
+      transition-duration: 1s;
     }
-    div:last-child {
+    div:nth-child(3) {
       font-size: $fz22;
       font-weight: 500;
       line-height: 30px;
+      transition-duration: 1s;
+    }
+  }
+  .redBanner:hover {
+    background-color:$green;
+    width: 600px;
+    height: 300px;
+    div:first-child {
+      font-size: $fz28;
+      transition-duration: 1s;
+    }
+    div:nth-child(2) {
+      font-size: $fz50;
+      transition-duration: 1s;
+    }
+    div:nth-child(3) {
+      font-size: $fz28;
+      transition-duration: 1s;
     }
   }
 }
+
 
 .menuBottomHeader {
   display: flex;
@@ -199,6 +337,92 @@ a {
   div:first-child {
     margin-left: 80px;
     padding-right: 0px;
+    position: relative;
+    cursor: pointer;
+    ul.menuLevel2 {
+      width: 328px;
+      height: 450px;
+      background: url('../img/filterBack.png') no-repeat;
+      display: none;
+      cursor: pointer;
+   
+      li {
+        list-style-type: none;
+
+        div {
+          font-weight: 500;
+          font-size: $fz;
+          line-height: 22px;
+          margin-left: 60px;
+          margin-bottom: 15px;
+        }
+        img {
+          position: absolute;
+          left: 15%;
+        }
+        p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+          color: rgba(0, 0, 0, 0.5);
+          span {
+            font-weight: 500;
+            color: $tekst;
+          }
+        }
+   
+      }
+      li:first-child {
+        margin-top: 70px;
+        p:nth-of-type(1) {
+          position: absolute;
+          left: 17%;
+          top: 33%;
+        }
+        p:nth-of-type(2) {
+          position: absolute;
+          left: 60%;
+          top: 33%;
+        }
+        
+      }
+      li:nth-child(2) {
+        margin-top: 80px;
+        button.btn1 {
+          @include btn1(85px, $green, none, $white);
+          position: absolute;
+          left: 17%;
+          top: 50%;
+        }
+        button.btn2 {
+          @include btn1(85px, $white, none, $tekst);
+          position: absolute;
+          left: 45%;
+          top: 50%;
+        }
+      }
+      li:nth-child(3) {
+        margin-top: 70px;
+        p:nth-of-type(1) {
+          position: absolute;
+          left: 17%;
+          top: 75%;
+        }
+        p:nth-of-type(2) {
+          position: absolute;
+          left: 50%;
+          top: 75%;
+        }
+      }
+    }  
+  }
+
+  div:first-child:hover ul.menuLevel2 {
+    display: block; 
+    position: absolute; 
+    top: 50%;
+    left: -145px;
+    z-index: 1;
   }
   div:nth-child(2) {
     margin-right: 147px;
@@ -278,7 +502,8 @@ a {
       height: 273px;
       display: flex;
       justify-content: space-between;
-
+      transition: transform 2s;
+  
 
       img[class="imgURL"] {
         width: 210px;
@@ -307,6 +532,7 @@ a {
           span {
             font-weight: 600;
           }
+        
         }
         div.Delivery {
           display: flex;
@@ -340,15 +566,16 @@ a {
       div:last-child {
         width: 250px;
         margin-top: 15px;
-        margin-right: 20px;
+        margin-right: 5px;
+        margin-left: 15px;
         position: relative;
         div {
           position: absolute;
-          right: 30px;
+          right: 40px;
         }
         img {
           position: absolute;
-          right: 2px;
+          right: 7px;
         }
         h2 {
           margin-top: 140px;
@@ -360,10 +587,20 @@ a {
           margin-top: 5px;
         }
       }
-    };
-
+    }
+    li:hover {
+      transform: scale(1.1);
+     }
     button.btn {
-      @include btn(200px, $green, none, $white);
+      @include btn(240px, $green, none, $white);
+      position: relative;
+      img {
+        position: absolute;
+        left: 20px;
+      }
+      span{
+        margin-left: 30px;
+      }
     }
     .like {
       width: 25px;
@@ -381,6 +618,7 @@ a {
   width: $xl;
   height: 209px;
   background: url('../img/AdvertBanner.png') no-repeat;
+  background-size: 100%;
   h1 {
     margin: 41px 0px 0px 136px;
     font-weight: 600;
@@ -424,6 +662,9 @@ a {
   text-align: center;
 }
 
+.footerColor {
+  background-color: $wFooter;
+}
 .footerTop {
   margin-top: 90px;
   display: flex;
@@ -469,3 +710,4 @@ a {
     margin-top: 15px;
   }
 }
+
