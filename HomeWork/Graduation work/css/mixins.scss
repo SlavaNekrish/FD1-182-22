@@ -28,3 +28,9 @@
   color: $tc;
   
 }
+
+@mixin onlySmoller($w) {
+  @media (max-width: $w) {
+    @content;
+  }
+}

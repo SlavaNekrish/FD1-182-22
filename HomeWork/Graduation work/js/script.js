@@ -135,3 +135,28 @@ for (var i = 0; i<cards.length; i++) {
 }
 list.innerHTML = htmlElems;
 
+// cards auto filling
+
+
+
+var open = document.getElementById('open');
+var close = document.getElementById('close');
+
+var block = document.getElementById('block');
+open.addEventListener('click', function(){
+    block.style.transform = 'translate(0,910px)';
+    close.style.display = 'block';
+    
+});
+
+close.addEventListener('click', function(){
+    block.style.transform = 'translate(-470px,910px)';
+    open.style.display = 'block';
+    
+});
+
+
+
+// left sliding menu
+
+
