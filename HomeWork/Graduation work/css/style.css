@@ -33,6 +33,9 @@ a {
   @media (max-width: 1100px) {
     .conteiner {
       width: 1000px; } }
+  @media (max-width: 1000px) {
+    .conteiner {
+      width: 900px; } }
 
 .menuTopHeader {
   display: -webkit-box;
@@ -51,6 +54,9 @@ a {
     @media (max-width: 1250px) {
       .menuTopHeader div {
         padding-right: 10px; } }
+    @media (max-width: 1000px) {
+      .menuTopHeader div {
+        padding-right: 5px; } }
   .menuTopHeader div:nth-child(5) {
     padding-right: 106px; }
     @media (max-width: 1100px) {
@@ -66,6 +72,9 @@ a {
       .menuTopHeader div:nth-of-type(6) {
         margin-right: 100px;
         padding-right: 0px; } }
+    @media (max-width: 1000px) {
+      .menuTopHeader div:nth-of-type(6) {
+        margin-right: 20px; } }
   .menuTopHeader img {
     width: 25px;
     height: 25px; }
@@ -128,22 +137,39 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 82px;
-  position: relative; }
-  .searchHeader button {
-    border: none; }
-  .searchHeader #block {
-    width: 457px;
-    height: 1843px;
-    background: red;
-    -webkit-transform: translate(-470px, 910px);
-            transform: translate(-470px, 910px);
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    position: absolute;
-    z-index: 1; }
+  height: 82px; }
+  .searchHeader #open {
+    border: none;
+    width: 25px;
+    height: 25px;
+    position: relative; }
+    .searchHeader #open #block {
+      width: 0px;
+      height: 0px;
+      background: red;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      -webkit-transition: 1s;
+      transition: 1s;
+      z-index: 1;
+      overflow: hidden; }
+      .searchHeader #open #block #close {
+        border: none;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        display: none;
+        top: 0px;
+        left: 0px;
+        z-index: 1; }
+        .searchHeader #open #block #close img[alt="MenuIcon2"] {
+          display: none; }
   .searchHeader img[alt="logo"] {
     margin-left: -40px; }
+    @media (max-width: 1000px) {
+      .searchHeader img[alt="logo"] {
+        margin-left: -20px; } }
   .searchHeader img[alt="lupa"] {
     margin-left: -40px; }
     @media (max-width: 1250px) {
@@ -162,6 +188,9 @@ a {
     @media (max-width: 1100px) {
       .searchHeader input {
         width: 500px; } }
+    @media (max-width: 1000px) {
+      .searchHeader input {
+        width: 400px; } }
   .searchHeader .GreenButton {
     width: 156px;
     height: 52px;
@@ -303,6 +332,11 @@ a {
       .headerBanner .redBanner {
         margin-bottom: 60px;
         width: 450px; } }
+    @media (max-width: 1000px) {
+      .headerBanner .redBanner {
+        margin-bottom: 100px;
+        width: 450px;
+        height: 200px; } }
     .headerBanner .redBanner div {
       color: #FFFFFF; }
     .headerBanner .redBanner div:first-child {
@@ -334,6 +368,11 @@ a {
         width: 520px;
         height: 260px;
         margin-bottom: 70px; } }
+    @media (max-width: 1000px) {
+      .headerBanner .redBanner:hover {
+        width: 480px;
+        height: 250px;
+        margin-bottom: 120px; } }
     .headerBanner .redBanner:hover div:first-child {
       font-size: 28px;
       -webkit-transition-duration: 1s;
@@ -364,6 +403,9 @@ a {
   @media (max-width: 1050px) {
     .menuBottomHeader {
       margin-top: -60px; } }
+  @media (max-width: 950px) {
+    .menuBottomHeader {
+      margin-top: -90px; } }
   .menuBottomHeader div {
     font-weight: 500;
     font-size: 16px;
@@ -384,7 +426,8 @@ a {
     cursor: pointer; }
     @media (max-width: 1250px) {
       .menuBottomHeader div:first-child {
-        margin-right: 20px; } }
+        margin-right: 20px;
+        margin-left: 90px; } }
     .menuBottomHeader div:first-child ul.menuLevel2 {
       width: 328px;
       height: 450px;
@@ -469,32 +512,40 @@ a {
     @media (max-width: 1100px) {
       .menuBottomHeader div:nth-child(2) {
         margin-right: 100px; } }
+    @media (max-width: 1000px) {
+      .menuBottomHeader div:nth-child(2) {
+        margin-right: 40px; } }
   .menuBottomHeader div:last-child {
     margin-right: 0px;
     padding-right: 0px;
     padding-left: 4px; }
 
+.contentColor {
+  background-color: #F9F9F9; }
+
 .menuTopContent1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 65px; }
+  padding-top: 65px; }
   @media (max-width: 1150px) {
     .menuTopContent1 {
-      margin-top: 40px; } }
+      padding-top: 40px; } }
+  @media (max-width: 1000px) {
+    .menuTopContent1 {
+      margin-top: -10px; } }
   .menuTopContent1 div {
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
     color: rgba(0, 0, 0, 0.5);
     margin-right: 5px; }
-  @media (max-width: 1150px) {
-    .menuTopContent1 div:nth-of-type(1) {
-      margin-left: 10px; } }
+  .menuTopContent1 div:nth-of-type(1) {
+    margin-left: 10px; }
   .menuTopContent1 div:nth-of-type(3) {
     color: #000000; }
   .menuTopContent1 div:nth-of-type(4) {
-    margin-left: 528px;
+    margin-left: 518px;
     color: #000000;
     margin-right: 15px; }
     @media (max-width: 1250px) {
@@ -503,6 +554,9 @@ a {
     @media (max-width: 1100px) {
       .menuTopContent1 div:nth-of-type(4) {
         margin-left: 300px; } }
+    @media (max-width: 1000px) {
+      .menuTopContent1 div:nth-of-type(4) {
+        margin-left: 200px; } }
   .menuTopContent1 div:nth-of-type(5) {
     margin-right: 15px; }
   .menuTopContent1 div:nth-of-type(6) {
@@ -522,7 +576,8 @@ a {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  height: 77px; }
+  height: 77px;
+  margin-left: 7px; }
   .menuTopContent2 div:first-child {
     font-weight: 700;
     font-size: 36px;
@@ -538,8 +593,19 @@ a {
         margin-right: 650px; } }
     @media (max-width: 1100px) {
       .menuTopContent2 div:nth-child(2) {
-        margin-right: 450px; } }
+        margin-right: 450px;
+        margin-left: -90px; } }
+    @media (max-width: 1000px) {
+      .menuTopContent2 div:nth-child(2) {
+        margin-right: 360px; } }
+  @media (max-width: 1100px) {
+    .menuTopContent2 div:nth-child(3) {
+      margin-right: -100px; } }
+  .menuTopContent2 div:nth-child(4) {
+    margin-right: 10px; }
 
+.cards .cardColor {
+  background-color: #FFFFFF; }
 .cards ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -566,6 +632,9 @@ a {
     width: 210px;
     height: 210px;
     margin: 20px 56px 20px 20px; }
+    @media (max-width: 1250px) {
+      .cards li img[class="imgURL"] {
+        margin: 20px 120px 20px 20px; } }
   .cards li div.cardInfo {
     width: 600px;
     margin-left: -120px; }
@@ -591,9 +660,18 @@ a {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      margin-top: 25px; }
+      margin-top: 25px;
+      position: relative;
+      left: 30px; }
+      @media (max-width: 1250px) {
+        .cards li div.cardInfo div.Delivery {
+          left: 125px; } }
+      @media (max-width: 1000px) {
+        .cards li div.cardInfo div.Delivery {
+          left: 190px; } }
       .cards li div.cardInfo div.Delivery img {
-        margin-right: 20px; }
+        position: absolute;
+        right: 107%; }
     .cards li div.cardInfo .stars {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -619,6 +697,12 @@ a {
     margin-right: 5px;
     margin-left: 15px;
     position: relative; }
+    @media (max-width: 1250px) {
+      .cards li div:last-child {
+        margin-left: -80px; } }
+    @media (max-width: 1000px) {
+      .cards li div:last-child {
+        margin-left: -150px; } }
     .cards li div:last-child div {
       position: absolute;
       right: 40px; }
@@ -705,7 +789,7 @@ a {
   .contentBottom button {
     width: 150px;
     height: 50px;
-    background: #FFFFFF;
+    background: #F9F9F9;
     border-radius: 8px;
     border: solid 1px;
     font-weight: 600;
@@ -714,14 +798,20 @@ a {
     color: #000000;
     justify-self: center; }
   .contentBottom img {
-    margin-left: 480px;
-    margin-right: 20px;
+    margin-left: 490px;
+    margin-right: 10px;
     margin-top: 10px;
     width: 25px;
     height: 25px; }
     @media (max-width: 1250px) {
       .contentBottom img {
-        margin-left: 430px; } }
+        margin-left: 440px; } }
+    @media (max-width: 1100px) {
+      .contentBottom img {
+        margin-left: 390px; } }
+    @media (max-width: 1000px) {
+      .contentBottom img {
+        margin-left: 340px; } }
 
 .pages {
   color: rgba(0, 0, 0, 0.5);
@@ -730,13 +820,14 @@ a {
   line-height: 16px;
   text-align: center;
   margin-top: 30px;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 35px; }
 
 .footerColor {
   background-color: #F0F0F0; }
 
 .footerTop {
-  margin-top: 90px;
+  padding-top: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -759,7 +850,7 @@ a {
 
 .footerBottom {
   margin-top: 90px;
-  margin-bottom: 48px;
+  padding-bottom: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

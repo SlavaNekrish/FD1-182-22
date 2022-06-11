@@ -3,7 +3,7 @@ var cards = [
     id: 0,
     title: 'Пихта Нордмана (в кадках)',
     artcl: 'Артикул №256985',
-    imgURL: 'img/Tree01.jpg',
+    imgURL: 'img/Tree01.png',
     rating: 4.0,
     review: '150 отзывов',
     size: '80 - 100 см',
@@ -15,7 +15,7 @@ var cards = [
     id: 1,
     title: 'Пихта Нордмана (срезанная)',
     artcl: 'Артикул №256969',
-    imgURL: 'img/Tree02.jpg',
+    imgURL: 'img/Tree02.png',
     rating: 4.2,
     review: '29 отзывов',
     size: '100 - 125 см',
@@ -27,7 +27,7 @@ var cards = [
     id: 2,
     title: 'Пихта Нордмана (срезанная)',
     artcl: 'Артикул №256859',
-    imgURL: 'img/Tree03.jpg',
+    imgURL: 'img/Tree03.png',
     rating: 2.2,
     review: '2 отзыва',
     size: '80 - 100 см',
@@ -39,7 +39,7 @@ var cards = [
     id: 3,
     title: 'Пихта Нордмана (срезанная)',
     artcl: 'Артикул №256256',
-    imgURL: 'img/Tree04.jpg',
+    imgURL: 'img/Tree04.png',
     rating: 4.3,
     review: '70 отзывов',
     size: '150 - 175 см',
@@ -51,7 +51,7 @@ var cards = [
     id: 4,
     title: 'Пихта Простоцветы (в кадках)',
     artcl: 'Артикул №256985',
-    imgURL: 'img/Tree05.jpg',
+    imgURL: 'img/Tree05.png',
     rating: 4.9,
     review: '62 отзыва',
     size: '100 - 125 см',
@@ -63,7 +63,7 @@ var cards = [
     id: 5,
     title: 'Пихта 7 цветов (срезанная)',
     artcl: 'Артикул №2989825',
-    imgURL: 'img/Tree06.jpg',
+    imgURL: 'img/Tree06.png',
     rating: 2.4,
     review: '2 отзыва',
     size: '80 - 100 см',
@@ -75,7 +75,7 @@ var cards = [
     id: 6,
     title: 'Пихта Нью Елки (в кадках)',
     artcl: 'Артикул №256985',
-    imgURL: 'img/Tree07.jpg',
+    imgURL: 'img/Tree07.png',
     rating: 4.1,
     review: '50 отзывов',
     size: '150 - 175 см',
@@ -103,7 +103,7 @@ for (var i = 0; i<cards.length; i++) {
     htmlElems += Adv;
     }
   htmlElems += `
-    <li>
+    <li class="cardColor">
     <img src="${cards[i].imgURL}" alt="Tree" class="imgURL">
     <div class="cardInfo">
       <h2 class="title">${cards[i].title}</h2>
@@ -130,7 +130,7 @@ for (var i = 0; i<cards.length; i++) {
       <h2 class="price">${cards[i].price}</h2>
       <button class="btn" onclick=""><img src="img/Basket.png" alt="Basket"><span>Добавить в корзину</span></button>
     </div>
-  </a></li>
+  </li>
   `
 }
 list.innerHTML = htmlElems;
@@ -143,14 +143,19 @@ var open = document.getElementById('open');
 var close = document.getElementById('close');
 
 var block = document.getElementById('block');
+
 open.addEventListener('click', function(){
-    block.style.transform = 'translate(0,910px)';
+    block.style.width = '457px';
+    block.style.height = '1843px';
     close.style.display = 'block';
+    this.style.display = 'none';
     
 });
 
 close.addEventListener('click', function(){
-    block.style.transform = 'translate(-470px,910px)';
+    block.style.width = '0';
+    block.style.height = '0';
+    this.style.display = 'none';
     open.style.display = 'block';
     
 });

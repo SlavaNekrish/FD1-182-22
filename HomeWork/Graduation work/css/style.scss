@@ -43,7 +43,13 @@ a {
   @include onlySmoller(1100px) {
     width: 1000px;
   }
+
+  @include onlySmoller(1000px) {
+    width: 900px;
+  }
+
 }
+
 
 .menuTopHeader {
   display: flex;
@@ -57,6 +63,10 @@ a {
       padding-right: 26px;
       @include onlySmoller(1250px) {
         padding-right: 10px;
+      }
+      @include onlySmoller(1000px) {
+        padding-right: 5px;
+      
       }
     
     }
@@ -75,6 +85,10 @@ a {
       @include onlySmoller(1100px) {
         margin-right: 100px;
         padding-right: 0px;
+      }
+      @include onlySmoller(1000px) {
+        margin-right: 20px;
+     
       }
     }
     img {
@@ -155,23 +169,47 @@ a {
   align-items: center;
   justify-content: space-between;
   height: 82px;
-  position: relative;
-  button {
+  
+  #open {
     border: none;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    
+
+   #block{
+      width: 0px;
+      height: 0px;
+      background: red;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      transition: 1s;
+      z-index: 1;
+      overflow: hidden;
+     
+      #close {
+        border: none;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        display: none;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        img[alt="MenuIcon2"] {
+          display: none;
+        }
+      }
+    }
   }
-  #block{
-    width: 457px;
-    height: 1843px;
-    background: red;
-    transform: translate(-470px,910px);
-    transition: 0.5s;
-    position: absolute;
-    z-index: 1;
-  }
-   
+  
 
   img[alt="logo"] {
    margin-left: -40px;
+   @include onlySmoller(1000px) {
+    margin-left: -20px;
+  }
   } 
 
   img[alt="lupa"] {
@@ -192,6 +230,9 @@ a {
     }
     @include onlySmoller(1100px) {
       width: 500px;
+    }
+    @include onlySmoller(1000px) {
+      width: 400px;
     }
    }
   .GreenButton {
@@ -335,6 +376,11 @@ a {
         margin-bottom: 60px;
         width: 450px;
       }
+      @include onlySmoller(1000px) {
+        margin-bottom: 100px;
+        width: 450px;
+        height: 200px;
+      }
     div {
       color: $white;
     }
@@ -368,6 +414,11 @@ a {
       height: 260px;
       margin-bottom: 70px;
     }
+    @include onlySmoller(1000px) {
+      width: 480px;
+      height: 250px;
+      margin-bottom: 120px;
+    }
     div:first-child {
       font-size: $fz28;
       transition-duration: 1s;
@@ -397,6 +448,9 @@ a {
   @include onlySmoller(1050px) {
     margin-top: -60px;;
   }
+  @include onlySmoller(950px) {
+    margin-top: -90px;;
+  }
   div {
     font-weight: 500;
     font-size: $fz;
@@ -419,7 +473,9 @@ a {
     cursor: pointer;
     @include onlySmoller(1250px) {
       margin-right: 20px;
+      margin-left: 90px;
     }
+   
     ul.menuLevel2 {
       width: 328px;
       height: 450px;
@@ -510,6 +566,9 @@ a {
     @include onlySmoller(1100px) {
       margin-right: 100px
     }
+    @include onlySmoller(1000px) {
+      margin-right: 40px
+    }
   }
   div:last-child {
     margin-right: 0px;
@@ -519,11 +578,18 @@ a {
   
 }
 
+.contentColor {
+  background-color: $wContent;
+}
+
 .menuTopContent1 {
   display: flex;
-  margin-top: 65px;
+  padding-top: 65px;
   @include onlySmoller(1150px) {
-    margin-top: 40px;
+    padding-top: 40px;
+  }
+  @include onlySmoller(1000px) {
+    margin-top: -10px;
   }
   div {
     font-weight: 400;
@@ -531,18 +597,18 @@ a {
     line-height: 19px;
     color: $tGrey;
     margin-right: 5px;
+    
   }
   div:nth-of-type(1) {
-    @include onlySmoller(1150px) {
-      margin-left: 10px;
-    }
+    margin-left: 10px;
+   
   }
   
   div:nth-of-type(3) {
     color: $tekst;
   }
   div:nth-of-type(4) {
-    margin-left: 528px;
+    margin-left: 518px;
     color: $tekst;
     margin-right: 15px;
     @include onlySmoller(1250px) {
@@ -550,6 +616,9 @@ a {
     }
     @include onlySmoller(1100px) {
       margin-left: 300px;
+    }
+    @include onlySmoller(1000px) {
+      margin-left: 200px;
     }
   
   }
@@ -571,10 +640,12 @@ a {
   justify-content:space-between;
   align-items:baseline;
   height: 77px;
+  margin-left: 7px;
   div:first-child {
     font-weight: 700;
     font-size: $fz36;
     line-height: 49px;
+    
     
   }
   div:nth-child(2) {
@@ -588,14 +659,36 @@ a {
     }
     @include onlySmoller(1100px) {
       margin-right: 450px;
+      margin-left: -90px;
+    }
+    @include onlySmoller(1000px) {
+      margin-right: 360px;
+      
     }
   }
+  div:nth-child(3) {
+    @include onlySmoller(1100px) {
+      margin-right: -100px;
+    }
+  }
+  div:nth-child(4) {
+    margin-right: 10px;
+  }
+
  
  
   
 }
 
+
+
 .cards {
+
+  .cardColor {
+    background-color: $white;
+
+  }
+
     ul {
       display: flex;
       justify-content: space-between;
@@ -607,12 +700,15 @@ a {
       display: flex;
       justify-content: space-between;
       transition: transform 2s;
-  
-
+    
       img[class="imgURL"] {
         width: 210px;
         height: 210px;
         margin: 20px 56px 20px 20px;
+        @include onlySmoller(1250px) {
+          margin: 20px 120px 20px 20px;
+        }
+    
       }
       div.cardInfo {
         width: 600px;
@@ -642,8 +738,17 @@ a {
           display: flex;
           align-items:center;
           margin-top: 25px;
+          position: relative;
+          left: 30px;
+          @include onlySmoller(1250px) {
+            left: 125px;
+          }
+          @include onlySmoller(1000px) {
+            left: 190px;
+          }
           img {
-            margin-right: 20px;
+            position: absolute;
+            right: 107%;
           }
         }
         .stars{
@@ -673,6 +778,13 @@ a {
         margin-right: 5px;
         margin-left: 15px;
         position: relative;
+        @include onlySmoller(1250px) {
+          margin-left: -80px;
+        }
+        @include onlySmoller(1000px) {
+          margin-left: -150px;
+        }
+
         div {
           position: absolute;
           right: 40px;
@@ -747,18 +859,24 @@ a {
   display: flex;
   justify-content: end;
   button {
-    @include btn(150px, $white, solid 1px, $tekst);
+    @include btn(150px, $wContent, solid 1px, $tekst);
     justify-self: center;
   }
 
   img{
-    margin-left: 480px;
-    margin-right: 20px;
+    margin-left: 490px;
+    margin-right: 10px;
     margin-top: 10px;
     width: 25px;
     height: 25px;
     @include onlySmoller(1250px) {
-      margin-left: 430px;
+      margin-left: 440px;
+    }
+    @include onlySmoller(1100px) {
+      margin-left: 390px;
+    }
+    @include onlySmoller(1000px) {
+      margin-left: 340px;
     }
   }
 }
@@ -770,13 +888,15 @@ a {
   text-align: center;
   margin-top: 30px;
   text-align: center;
+  padding-bottom: 35px;
 }
 
 .footerColor {
   background-color: $wFooter;
 }
 .footerTop {
-  margin-top: 90px;
+  padding-top: 90px;
+  
   display: flex;
   justify-content: space-around;
   
@@ -802,7 +922,7 @@ a {
 
 .footerBottom {
   margin-top: 90px;
-  margin-bottom: 48px;
+  padding-bottom: 48px;
   display: flex;
   flex-direction: column;
   align-items:center;
