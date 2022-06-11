@@ -148,7 +148,7 @@ open.addEventListener('click', function(){
     block.style.width = '457px';
     block.style.height = '1843px';
     close.style.display = 'block';
-    this.style.display = 'none';
+    
     
 });
 
@@ -157,6 +157,7 @@ close.addEventListener('click', function(){
     block.style.height = '0';
     this.style.display = 'none';
     open.style.display = 'block';
+
     
 });
 
