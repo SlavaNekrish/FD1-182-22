@@ -753,9 +753,9 @@ a {
       .menuTopContent2 div:nth-child(4) {
         margin-right: 5px; } }
 
-.cards .cardColor {
+.cards1p .cardColor {
   background-color: #FFFFFF; }
-.cards ul {
+.cards1p ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -764,9 +764,10 @@ a {
           justify-content: space-between;
   -ms-flex-flow: wrap;
       flex-flow: wrap; }
-.cards li {
+.cards1p li {
   width: 1200px;
   height: 273px;
+  border-radius: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -777,38 +778,38 @@ a {
   transition: -webkit-transform 2s;
   transition: transform 2s;
   transition: transform 2s, -webkit-transform 2s; }
-  .cards li img[class="imgURL"] {
+  .cards1p li img[class="imgURL"] {
     width: 210px;
     height: 210px;
     margin: 20px 56px 20px 20px; }
     @media (max-width: 1250px) {
-      .cards li img[class="imgURL"] {
+      .cards1p li img[class="imgURL"] {
         margin: 20px 120px 20px 20px; } }
-  .cards li div.cardInfo {
+  .cards1p li div.cardInfo {
     width: 600px;
     margin-left: -120px; }
     @media (max-width: 900px) {
-      .cards li div.cardInfo {
+      .cards1p li div.cardInfo {
         margin-left: -130px; } }
-    .cards li div.cardInfo h2 {
+    .cards1p li div.cardInfo h2 {
       font-weight: 600;
       font-size: 28px;
       line-height: 160%; }
       @media (max-width: 900px) {
-        .cards li div.cardInfo h2 {
+        .cards1p li div.cardInfo h2 {
           font-size: 24px; } }
-    .cards li div.cardInfo p.artcl {
+    .cards1p li div.cardInfo p.artcl {
       color: rgba(0, 0, 0, 0.2);
       font-weight: 400;
       font-size: 14px;
       line-height: 160%; }
-    .cards li div.cardInfo p {
+    .cards1p li div.cardInfo p {
       font-weight: 400;
       font-size: 14px;
       line-height: 160%; }
-      .cards li div.cardInfo p span {
+      .cards1p li div.cardInfo p span {
         font-weight: 600; }
-    .cards li div.cardInfo div.Delivery {
+    .cards1p li div.cardInfo div.Delivery {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -819,18 +820,18 @@ a {
       position: relative;
       left: 30px; }
       @media (max-width: 1250px) {
-        .cards li div.cardInfo div.Delivery {
+        .cards1p li div.cardInfo div.Delivery {
           left: 125px; } }
       @media (max-width: 1000px) {
-        .cards li div.cardInfo div.Delivery {
+        .cards1p li div.cardInfo div.Delivery {
           left: 220px; } }
       @media (max-width: 900px) {
-        .cards li div.cardInfo div.Delivery {
+        .cards1p li div.cardInfo div.Delivery {
           left: 340px; } }
-      .cards li div.cardInfo div.Delivery img {
+      .cards1p li div.cardInfo div.Delivery img {
         position: absolute;
         right: 107%; }
-    .cards li div.cardInfo .stars {
+    .cards1p li div.cardInfo .stars {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -838,68 +839,68 @@ a {
           -ms-flex-align: center;
               align-items: center;
       margin: 20px 0px; }
-      .cards li div.cardInfo .stars p {
+      .cards1p li div.cardInfo .stars p {
         color: rgba(0, 0, 0, 0.5);
         font-weight: 400;
         font-size: 14px;
         line-height: 160%;
         margin-right: 10px; }
-      .cards li div.cardInfo .stars img {
+      .cards1p li div.cardInfo .stars img {
         width: 16px;
         height: 16px; }
-      .cards li div.cardInfo .stars img[alt="stYellowLight"] {
+      .cards1p li div.cardInfo .stars img[alt="stYellowLight"] {
         margin-right: 20px; }
-  .cards li div:last-child {
+  .cards1p li div:last-child {
     width: 250px;
     margin-top: 15px;
     margin-right: 5px;
     margin-left: 15px;
     position: relative; }
     @media (max-width: 1250px) {
-      .cards li div:last-child {
+      .cards1p li div:last-child {
         margin-left: -80px; } }
     @media (max-width: 1000px) {
-      .cards li div:last-child {
+      .cards1p li div:last-child {
         margin-left: -180px; } }
     @media (max-width: 900px) {
-      .cards li div:last-child {
+      .cards1p li div:last-child {
         margin-left: -300px; } }
-    .cards li div:last-child div {
+    .cards1p li div:last-child div {
       position: absolute;
       right: 40px; }
       @media (max-width: 950px) {
-        .cards li div:last-child div {
+        .cards1p li div:last-child div {
           right: 50px; } }
       @media (max-width: 950px) {
-        .cards li div:last-child div {
+        .cards1p li div:last-child div {
           right: 70px; } }
-    .cards li div:last-child img {
+    .cards1p li div:last-child img {
       position: absolute;
       right: 7px; }
       @media (max-width: 950px) {
-        .cards li div:last-child img {
+        .cards1p li div:last-child img {
           right: 15px; } }
       @media (max-width: 900px) {
-        .cards li div:last-child img {
+        .cards1p li div:last-child img {
           right: 40px; } }
-    .cards li div:last-child h2 {
+    .cards1p li div:last-child h2 {
       margin-top: 140px;
       font-weight: 700;
       font-size: 28px;
       line-height: 160%; }
       @media (max-width: 900px) {
-        .cards li div:last-child h2 {
+        .cards1p li div:last-child h2 {
           font-size: 22px; } }
-    .cards li div:last-child button {
+    .cards1p li div:last-child button {
       margin-top: 5px; }
-.cards li:hover {
+.cards1p li:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1); }
   @media (max-width: 1250px) {
-    .cards li:hover {
+    .cards1p li:hover {
       -webkit-transform: scale(1.01);
               transform: scale(1.01); } }
-.cards button.btn {
+.cards1p button.btn {
   width: 240px;
   height: 50px;
   background: #81B43F;
@@ -911,7 +912,7 @@ a {
   color: #FFFFFF;
   position: relative; }
   @media (max-width: 900px) {
-    .cards button.btn {
+    .cards1p button.btn {
       width: 210px;
       height: 50px;
       background: #81B43F;
@@ -921,17 +922,109 @@ a {
       font-size: 16px;
       line-height: 22px;
       color: #FFFFFF; } }
-  .cards button.btn img {
+  .cards1p button.btn img {
     position: absolute;
     left: 20px; }
-  .cards button.btn span {
+  .cards1p button.btn span {
     margin-left: 30px; }
-.cards .like {
+.cards1p .like {
   width: 25px;
   height: 25px;
   background: url("../img/FavoriteIconGrey.png") no-repeat; }
-  .cards .like.active {
+  .cards1p .like.active {
     background: url("../img/FavoriteIconGreyRed.png") no-repeat; }
+
+.cards2p .cardColor {
+  background-color: #FFFFFF; }
+.cards2p ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap; }
+.cards2p li {
+  width: 272px;
+  height: 387px;
+  border-radius: 8px;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+  position: relative; }
+  .cards2p li .cardPicture {
+    width: 232px;
+    height: 253px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 auto; }
+  .cards2p li .stars {
+    margin-top: 5px;
+    margin-left: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .cards2p li .stars .review {
+      margin-left: 7px;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 160%;
+      color: rgba(0, 0, 0, 0.5); }
+    .cards2p li .stars img {
+      width: 8.69px;
+      height: 8.29px; }
+  .cards2p li .size {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 20px; }
+  .cards2p li .price {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    margin-left: 20px;
+    margin-bottom: 27px; }
+  .cards2p li h3 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 160%;
+    margin-left: 20px; }
+  .cards2p li button {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 330px;
+    left: 210px; }
+  .cards2p li .like {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 18px;
+    left: 227px;
+    background: url("../img/FavoriteIconGrey.png") no-repeat; }
+    .cards2p li .like.active {
+      background: url("../img/FavoriteIconGreyRed.png") no-repeat; }
 
 .advertBanner {
   display: -webkit-box;

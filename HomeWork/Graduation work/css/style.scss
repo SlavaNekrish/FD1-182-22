@@ -836,7 +836,7 @@ a {
 
 
 
-.cards {
+.cards1p {
 
   .cardColor {
     background-color: $white;
@@ -851,6 +851,7 @@ a {
     li {
       width: $xl;
       height: 273px;
+      border-radius: 8px;
       display: flex;
       justify-content: space-between;
       transition: transform 2s;
@@ -1014,6 +1015,100 @@ a {
       background: url('../img/FavoriteIconGreyRed.png') no-repeat;
       }
     }
+}
+
+.cards2p {
+
+  .cardColor {
+    background-color: $white;
+
+  }
+
+    ul {
+      display: flex;
+      flex-flow: wrap;
+      
+    }
+    li {
+      width: 272px;
+      height: 387px;
+      border-radius: 8px;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      transition: transform 2s;
+      position: relative;
+      
+
+      .cardPicture {
+        width: 232px;
+        height: 253px;
+        display: flex;
+        align-items:center;
+        justify-content: space-around;
+        margin: 0 auto;
+      }
+      .stars{
+        margin-top: 5px;
+        margin-left: 20px;
+        display: flex;
+        align-items:center;
+        .review {
+          margin-left: 7px;
+          font-weight: 400;
+          font-size: $fz10;
+          line-height: 160%;
+          color: rgba(0, 0, 0, 0.5);
+        }
+        img {
+          width: 8.69px;
+          height: 8.29px;
+        }
+      }
+      .size {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 160%;
+        color: rgba(0, 0, 0, 0.5);
+        margin-left: 20px;
+      }
+      .price {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        margin-left: 20px;
+        margin-bottom: 27px;
+      }
+      h3 {
+        font-weight: 600;
+        font-size: $fz14;
+        line-height: 160%;
+        margin-left: 20px;
+      }
+
+      button {
+        width: 36px;
+        height: 36px;
+        border: none;
+        background-color: $white;
+        position: absolute;
+        top: 330px;
+        left: 210px;
+      }
+      .like {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 18px;
+        left: 227px;
+        background: url('../img/FavoriteIconGrey.png') no-repeat;
+        &.active {
+        background: url('../img/FavoriteIconGreyRed.png') no-repeat;
+        }
+      }
+    }
+
 }
 
 .advertBanner {

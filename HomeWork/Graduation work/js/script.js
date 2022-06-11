@@ -1,9 +1,9 @@
-var cards = [
+var cards1p = [
   {
     id: 0,
     title: 'Пихта Нордмана (в кадках)',
     artcl: 'Артикул №256985',
-    imgURL: 'img/Tree01.png',
+    imgURL: 'img/Tree11.png',
     rating: 4.0,
     review: '150 отзывов',
     size: '80 - 100 см',
@@ -15,7 +15,7 @@ var cards = [
     id: 1,
     title: 'Пихта Нордмана (срезанная)',
     artcl: 'Артикул №256969',
-    imgURL: 'img/Tree02.png',
+    imgURL: 'img/Tree12.png',
     rating: 4.2,
     review: '29 отзывов',
     size: '100 - 125 см',
@@ -27,7 +27,7 @@ var cards = [
     id: 2,
     title: 'Пихта Нордмана (срезанная)',
     artcl: 'Артикул №256859',
-    imgURL: 'img/Tree03.png',
+    imgURL: 'img/Tree13.png',
     rating: 2.2,
     review: '2 отзыва',
     size: '80 - 100 см',
@@ -39,7 +39,7 @@ var cards = [
     id: 3,
     title: 'Пихта Нордмана (срезанная)',
     artcl: 'Артикул №256256',
-    imgURL: 'img/Tree04.png',
+    imgURL: 'img/Tree14.png',
     rating: 4.3,
     review: '70 отзывов',
     size: '150 - 175 см',
@@ -51,7 +51,7 @@ var cards = [
     id: 4,
     title: 'Пихта Простоцветы (в кадках)',
     artcl: 'Артикул №256985',
-    imgURL: 'img/Tree05.png',
+    imgURL: 'img/Tree15.png',
     rating: 4.9,
     review: '62 отзыва',
     size: '100 - 125 см',
@@ -63,7 +63,7 @@ var cards = [
     id: 5,
     title: 'Пихта 7 цветов (срезанная)',
     artcl: 'Артикул №2989825',
-    imgURL: 'img/Tree06.png',
+    imgURL: 'img/Tree16.png',
     rating: 2.4,
     review: '2 отзыва',
     size: '80 - 100 см',
@@ -75,7 +75,7 @@ var cards = [
     id: 6,
     title: 'Пихта Нью Елки (в кадках)',
     artcl: 'Артикул №256985',
-    imgURL: 'img/Tree07.png',
+    imgURL: 'img/Tree17.png',
     rating: 4.1,
     review: '50 отзывов',
     size: '150 - 175 см',
@@ -85,13 +85,13 @@ var cards = [
   }
 ]
 
-//cards-list
+//cards-list (list)
 
-var list = document.getElementById('cards-list');
+var list = document.getElementById('cards-list1p');
 
 var  htmlElems = '';
 
-for (var i = 0; i<cards.length; i++) {
+for (var i = 0; i<cards1p.length; i++) {
   if (i == 3) {
     var Adv = '';
     Adv = `
@@ -104,30 +104,30 @@ for (var i = 0; i<cards.length; i++) {
     }
   htmlElems += `
     <li class="cardColor">
-    <img src="${cards[i].imgURL}" alt="Tree" class="imgURL">
+    <img src="${cards1p[i].imgURL}" alt="Tree1p" class="imgURL">
     <div class="cardInfo">
-      <h2 class="title">${cards[i].title}</h2>
-      <p class="artcl">${cards[i].artcl}</p> 
+      <h2 class="title">${cards1p[i].title}</h2>
+      <p class="artcl">${cards1p[i].artcl}</p> 
       <div class="stars">
       <img src="img/StarYellow.png" alt="stYellow">
       <img src="img/StarYellow.png" alt="stYellow">
       <img src="img/StarYellow.png" alt="stYellow">
       <img src="img/StarYellow.png" alt="stYellow">
       <img src="img/StarYellowLight.png" alt="stYellowLight">
-      <p class="rating">${cards[i].rating}</p>
-      <p class="review">${cards[i].review}</p>
+      <p class="rating">${cards1p[i].rating}</p>
+      <p class="review">${cards1p[i].review}</p>
       </div>
       <p><span>Тип товара: </span>пихта</p>
-      <p class="size partic"><span>Размер:  </span>${cards[i].size}</p>
-      <p class="partic"><span>В кадке (горшке):  </span>${cards[i].partic}</p>
+      <p class="size partic"><span>Размер:  </span>${cards1p[i].size}</p>
+      <p class="partic"><span>В кадке (горшке):  </span>${cards1p[i].partic}</p>
       <div class="Delivery"><img src="img/DeliveryIcon.jpg" alt="Delivery">
         Бесплатная доставка
       </div>
     </div>
     <div>
-      <div class="like ${cards[i].isLike?"active":null}"></div>
+      <div class="like ${cards1p[i].isLike?"active":null}"></div>
       <img src="img/shareIcon.png" alt="Share">
-      <h2 class="price">${cards[i].price}</h2>
+      <h2 class="price">${cards1p[i].price}</h2>
       <button class="btn" onclick=""><img src="img/Basket.png" alt="Basket"><span>Добавить в корзину</span></button>
     </div>
   </li>
@@ -135,7 +135,194 @@ for (var i = 0; i<cards.length; i++) {
 }
 list.innerHTML = htmlElems;
 
-// cards auto filling
+// cards auto filling (default load site)
+
+var cards2p = [
+  {
+    id: 0,
+    title: 'Пихта Нордмана (в кадках)',
+    imgURL: 'img/Tree21.png',
+    review: '150 отзывов',
+    size: '80 - 100 см',
+    isLike: false,
+    price: '125,52 руб.'
+  },
+  {
+    id: 1,
+    title: 'Пихта Нордмана (срезанная)',
+    imgURL: 'img/Tree22.png',
+    review: '29 отзывов',
+    size: '100-125 см',
+    isLike: true,
+    price: '55,60 руб.'
+  },
+  {
+    id: 2,
+    title: 'Пихта Нордмана (срезанная)',
+    imgURL: 'img/Tree23.png',
+    review: '2 отзыва',
+    size: '80-100 см',
+    isLike: false,
+    price: '50,20 руб.'
+  },
+  {
+    id: 3,
+    title: 'Пихта Нордмана (срезанная)',
+    imgURL: 'img/Tree24.png',
+    review: '70 отзывов',
+    size: '150-175 см',
+    isLike: false,
+    price: '80,99 руб.'
+  },
+  {
+    id: 4,
+    title: 'Пихта Простоцветы (в кадках)',
+    imgURL: 'img/Tree25.png',
+    review: '62 отзыва',
+    size: '100-125 см',
+    isLike: false,
+    price: '150,80 руб.'
+  },
+  {
+    id: 5,
+    title: 'Пихта 7 цветов (срезанная)',
+    imgURL: 'img/Tree26.png',
+    review: '2 отзыва',
+    size: '180-100 см',
+    isLike: false,
+    price: '50,52 руб.'
+  },
+  {
+    id: 6,
+    title: 'Пихта Нью Елки (в кадках)',
+    imgURL: 'img/Tree27.png',
+    review: '50 отзывов',
+    size: '150-175 см',
+    isLike: false,
+    price: '180,00 руб.'
+  },
+  {
+    id: 7,
+    title: 'Пихта HD Nordic Trees (в кадках)',
+    imgURL: 'img/Tree28.png',
+    review: '35 отзывов',
+    size: '80-100 см',
+    isLike: true,
+    price: '199,00 руб.'
+  },
+  {
+    id: 8,
+    title: 'Пихта HD Nordic Trees (в кадках)',
+    imgURL: 'img/Tree29.png',
+    review: '20 отзывов',
+    size: '150-175 см',
+    isLike: false,
+    price: '205,00 руб.'
+  },
+  {
+    id: 9,
+    title: 'Пихта Простоцветы (в кадках)',
+    imgURL: 'img/Tree30.png',
+    review: '3 отзыва',
+    size: '150-175 см',
+    isLike: false,
+    price: '180,00 руб.'
+  },
+  {
+    id: 10,
+    title: 'Пихта Нордмана (в кадках)',
+    imgURL: 'img/Tree31.png',
+    review: '5 отзывов',
+    size: '200-210 см',
+    isLike: false,
+    price: '200,20 руб.'
+  },
+  {
+    id: 11,
+    title: 'Пихта Датская (срезанная)',
+    imgURL: 'img/Tree32.png',
+    review: '5 отзывов',
+    size: '80-100 см',
+    isLike: false,
+    price: '150,52 руб.'
+  },
+  {
+    id: 12,
+    title: 'Пихта Фразера (в кадках)',
+    imgURL: 'img/Tree33.png',
+    review: '12 отзывов',
+    size: '80-100 см',
+    isLike: false,
+    price: '110,60 руб.'
+  },
+  {
+    id: 13,
+    title: 'Пихта Фразера (срезанная)',
+    imgURL: 'img/Tree34.png',
+    review: '0 отзывов',
+    size: '100-150 см',
+    isLike: false,
+    price: '85,20 руб.'
+  },
+  {
+    id: 14,
+    title: 'Пихта Нордмана (в кадках)',
+    imgURL: 'img/Tree35.png',
+    review: '150 отзывов',
+    size: '80-100 см',
+    isLike: true,
+    price: '125,52 руб.'
+  },
+  {
+    id: 15,
+    title: 'Пихта Датская (срезанная)',
+    imgURL: 'img/Tree36.png',
+    review: '45 отзывов',
+    size: '125-150 см',
+    isLike: false,
+    price: '60,00 руб.'
+  },
+  {
+    id: 16,
+    title: 'Пихта Нордмана (в кадках)',
+    imgURL: 'img/Tree37.png',
+    review: '2 отзыва',
+    size: '120-140 см',
+    isLike: false,
+    price: '50,00 руб.'
+  },
+  {
+    id: 17,
+    title: 'Пихта Нордмана (в кадках)',
+    imgURL: 'img/Tree38.png',
+    review: '0 отзывов',
+    size: '200-210 см',
+    isLike: false,
+    price: '210,00 руб.'
+  },
+  {
+    id: 18,
+    title: 'Пихта Датская (в кадках)',
+    imgURL: 'img/Tree39.png',
+    review: '12 отзывов',
+    size: '80-100 см',
+    isLike: true,
+    price: '125,52 руб.'
+  },
+  {
+    id: 19,
+    title: 'Пихта Простоцветы (в кадках)',
+    imgURL: 'img/Tree40.png',
+    review: '10 отзывов',
+    size: '80-100 см',
+    isLike: false,
+    price: '60,00 руб.'
+  },
+  
+]
+
+//cards-list (table)
+
 
 
 
