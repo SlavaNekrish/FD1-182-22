@@ -1428,3 +1428,208 @@ a {
   }
   }
 }
+
+.deliveryForm {
+  display: flex;
+  flex-flow:wrap;
+  li {
+    list-style-type: none;
+  }
+  
+  background: $wContent;
+  form {
+    input[type="radio"] {
+      display: none;
+    }
+  
+      input[type="radio"] + label {
+        background: url('../img/radioButton.png') no-repeat -30px 0px;
+        background-size: 59px;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+      }
+      input[type="radio"]:checked + label {
+        background-position: 0px 0px;
+      }
+    }
+  li.lev1 {
+    padding-top: 94px;
+    padding-left: 50px;
+    h4 {
+      font-weight: 600;
+      font-size: $fz;
+      line-height: 22px;
+    }
+    .delivVariant {
+      width:  535px;
+      height: 138px;
+      display: flex;
+      margin-top: 27px;
+      margin-left: 26px;
+      li.lev2 {
+        display: flex;
+        h4 {
+          margin-bottom: 6px;
+        }
+        h5 {
+          font-weight: 500;
+          font-size: $fz14;
+          line-height: 19px;
+        }
+        h6 {
+          font-weight: 400;
+          font-size: $fz10;
+          line-height: 14px;
+        }
+        p {
+          font-weight: 400;
+          font-size: $fz12;
+          line-height: 16px;
+          color: rgba(0, 0, 0, 0.5);
+        }
+        label {
+          margin-right: 5px;
+        }
+        img {
+          width: 24px;
+          height: 24px;
+          margin-right: 5px;
+        }
+        img[alt="pen"] {
+          width: 12.67px;
+          height: 12.67px;
+        }
+      }
+      li.lev2:nth-of-type(2) form {
+        margin-left: -15px;
+      }
+      .adress {
+       width: 220px;
+        position: relative;
+        img[alt="pen"] {
+          position: absolute;
+          left: 160px;
+          top: 5px;
+
+        }
+      }
+    }
+  }
+
+  li.lev1:nth-child(3) {
+    padding-top: 0px;
+    padding-left: 50px;
+    margin-top: -180px;
+    .payVariant {
+      width:  600px;
+      height: 138px;
+      display: flex;
+      margin-top: 27px;
+      margin-left: 26px;
+      position: relative;
+      li {
+        display: flex;
+        img {
+          width: 25px;
+          height: 25px;
+          margin-right: 6px;
+        }
+        img[alt="pen"] {
+          width: 12.67px;
+          height: 12.67px;
+          position: absolute;
+          left: 375px;
+          top: 5px;
+        }
+        label {
+          margin-right: 5px;
+        }
+        h4 {
+          margin-right: 58px;
+        }
+        h5 {
+          font-weight: 500;
+          font-size: $fz14;
+          line-height: 19px;
+          color: #000000;
+        }
+      }
+    }
+  }
+  .Actio {
+    flex-basis: 450px;
+    justify-self: flex-end;
+    margin-left: 100px;
+    padding-top: 94px;
+    position: relative;
+    h4 {
+      font-weight: 600;
+      font-size: $fz;
+      line-height: 22px;
+    }
+    h4:nth-of-type(2) {
+     margin-bottom: 5px;
+    }
+    input:nth-of-type(1) {
+      width: 314px;
+      height: 50px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+    input:nth-of-type(2) {
+      width: 261px;
+      height: 50px;
+      border-radius: 8px;
+    }
+    img[alt="arrow"] {
+      position: absolute;
+      left: 260px;
+      bottom: 250px;
+    }
+
+    img[alt="rightGreen"] {
+      position: absolute;
+      right: 189px;
+    }
+    h1 {
+      font-weight: 800;
+      font-size: $fz36;
+      position: absolute;
+      left: 225px;
+      bottom: 157px;
+      color: $white;
+    }
+  }
+  ul {
+  display: flex;
+   margin-top: 56px;
+   margin-bottom: 30px;
+    li {
+      div {
+        font-weight: 400;
+        font-size: $fz14;
+        line-height: 19px;
+        margin-bottom: 2px;
+      }
+      h2 {
+        font-weight: 600;
+        font-size: $fz18;
+        line-height: 25px;
+        margin-top: 10px;
+      }
+    }
+    li:last-child {
+      margin-left: 53px;
+      span {
+        font-weight: 700;
+        font-size: $fz24;
+        line-height: 33px;
+      }
+    }
+  }
+  button.btn {
+    @include btn(180px, $green, none, $white);
+  }
+  
+}

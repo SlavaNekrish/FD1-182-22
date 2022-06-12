@@ -1356,4 +1356,180 @@ a {
       -ms-flex-preferred-size: 458px;
           flex-basis: 458px; }
 
+.deliveryForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  background: #F9F9F9; }
+  .deliveryForm li {
+    list-style-type: none; }
+  .deliveryForm form input[type="radio"] {
+    display: none; }
+  .deliveryForm form input[type="radio"] + label {
+    background: url("../img/radioButton.png") no-repeat -30px 0px;
+    background-size: 59px;
+    width: 24px;
+    height: 24px;
+    display: inline-block; }
+  .deliveryForm form input[type="radio"]:checked + label {
+    background-position: 0px 0px; }
+  .deliveryForm li.lev1 {
+    padding-top: 94px;
+    padding-left: 50px; }
+    .deliveryForm li.lev1 h4 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px; }
+    .deliveryForm li.lev1 .delivVariant {
+      width: 535px;
+      height: 138px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 27px;
+      margin-left: 26px; }
+      .deliveryForm li.lev1 .delivVariant li.lev2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .deliveryForm li.lev1 .delivVariant li.lev2 h4 {
+          margin-bottom: 6px; }
+        .deliveryForm li.lev1 .delivVariant li.lev2 h5 {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 19px; }
+        .deliveryForm li.lev1 .delivVariant li.lev2 h6 {
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 14px; }
+        .deliveryForm li.lev1 .delivVariant li.lev2 p {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+          color: rgba(0, 0, 0, 0.5); }
+        .deliveryForm li.lev1 .delivVariant li.lev2 label {
+          margin-right: 5px; }
+        .deliveryForm li.lev1 .delivVariant li.lev2 img {
+          width: 24px;
+          height: 24px;
+          margin-right: 5px; }
+        .deliveryForm li.lev1 .delivVariant li.lev2 img[alt="pen"] {
+          width: 12.67px;
+          height: 12.67px; }
+      .deliveryForm li.lev1 .delivVariant li.lev2:nth-of-type(2) form {
+        margin-left: -15px; }
+      .deliveryForm li.lev1 .delivVariant .adress {
+        width: 220px;
+        position: relative; }
+        .deliveryForm li.lev1 .delivVariant .adress img[alt="pen"] {
+          position: absolute;
+          left: 160px;
+          top: 5px; }
+  .deliveryForm li.lev1:nth-child(3) {
+    padding-top: 0px;
+    padding-left: 50px;
+    margin-top: -180px; }
+    .deliveryForm li.lev1:nth-child(3) .payVariant {
+      width: 600px;
+      height: 138px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 27px;
+      margin-left: 26px;
+      position: relative; }
+      .deliveryForm li.lev1:nth-child(3) .payVariant li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .deliveryForm li.lev1:nth-child(3) .payVariant li img {
+          width: 25px;
+          height: 25px;
+          margin-right: 6px; }
+        .deliveryForm li.lev1:nth-child(3) .payVariant li img[alt="pen"] {
+          width: 12.67px;
+          height: 12.67px;
+          position: absolute;
+          left: 375px;
+          top: 5px; }
+        .deliveryForm li.lev1:nth-child(3) .payVariant li label {
+          margin-right: 5px; }
+        .deliveryForm li.lev1:nth-child(3) .payVariant li h4 {
+          margin-right: 58px; }
+        .deliveryForm li.lev1:nth-child(3) .payVariant li h5 {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 19px;
+          color: #000000; }
+  .deliveryForm .Actio {
+    -ms-flex-preferred-size: 450px;
+        flex-basis: 450px;
+    justify-self: flex-end;
+    margin-left: 100px;
+    padding-top: 94px;
+    position: relative; }
+    .deliveryForm .Actio h4 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px; }
+    .deliveryForm .Actio h4:nth-of-type(2) {
+      margin-bottom: 5px; }
+    .deliveryForm .Actio input:nth-of-type(1) {
+      width: 314px;
+      height: 50px;
+      border-radius: 8px;
+      margin-bottom: 16px; }
+    .deliveryForm .Actio input:nth-of-type(2) {
+      width: 261px;
+      height: 50px;
+      border-radius: 8px; }
+    .deliveryForm .Actio img[alt="arrow"] {
+      position: absolute;
+      left: 260px;
+      bottom: 250px; }
+    .deliveryForm .Actio img[alt="rightGreen"] {
+      position: absolute;
+      right: 189px; }
+    .deliveryForm .Actio h1 {
+      font-weight: 800;
+      font-size: 36px;
+      position: absolute;
+      left: 225px;
+      bottom: 157px;
+      color: #FFFFFF; }
+  .deliveryForm ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 56px;
+    margin-bottom: 30px; }
+    .deliveryForm ul li div {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      margin-bottom: 2px; }
+    .deliveryForm ul li h2 {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      margin-top: 10px; }
+    .deliveryForm ul li:last-child {
+      margin-left: 53px; }
+      .deliveryForm ul li:last-child span {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px; }
+  .deliveryForm button.btn {
+    width: 180px;
+    height: 50px;
+    background: #81B43F;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF; }
+
 /*# sourceMappingURL=style.css.map */
