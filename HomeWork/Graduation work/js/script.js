@@ -87,9 +87,10 @@ var cards1p = [
 
 //cards-list (list)
 
-var list = document.getElementById('cards-list1p');
+var list1p = document.getElementById('cards-list1p');
 
 var  htmlElems = '';
+var quantityElems = '';
 
 for (var i = 0; i<cards1p.length; i++) {
   if (i == 3) {
@@ -133,7 +134,7 @@ for (var i = 0; i<cards1p.length; i++) {
   </li>
   `
 }
-list.innerHTML = htmlElems;
+list1p.innerHTML = htmlElems;
 
 // cards auto filling (default load site)
 
@@ -323,6 +324,108 @@ var cards2p = [
 
 //cards-list (table)
 
+var list2p = document.getElementById('cards-list2p');
+var tileBTN = document.getElementById('tile');
+var listBTN = document.getElementById('list');
+var quantity = document.getElementById('pages');
+
+
+
+tileBTN.addEventListener('click', function() {
+  htmlElems = '';
+  quantityElems = '';
+  for (var i = 0; i<cards2p.length; i++) {
+    if (i == 8) {
+      var Adv = '';
+      Adv = `
+      <div class="advertBanner">
+      <h1>Новогодние игрушки</h1>
+      <a href="#"><button class="btn">Посмотреть товары</button></a>
+      </div>
+      `
+      htmlElems += Adv;
+      }
+      htmlElems += `
+      <li class="cardColor">
+      <div class="cardPicture"><img src="${cards2p[i].imgURL}" alt="Tree2p"></div>
+      <div class="stars">
+        <img src="img/StarYellow.png" alt="stYellow">
+        <img src="img/StarYellow.png" alt="stYellow">
+        <img src="img/StarYellow.png" alt="stYellow">
+        <img src="img/StarYellow.png" alt="stYellow">
+        <img src="img/StarYellowLight.png" alt="stYellowLight">
+        <p class="review">${cards2p[i].review}</p>
+      </div>
+      <h3 class="title">${cards2p[i].title}</h3>
+      <p class="size">${cards2p[i].size}</p>
+      <h2 class="price">${cards2p[i].price}</h2>
+      <button class="btnSmall"><img src="img/btnSmall.jpg" alt="BasketSmall"></button>
+      <div class="like ${cards2p[i].isLike?"active":null}"></div>
+    </li>
+    `
+  }
+  quantityElems = `<div class="pages">Отображается 20 из 96</div>`;
+  quantity.innerHTML = quantityElems;
+  list2p.innerHTML = htmlElems;
+  list2p.style.display = 'flex';
+  list1p.style.display = 'none';
+})
+
+listBTN.addEventListener('click', function() {
+  htmlElems = '';
+  quantityElems = '';
+  for (var i = 0; i<cards1p.length; i++) {
+    if (i == 3) {
+      var Adv = '';
+      Adv = `
+      <div class="advertBanner">
+      <h1>Новогодние игрушки</h1>
+      <a href="#"><button class="btn">Посмотреть товары</button></a>
+      </div>
+      `
+      htmlElems += Adv;
+      }
+    htmlElems += `
+      <li class="cardColor">
+      <img src="${cards1p[i].imgURL}" alt="Tree1p" class="imgURL">
+      <div class="cardInfo">
+        <h2 class="title">${cards1p[i].title}</h2>
+        <p class="artcl">${cards1p[i].artcl}</p> 
+        <div class="stars">
+        <img src="img/StarYellow.png" alt="stYellow">
+        <img src="img/StarYellow.png" alt="stYellow">
+        <img src="img/StarYellow.png" alt="stYellow">
+        <img src="img/StarYellow.png" alt="stYellow">
+        <img src="img/StarYellowLight.png" alt="stYellowLight">
+        <p class="rating">${cards1p[i].rating}</p>
+        <p class="review">${cards1p[i].review}</p>
+        </div>
+        <p><span>Тип товара: </span>пихта</p>
+        <p class="size partic"><span>Размер:  </span>${cards1p[i].size}</p>
+        <p class="partic"><span>В кадке (горшке):  </span>${cards1p[i].partic}</p>
+        <div class="Delivery"><img src="img/DeliveryIcon.jpg" alt="Delivery">
+          Бесплатная доставка
+        </div>
+      </div>
+      <div>
+        <div class="like ${cards1p[i].isLike?"active":null}"></div>
+        <img src="img/shareIcon.png" alt="Share">
+        <h2 class="price">${cards1p[i].price}</h2>
+        <button class="btn" onclick=""><img src="img/Basket.png" alt="Basket"><span>Добавить в корзину</span></button>
+      </div>
+    </li>
+    `
+  }
+ 
+  quantityElems = `<div class="pages">Отображается 7 из 96</div>`;
+  quantity.innerHTML = quantityElems;
+  list1p.innerHTML = htmlElems;
+  list1p.style.display = 'flex';
+  list2p.style.display = 'none';
+})
+
+// cards auto filling (with two buttons)
+
 
 
 
@@ -348,8 +451,7 @@ close.addEventListener('click', function(){
     
 });
 
-
-
 // left sliding menu
+
 
 

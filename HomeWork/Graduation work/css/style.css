@@ -510,6 +510,9 @@ a {
   @media (max-width: 1050px) {
     .menuBottomHeader {
       margin-top: -60px; } }
+  @media (max-width: 1000px) {
+    .menuBottomHeader {
+      margin-top: -70px; } }
   @media (max-width: 950px) {
     .menuBottomHeader {
       margin-top: -90px; } }
@@ -723,34 +726,40 @@ a {
     font-size: 14px;
     line-height: 49px;
     color: rgba(0, 0, 0, 0.5);
-    margin-right: 770px; }
+    margin-right: 758px;
+    margin-left: 10px; }
     @media (max-width: 1250px) {
       .menuTopContent2 div:nth-child(2) {
-        margin-right: 650px; } }
+        margin-right: 658px; } }
     @media (max-width: 1100px) {
       .menuTopContent2 div:nth-child(2) {
-        margin-right: 480px;
+        margin-right: 450px;
         margin-left: -90px; } }
     @media (max-width: 1000px) {
       .menuTopContent2 div:nth-child(2) {
-        margin-right: 400px; } }
+        margin-right: 380px; } }
     @media (max-width: 900px) {
       .menuTopContent2 div:nth-child(2) {
-        margin-right: 320px;
+        margin-right: 310px;
         margin-left: -70px; } }
-  @media (max-width: 1100px) {
-    .menuTopContent2 div:nth-child(3) {
-      margin-right: -100px; } }
-  @media (max-width: 1000px) {
-    .menuTopContent2 div:nth-child(3) {
-      margin-right: -90px; } }
-  @media (max-width: 900px) {
-    .menuTopContent2 div:nth-child(3) {
-      margin-right: -80px; } }
-  .menuTopContent2 div:nth-child(4) {
+  .menuTopContent2 button:nth-of-type(1) {
+    background: #F9F9F9;
+    border: none; }
+    @media (max-width: 1100px) {
+      .menuTopContent2 button:nth-of-type(1) {
+        margin-right: -100px; } }
+    @media (max-width: 1000px) {
+      .menuTopContent2 button:nth-of-type(1) {
+        margin-right: -90px; } }
+    @media (max-width: 900px) {
+      .menuTopContent2 button:nth-of-type(1) {
+        margin-right: -80px; } }
+  .menuTopContent2 button:nth-of-type(2) {
+    background: #F9F9F9;
+    border: none;
     margin-right: 10px; }
     @media (max-width: 1000px) {
-      .menuTopContent2 div:nth-child(4) {
+      .menuTopContent2 button:nth-of-type(2) {
         margin-right: 5px; } }
 
 .cards1p .cardColor {
@@ -941,7 +950,9 @@ a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: wrap;
-      flex-flow: wrap; }
+      flex-flow: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 .cards2p li {
   width: 272px;
   height: 387px;
@@ -960,7 +971,8 @@ a {
   transition: -webkit-transform 2s;
   transition: transform 2s;
   transition: transform 2s, -webkit-transform 2s;
-  position: relative; }
+  position: relative;
+  margin-bottom: 16px; }
   .cards2p li .cardPicture {
     width: 232px;
     height: 253px;
@@ -1025,6 +1037,13 @@ a {
     background: url("../img/FavoriteIconGrey.png") no-repeat; }
     .cards2p li .like.active {
       background: url("../img/FavoriteIconGreyRed.png") no-repeat; }
+.cards2p li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1); }
+  @media (max-width: 1250px) {
+    .cards2p li:hover {
+      -webkit-transform: scale(1.01);
+              transform: scale(1.01); } }
 
 .advertBanner {
   display: -webkit-box;

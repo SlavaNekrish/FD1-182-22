@@ -561,6 +561,9 @@ a {
   @include onlySmoller(1050px) {
     margin-top: -60px;;
   }
+  @include onlySmoller(1000px) {
+    margin-top: -70px;;
+  }
   @include onlySmoller(950px) {
     margin-top: -90px;;
   }
@@ -795,23 +798,26 @@ a {
     font-size: $fz14;
     line-height: 49px;
     color:$tGrey;
-    margin-right: 770px;
+    margin-right: 758px;
+    margin-left: 10px;
     @include onlySmoller(1250px) {
-      margin-right: 650px;
+      margin-right: 658px;
     }
     @include onlySmoller(1100px) {
-      margin-right: 480px;
+      margin-right: 450px;
       margin-left: -90px;
     }
     @include onlySmoller(1000px) {
-      margin-right: 400px;
+      margin-right: 380px;
     }
     @include onlySmoller(900px) {
-      margin-right: 320px;
+      margin-right: 310px;
       margin-left: -70px;
     }
   }
-  div:nth-child(3) {
+  button:nth-of-type(1) {
+    background: $wContent;
+    border: none;
     @include onlySmoller(1100px) {
       margin-right: -100px;
     }
@@ -822,7 +828,9 @@ a {
       margin-right: -80px;
     }
   }
-  div:nth-child(4) {
+  button:nth-of-type(2) {
+    background: $wContent;
+    border: none;
     margin-right: 10px;
     @include onlySmoller(1000px) {
       margin-right: 5px;
@@ -1027,7 +1035,7 @@ a {
     ul {
       display: flex;
       flex-flow: wrap;
-      
+      justify-content: space-around;
     }
     li {
       width: 272px;
@@ -1039,6 +1047,8 @@ a {
       justify-content: space-around;
       transition: transform 2s;
       position: relative;
+      margin-bottom: 16px;
+      
       
 
       .cardPicture {
@@ -1108,7 +1118,12 @@ a {
         }
       }
     }
-
+    li:hover {
+      transform: scale(1.1);
+      @include onlySmoller(1250px) {
+        transform: scale(1.01);
+      }
+    }
 }
 
 .advertBanner {
