@@ -430,6 +430,7 @@ listBTN.addEventListener('click', function() {
 
 
 var open = document.getElementById('open');
+
 var close = document.getElementById('close');
 
 var block = document.getElementById('block');

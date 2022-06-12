@@ -87,32 +87,11 @@
         <div><img src="img/Logo.png" alt="logo"></div>
         <img src="img/SearchIcon.png" alt="lupa">
         <input type="text" placeholder="   Поиск">
-        <div class="GreenButton">
+        <div class="WhiteButton">
+          <img src="img/Indicator3.png" alt="Arrow3">
           <a href="#">
-          <span>Корзина</span>
-          <span>|</span></a>
-          <a href="#"><span>3</span>
+            <p>Вернуться</p>
           </a>
-          <ul class="menuLevel2">
-            <li>
-              <img src="img/gloves.png" alt="gloves">
-              <div>Перчатки из ткани с прорезинеными пальцами 2 пары в наборе</div>
-              <div>1 шт.</div>
-              <img src="img/trash.jpg" alt="trash">
-              <div>10 руб.</div>
-            </li>
-            <li>
-              <img src="img/ground.png" alt="ground">
-              <div>Грунт Скорая помощь Универсаль с удобрением АВА, 2,5 л</div>
-              <div>1 шт.</div>
-              <img src="img/trash.jpg" alt="trash">
-              <div>26 руб.</div>
-            </li>
-            <li>
-              <div>Сумма заказа</div>
-              <div>36 руб.</div>
-            </li>
-          </ul>
         </div>
       </div>
       <div class="menuMiddleHeader">
@@ -122,17 +101,92 @@
         <div><a href="#">Хозяйственные товары</a></div>
         <div><a href="#">Акции</a></div>
       </div>  
-    </div>
-    </div>
-      <div class="headerBanner">
-        <div class="conteiner">
-          <div class="redBanner effect">
-          <div>Новогодняя распродажа</div>
-          <div>ВСЕМ ПО ЕЛКЕ!</div>
-          <div>C 12 по 31 декабря</div>
-          <div class="mask"></div>
-          </div>
-        </div>
+      <div class="menuTopContent">
+        <div>Корзина</div>
+        <div>3 товара</div>
+        <form class="checkbox">
+          <input type="checkbox" id="check0">
+          <label for="check0"></label>
+        </form>
+        <div>Выбрать все товары</div>
       </div>
+      <ul class="goods">
+        <li>
+          <div>Товар</div>
+          <div>Количество</div>
+          <div>Цена</div>
+          <div>Доставка</div>
+        </li>
+        <li class="good">
+          <form class="checkbox">
+            <input type="checkbox" id="check1">
+            <label for="check1"></label>
+          </form>
+          <div> <img src="img/gloves2.png" alt="gloves"></div>
+          <div class="goodsInfo">
+          <h4>Перчатки из ткани с прорезинеными<br>
+            пальцами 2 пары в наборе</h4>
+          <p>В наличии</p>
+          </div>
+          <div><div class="count">
+            <img src="img/minus.jpg" alt="minus">
+            <span>1</span>
+            <img src="img/plus.png" alt="plus">
+          </div></div>
+          <h3>10 руб.</h3>
+          <img src="img/DeliveryIcon.jpg" alt="delivery">
+          <div class="delivText">
+          <h5>Бесплатная доставка</h5>
+          <h5>Ориентировочно: 15-18 января</h5>
+          </div>
+          <img src="img/trash.jpg" alt="trash">
+        </li>
+        <li class="good">
+          <form class="checkbox">
+            <input type="checkbox" id="check2">
+            <label for="check2"></label>
+          </form>
+          <div> <img src="img/ground2.png" alt="ground"></div>
+          <div class="goodsInfo">
+          <h4>Грунт Скорая помощь Универсаль с<br>
+            удобрением АВА, 2,5 л</h4>
+          <p>В наличии</p>
+          </div>
+          <div><div class="count">
+            <img src="img/minus.jpg" alt="minus">
+            <span>1</span>
+            <img src="img/plus.png" alt="plus">
+          </div></div>
+          <h3>26 руб.</h3>
+          <img src="img/DeliveryIcon.jpg" alt="delivery">
+          <div class="delivText">
+          <h5>Бесплатная доставка</h5>
+          <h5>Ориентировочно: 14-16 января</h5>
+          </div>
+          <img src="img/trash.jpg" alt="trash">
+        </li>
+        <li class="good">
+          <form class="checkbox">
+            <img src="img/checkboxGrey.png" alt="checkGrey">
+          </form>
+          <div> <img src="img/meds.png" alt="meds"></div>
+          <div class="goodsInfo">
+          <h4  class="goodGrey">Биопрепарат от насекомых<br>
+            Фитоверм (ампула)</h4>
+          <p>Нет в наличии</p>
+          </div>
+          <div><div class="count">
+            <img src="img/minus.jpg" alt="minus">
+            <span>1</span>
+            <img src="img/plus.png" alt="plus">
+          </div></div>
+          <h3 class="goodGrey">5 руб.</h3>
+          <img src="img/trash.jpg" alt="trash">
+        </li>
+      </ul>
+    </div>
+    </div>
+      
+      <script src="js/scriptBasket.js"></script>
 </body>
 </html>
