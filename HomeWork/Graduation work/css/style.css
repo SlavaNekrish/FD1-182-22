@@ -1870,4 +1870,117 @@ a {
             .BigCard .bigInfo .pricebtn button.btn span {
               margin-left: 0px; } }
 
+.otherGoods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 26px; }
+  .otherGoods h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 160%; }
+  .otherGoods span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px; }
+
+.swiper-container {
+  width: 1200px;
+  overflow: hidden;
+  position: relative;
+  min-width: 0; }
+  .swiper-container .cards3p.swiper-wrapper.image-slider_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 0;
+    width: 1200px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .swiper-container .cards3p.swiper-wrapper.image-slider_wrapper .cardColor {
+      background-color: #FFFFFF; }
+    .swiper-container .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide {
+      width: 272px;
+      height: 387px;
+      border-radius: 8px;
+      padding-top: 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      position: relative;
+      margin-bottom: 16px; }
+      .swiper-container .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide .cardPicture {
+        width: 232px;
+        height: 253px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        margin: 0 auto; }
+      .swiper-container .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide .stars {
+        margin-top: 5px;
+        margin-left: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .swiper-container .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide .stars .review {
+          margin-left: 7px;
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 160%;
+          color: rgba(0, 0, 0, 0.5); }
+        .swiper-container .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide .stars img {
+          width: 8.69px;
+          height: 8.29px; }
+      .swiper-container .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide .size {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 160%;
+        color: rgba(0, 0, 0, 0.5);
+        margin-left: 20px; }
+      .swiper-container .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide .price {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        margin-left: 20px;
+        margin-bottom: 27px; }
+      .swiper-container .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide h3 {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 160%;
+        margin-left: 20px; }
+      .swiper-container .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide button {
+        width: 36px;
+        height: 36px;
+        border: none;
+        background-color: #FFFFFF;
+        position: absolute;
+        top: 330px;
+        left: 210px; }
+      .swiper-container .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide .like {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 18px;
+        left: 227px;
+        background: url("../img/FavoriteIconGrey.png") no-repeat; }
+        .swiper-container .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide .like.active {
+          background: url("../img/FavoriteIconGreyRed.png") no-repeat; }
+
 /*# sourceMappingURL=style.css.map */
