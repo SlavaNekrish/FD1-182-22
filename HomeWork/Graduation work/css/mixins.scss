@@ -29,6 +29,19 @@
   
 }
 
+@mixin btn2($w, $clr, $brdr, $tc) {
+  width: $w;
+  height: 50px;
+  background: $clr;
+  border-radius: 8px;
+  border: $brdr;
+  font-weight: 600;
+  font-size: $fz14;
+  line-height: 19px;
+  color: $tc;
+  
+}
+
 @mixin onlySmoller($w) {
   @media (max-width: $w) {
     @content;

@@ -1991,7 +1991,7 @@ a {
     line-height: 22px;
   }
 }
-.swiper-container {
+.swiper-container.image-slider {
   width: 1200px;
   overflow: hidden;
   position: relative;
@@ -2001,7 +2001,7 @@ a {
   min-width: 0;
   width: 1200px;
   justify-content: space-around;
-  
+  position: relative;
   .cardColor {
     background-color: $white;
 
@@ -2047,14 +2047,14 @@ a {
       }
       .size {
         font-weight: 400;
-        font-size: 12px;
+        font-size: $fz12;
         line-height: 160%;
         color: rgba(0, 0, 0, 0.5);
         margin-left: 20px;
       }
       .price {
         font-weight: 700;
-        font-size: 16px;
+        font-size: $fz;
         line-height: 22px;
         margin-left: 20px;
         margin-bottom: 27px;
@@ -2091,4 +2091,64 @@ a {
 }
 }
 
+.overviews {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  margin-top: 67px;
+  margin-bottom: 30px;
+  h2 {
+    font-weight: 600;
+    font-size: $fz24;
+    line-height: 160%;
+  }
+  div {
+    display: flex;
+    font-weight: 400;
+    font-size: $fz14;
+    line-height: 19px;
+    color: $tGrey;
+    margin-right: 17px;
+    div:first-child {
+      font-weight: 500;
+      color: $tekst;
+    }
+  }
+}
 
+.viewsContent {
+  display: flex;
+  .textViews {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin-bottom: 70px;
+    .theView {
+      p {
+        font-weight: 400;
+        font-size: $fz;
+        line-height: 160%;
+        color: rgba(0, 0, 0, 0.5);
+        margin-bottom: 6px;
+        span {
+          font-weight: 500;
+          color: $tekst
+        }
+      }
+      .stars {
+        margin-bottom: 15.75px;
+      }
+      h6 {
+        font-weight: 400;
+        font-size: $fz;
+        line-height: 160%;
+        margin-bottom: 28px;
+      }
+    }
+    button {
+      @include btn2(150px, $wContent, solid 1px, $tekst);
+      justify-self: center;
+      margin: 0 auto;
+    }
+  }
+}
