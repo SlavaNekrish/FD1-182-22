@@ -2070,10 +2070,11 @@ a {
         -ms-flex-align: center;
             align-items: center;
     margin-left: 120px;
-    background-color: #F9F9F9 h1;
-      background-color-font-weight: 500;
-      background-color-font-size: 48px;
-      background-color-line-height: 65px; }
+    background-color: #F9F9F9; }
+    .viewsContent .viewResults h1 {
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 65px; }
     .viewsContent .viewResults .stars {
       margin-bottom: 6.7px; }
     .viewsContent .viewResults p {
