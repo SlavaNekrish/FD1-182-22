@@ -1501,13 +1501,16 @@ a {
       -ms-flex-preferred-size: 458px;
           flex-basis: 458px; }
 
+.delivColor {
+  background: #F9F9F9; }
+
 .deliveryForm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
-  background: #F9F9F9; }
+  margin-top: 25px; }
   .deliveryForm li {
     list-style-type: none; }
   .deliveryForm form input[type="radio"] {
@@ -1633,7 +1636,7 @@ a {
     .deliveryForm .Actio img[alt="arrow"] {
       position: absolute;
       left: 260px;
-      bottom: 250px; }
+      bottom: 330px; }
     .deliveryForm .Actio img[alt="rightGreen"] {
       position: absolute;
       right: 189px; }
@@ -1642,7 +1645,7 @@ a {
       font-size: 36px;
       position: absolute;
       left: 225px;
-      bottom: 157px;
+      bottom: 240px;
       color: #FFFFFF; }
   .deliveryForm ul {
     display: -webkit-box;
@@ -2055,5 +2058,59 @@ a {
       color: #000000;
       justify-self: center;
       margin: 0 auto; }
+  .viewsContent .viewResults {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 120px;
+    background-color: #F9F9F9 h1;
+      background-color-font-weight: 500;
+      background-color-font-size: 48px;
+      background-color-line-height: 65px; }
+    .viewsContent .viewResults .stars {
+      margin-bottom: 6.7px; }
+    .viewsContent .viewResults p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      margin-bottom: 25px; }
+    .viewsContent .viewResults li {
+      list-style-type: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+      margin-bottom: 16px; }
+      .viewsContent .viewResults li div {
+        width: 160px;
+        margin-left: 12px;
+        margin-right: 92px; }
+        .viewsContent .viewResults li div img {
+          height: 4px;
+          margin-bottom: 2px; }
+      .viewsContent .viewResults li span {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px; }
+      .viewsContent .viewResults li span:nth-of-type(2) {
+        justify-self: flex-start; }
+    .viewsContent .viewResults .leaveView {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 30px; }
+      .viewsContent .viewResults .leaveView h6 {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        margin-left: 8px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1578,14 +1578,18 @@ a {
   }
 }
 
+.delivColor {
+  background: $wContent;
+}
+
 .deliveryForm {
   display: flex;
   flex-flow:wrap;
+  margin-top: 25px;
   li {
     list-style-type: none;
   }
   
-  background: $wContent;
   form {
     input[type="radio"] {
       display: none;
@@ -1734,7 +1738,7 @@ a {
     img[alt="arrow"] {
       position: absolute;
       left: 260px;
-      bottom: 250px;
+      bottom: 330px;
     }
 
     img[alt="rightGreen"] {
@@ -1746,7 +1750,7 @@ a {
       font-size: $fz36;
       position: absolute;
       left: 225px;
-      bottom: 157px;
+      bottom: 240px;
       color: $white;
     }
   }
@@ -2149,6 +2153,61 @@ a {
       @include btn2(150px, $wContent, solid 1px, $tekst);
       justify-self: center;
       margin: 0 auto;
+    }
+  }
+  .viewResults {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-left: 120px;
+    background-color: $wContent
+    h1 {
+      font-weight: 500;
+      font-size: $fz48;
+      line-height: 65px;
+    }
+    .stars {
+      margin-bottom: 6.7px;
+    }
+    p {
+      font-weight: 400;
+      font-size: $fz14;
+      line-height: 19px;
+      margin-bottom: 25px;
+    }
+    li {
+      list-style-type: none;
+      display: flex;
+      align-content: flex-start;
+      margin-bottom: 16px;
+      div {
+        width: 160px;
+        margin-left: 12px;
+        margin-right: 92px;
+      
+        img {
+          height: 4px;
+          margin-bottom: 2px;
+        }
+      }
+      span {
+        font-weight: 500;
+        font-size: $fz14;
+        line-height: 19px;
+      }
+      span:nth-of-type(2) {
+        justify-self:flex-start;
+      }
+    }
+    .leaveView {
+      display: flex;
+      margin-top: 30px;
+      h6 {
+        font-weight: 500;
+        font-size: $fz14;
+        line-height: 19px;
+        margin-left: 8px;
+      }
     }
   }
 }
