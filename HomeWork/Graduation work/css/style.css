@@ -2070,7 +2070,10 @@ a {
         -ms-flex-align: center;
             align-items: center;
     margin-left: 120px;
-    background-color: #F9F9F9; }
+    background-color: #F9F9F9;
+    width: 365px;
+    height: 380px;
+    border-radius: 20px; }
     .viewsContent .viewResults h1 {
       font-weight: 500;
       font-size: 48px;
