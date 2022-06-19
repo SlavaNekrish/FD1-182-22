@@ -428,6 +428,150 @@ listBTN.addEventListener('click', function() {
 
 
 
+var cardsMobile = [
+  {
+    id: 0,
+    title: 'Пихта Нордмана (в кадках)',
+    imgURL: 'img/TreeMob01.png',
+    rating: '4.0',
+    size: '80-100 см',
+    isLike: false,
+    price: '125,52 руб.'
+  },
+  {
+    id: 1,
+    title: 'Пихта Нордмана (срезанная)',
+    imgURL: 'img/TreeMob02.png',
+    rating: '4.2',
+    size: '100-125 см',
+    isLike: true,
+    price: '55,60 руб.'
+  },
+  {
+    id: 2,
+    title: 'Пихта Нордмана (в кадках)',
+    imgURL: 'img/TreeMob03.png',
+    rating: '4.0',
+    size: '80-100 см',
+    isLike: false,
+    price: '125,52 руб.'
+  },
+  {
+    id: 3,
+    title: 'Пихта Нордмана (в кадках)',
+    imgURL: 'img/TreeMob04.png',
+    rating: '4.0',
+    size: '80-100 см',
+    isLike: true,
+    price: '125,52 руб.'
+  },
+  {
+    id: 4,
+    title: 'Пихта Нордмана (в кадках)',
+    imgURL: 'img/TreeMob05.png',
+    rating: '4.0',
+    size: '80-100 см',
+    isLike: false,
+    price: '125,52 руб.'
+  },
+  {
+    id: 5,
+    title: 'Пихта Нордмана (в кадках)',
+    imgURL: 'img/TreeMob06.png',
+    rating: '4.0',
+    size: '80-100 см',
+    isLike: false,
+    price: '125,52 руб.'
+  },
+  {
+    id: 6,
+    title: 'Пихта Нордмана (в кадках)',
+    imgURL: 'img/TreeMob07.png',
+    rating: '4.0',
+    size: '80-100 см',
+    isLike: false,
+    price: '125,52 руб.'
+  },
+  {
+    id: 7,
+    title: 'Пихта Нордмана (в кадках)',
+    imgURL: 'img/TreeMob08.png',
+    rating: '4.0',
+    size: '80-100 см',
+    isLike: true,
+    price: '125,52 руб.'
+  },
+  {
+    id: 8,
+    title: 'Пихта Нордмана (в кадках)',
+    imgURL: 'img/TreeMob09.png',
+    rating: '4.0',
+    size: '80-100 см',
+    isLike: true,
+    price: '125,52 руб.'
+  },
+  {
+    id: 9,
+    title: 'Пихта Нордмана (в кадках)',
+    imgURL: 'img/TreeMob10.png',
+    rating: '4.0',
+    size: '80-100 см',
+    isLike: true,
+    price: '125,52 руб.'
+  },
+  {
+    id: 10,
+    title: 'Пихта Нордмана (в кадках)',
+    imgURL: 'img/TreeMob11.png',
+    rating: '4.0',
+    size: '80-100 см',
+    isLike: true,
+    price: '125,52 руб.'
+  },
+  {
+    id: 12,
+    title: 'Пихта Нордмана (в кадках)',
+    imgURL: 'img/TreeMob12.png',
+    rating: '4.0',
+    size: '80-100 см',
+    isLike: true,
+    price: '125,52 руб.'
+  },
+
+]
+
+//cardsMobile-list (list)
+
+var listMobile = document.getElementById('cards-listMobile');
+
+var  htmlElems = '';
+
+
+for (var i = 0; i<cardsMobile.length; i++) {
+  htmlElems += `
+  <li>
+            <div class="cardPicture"><img src="${cardsMobile[i].imgURL}"></div>
+            <div class="stars">
+              <img src="img/StarYellowMobile.png" alt="stYellowMob">
+              <img src="img/StarYellowMobile.png" alt="stYellowMob">
+              <img src="img/StarYellowMobile.png" alt="stYellowMob">
+              <img src="img/StarYellowMobile.png" alt="stYellowMob">
+              <img src="img/StarYellowLightMobile.png" alt="stYellowLightMob">
+              <p class="rating">${cardsMobile[i].rating}</p>
+            </div>
+            <h3 class="title">${cardsMobile[i].title}</h3>
+            <p class="size">${cardsMobile[i].size}</p>
+            <h2 class="price">${cardsMobile[i].price}</h2>
+            <button class="btnCardMobile"><img src="img/basketIconMobile.png" alt="BasketMob"></button>
+            <div class="like ${cards2p[i].isLike?"active":null}"></div>
+          </li>
+  `
+}
+listMobile.innerHTML = htmlElems;
+
+// cards auto filling (Mobile version)
+
+
 
 var open = document.getElementById('open');
 

@@ -54,7 +54,10 @@ a {
     width: 768px;
   }
   @include onlySmoller(770px) {
-    width: 546px;
+    width: 646px;
+  }
+  @include onlySmoller(650px) {
+    width: 375px;
   }
 }
 
@@ -65,6 +68,9 @@ a {
   height: 81px;
   @include onlySmoller(900px) {
     margin-left: 25px;
+  }
+  @include onlySmoller(650px) {
+    display: none;
   }
 
     div {
@@ -228,6 +234,34 @@ a {
       }
 }
 
+.menuTopHeaderMobile {
+  display: none;
+  @include onlySmoller(650px) {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 13px;
+  margin-right: 13px;
+  margin-top: 27px;
+  margin-bottom: 13px;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+    img[alt="favMobile"] {
+      margin-left: 34px;
+      margin-right: 34px;
+    }
+  }
+  button {
+    border: none;
+    background-color: $white
+  }
+}
+
 .searchHeader {
   display: flex;
   align-items: center;
@@ -241,6 +275,9 @@ a {
     margin-left: 15px;
   }
 
+  @include onlySmoller(650px) {
+      display: none;
+    }
   #open {
     border: none;
     width: 25px;
@@ -461,11 +498,70 @@ a {
 
  }
 
+ .searchHeaderMobile {
+    display: none;
+    position: relative;
+    padding-bottom: 16px;
+    @include onlySmoller(650px) {
+      display: flex;
+      justify-content: center;
+      flex-flow: wrap;
+    }
+    img[alt="lupaMobile"] {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+      }
+      input {
+        width: 349px;
+        height: 40px;
+        border:hidden;
+        border-radius: 10px;
+        margin-bottom: 16px;
+      }
+      div:nth-of-type(1) {
+        margin-right: 8px;
+        position: relative;
+        h3 {
+          position: absolute;
+          left: 70px;
+          top: 20px;
+          font-weight: 600;
+          font-size: $fz12;
+          line-height: 16px;
+          color: $white;
+        }
+        h2 {
+          position: absolute;
+          left: 47px;
+          top: 36px;
+          font-weight: 700;
+          font-size: $fz18;
+          line-height: 25px;
+          color: $white;
+        }
+      }
+      div:nth-of-type(2) {
+        position: relative;
+        h4 {
+          position: absolute;
+          left: 95px;
+          top: 22px;
+          font-weight: 600;
+          font-size: $fz12;
+          line-height: 16px;  
+        }
+      }
+ }
+
 .menuMiddleHeader {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 83px;
+  @include onlySmoller(650px) {
+    display: none;
+  }
   div {
     font-style: normal;
     font-weight: 500;
@@ -478,17 +574,22 @@ a {
     @include onlySmoller(770px) {
       padding-right: 4px;
     }
+   
   }
   div:last-child {
     color: $red;
   } 
 }
+
+
     
 .headerBanner {
   background: url('../img/Banner.png') no-repeat;
   background-size: 100%;
   margin: 0px;
- 
+  @include onlySmoller(650px) {
+    display: none;
+  }
   
   .conteiner {
     display: flex;
@@ -656,6 +757,9 @@ a {
   @include onlySmoller(770px) {
     margin-top: -140px;;
   }
+  @include onlySmoller(650px) {
+    display: none;
+  }
   div {
     font-weight: 500;
     font-size: $fz;
@@ -818,6 +922,9 @@ a {
   @include onlySmoller(770px) {
     padding-top: 30px;
   }
+  @include onlySmoller(650px) {
+    display: none;
+  }
   div {
     font-weight: 400;
     font-size: $fz14;
@@ -897,6 +1004,10 @@ a {
   @include onlySmoller(900px) {
     margin-left: 10px;
   }
+  @include onlySmoller(650px) {
+    display: none;
+  }
+
   div:first-child {
     font-weight: 700;
     font-size: $fz36;
@@ -963,10 +1074,35 @@ a {
   
 }
 
+.menuTopContentMobile {
+  display: none;
+  margin-left: 32px;
+  margin-bottom: 25px;
+  background-color: $white;
+  @include onlySmoller(650px) {
+    display: flex;
+    align-items: center;
+  }
+  button:nth-of-type(1).btnMobile {
+    @include btnMobile(58px, $green, none, $white);
+    margin-left: 31px;
+    margin-right: 15px;
+  }
+  button:nth-of-type(2).btnMobile {
+    @include btnMobile(130px, $white, solid 1px $green, $tekst);
+    margin-right: 15px;
+  }
+  button:nth-of-type(3).btnMobile {
+    @include btnMobile(50px, $white, solid 1px $green, $tekst);
+    margin-right: 15px;
+  }
+}
 
 
 .cards1p {
-
+  @include onlySmoller(650px) {
+    display: none;
+  }
   .cardColor {
     background-color: $white;
 
@@ -1187,7 +1323,9 @@ a {
 }
 
 .cards2p {
-
+  @include onlySmoller(650px) {
+    display: none;
+  }
   .cardColor {
     background-color: $white;
 
@@ -1323,10 +1461,117 @@ a {
   }
 } 
 
+.cardsMobile {
+   display: none;
+  @include onlySmoller(650px) {
+    display: flex;
+    
+   
+  }
+    ul {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: space-around;
+      padding-top: 10px;
+    }
+    li {
+      width: 169px;
+      height: 253px;
+      border-radius: 8px;
+      padding-top: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      position: relative;
+      margin-bottom: 11px;
+      background-color: $white;
+      
+      
+
+      .cardPicture {
+        width: 137px;
+        height: 137px;
+        display: flex;
+        align-items:center;
+        justify-content: space-around;
+        margin: 0 auto;
+      }
+      .stars{
+        margin-top: 10px;
+        margin-left: 16.69px;
+        display: flex;
+        align-items:center;
+        .rating {
+          margin-left: 7px;
+          font-weight: 400;
+          font-size: $fz9;
+          line-height: 160%;
+          color: rgba(0, 0, 0, 0.5);
+        }
+        img {
+          width: 6.7px;
+          height: 6.63px;
+        }
+      }
+      .size {
+        font-weight: 400;
+        font-size: $fz9;
+        line-height: 160%;
+        color: rgba(0, 0, 0, 0.5);
+        margin-left: 16px;
+        margin-bottom: 10px;
+      }
+      .price {
+        font-weight: 700;
+        font-size: $fz12;
+        line-height: 16px;
+        position: absolute;
+        top: 227px;
+        left: 20px;
+        color: $white;
+      }
+      h3 {
+        font-weight: 600;
+        font-size: $fz9;
+        line-height: 160%;
+        margin-left: 16px;
+      }
+
+      .btnCardMobile {
+        @include btnCardMobile(169px, $green, none, $white);
+        }
+        position: relative;
+        img[alt="BasketMob"] {
+          position: absolute;
+          bottom: 10px;
+          left: 125px;
+        }
+      }
+      .like {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 10px;
+        left: 135px;
+        background: url('../img/FavoriteIconGreyMobile.png') no-repeat;
+        &.active {
+        background: url('../img/FavoriteIconGreyRedMobile.png') no-repeat;
+        }
+      }
+}
+  
+   
+
 .contentBottom {
   margin-top: 20px;
   display: flex;
   justify-content: end;
+  @include onlySmoller(650px) {
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
   button {
     @include btn(150px, $wContent, solid 1px, $tekst);
     justify-self: center;
@@ -1353,6 +1598,9 @@ a {
     @include onlySmoller(770px) {
       margin-left: 160px;
     }
+    @include onlySmoller(650px) {
+      display: none;
+    }
   }
 }
 .pages {
@@ -1364,12 +1612,19 @@ a {
   margin-top: 30px;
   text-align: center;
   padding-bottom: 35px;
+  @include onlySmoller(650px) {
+    display: none;
+  }
 }
 
 .footerColor {
   background-color: $wFooter;
 }
 .footerTop {
+  @include onlySmoller(650px) {
+    display: none;
+  }
+
   padding-top: 90px;
   
   display: flex;
@@ -1407,6 +1662,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items:center;
+  @include onlySmoller(650px) {
+    display: none;
+  }
   li {
     list-style-type: none;
     color: rgba(0, 0, 0, 0.5);
@@ -1420,6 +1678,44 @@ a {
   li:nth-child(2) {
     margin-top: 15px;
   }
+}
+
+.accordion {
+.accordion-header {
+  
+  .accordion-button {
+    background-color: $wFooter;
+    border: sold 2px $white;
+    font-weight: 600;
+    font-size: $fz14;
+    line-height: 19px;
+  }
+}
+
+.accordion-body {
+  background-color: $wFooter;
+  ul {
+    li {
+      list-style-type: none;
+      font-weight: 400;
+      font-size: $fz14;
+      line-height: 30px;
+
+    }
+  }
+}
+}
+
+.footerBottomMobile {
+  display: none;
+  @include onlySmoller(650px) {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 13px 0px;
+    background-color: $white
+  }
+
 }
 
 // Page Basket
@@ -2004,7 +2300,7 @@ a {
   display: flex;
   min-width: 0;
   width: 1200px;
-  justify-content: space-around;
+  justify-content: space-between;
   position: relative;
   .cardColor {
     background-color: $white;
@@ -2018,7 +2314,7 @@ a {
       padding-top: 20px;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-between;
       position: relative;
       margin-bottom: 16px;
     

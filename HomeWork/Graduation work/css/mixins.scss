@@ -39,7 +39,31 @@
   font-size: $fz14;
   line-height: 19px;
   color: $tc;
-  
+}
+
+@mixin btnMobile($w, $clr, $brdr, $tc) {
+  width: $w;
+  height: 32px;
+  background: $clr;
+  border-radius: 8px;
+  border: $brdr;
+  font-weight: 500;
+  font-size: $fz10;
+  line-height: 14px;
+  color: $tc;
+}
+
+@mixin btnCardMobile($w, $clr, $brdr, $tc) {
+  width: $w;
+  height: 40px;
+  background: $clr;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: $brdr;
+  font-weight: 700;
+  font-size: $fz12;
+  line-height: 16px;
+  color: $tc;
 }
 
 @mixin onlySmoller($w) {

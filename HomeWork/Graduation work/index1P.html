@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cristmas tree</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -34,6 +35,15 @@
       <img src="img/FavoriteIcon.jpg" alt="Hurt">
       <img src="img/PersonalIcon.jpg" alt="Personal">
       <div><a href="#">Войти</a></div>
+    </div>
+    <div class="menuTopHeaderMobile">
+      <img src="img/LogoMobile.png" alt="logoMobile">
+      <div>
+        <img src="img/BellIconMobile.jpg" alt="bellMobile">
+        <img src="img/FavoriteIconMobile.png" alt="favMobile">
+        <img src="img/PersonalIconMobile.jpg" alt="persMobile">
+      </div>
+      <button id="openMobile"><img src="img/MenuIconMobile.png" alt="MenuIconMob"></button>
     </div>
     <div class="searchHeader">
       <button id="open"><img src="img/MenuIcon.png" alt="MenuIcon1"></button>
@@ -115,6 +125,19 @@
         </ul>
       </div>
     </div>
+    <div class="searchHeaderMobile">
+      <img src="img/SearchIconMobile.png" alt="lupaMobile">
+      <input type="text" placeholder="          Поиск по товарам">
+      <div>
+        <img src="img/bannerMobile.png" alt="banMobile">
+        <h3>РАСПРОДАЖА</h3>
+        <h2>ВСЕМ ПО ЕЛКЕ!</h2>
+      </div>
+      <div>
+        <img src="img/AdvertBannerMobile.png" alt="advBannerMobile">
+        <h4>20%<br>игру</h4>
+      </div>
+    </div>
     <div class="menuMiddleHeader">
       <div><a href="#">Все для сада и огорода</a></div>
       <div><a href="#">Техника</a></div>
@@ -164,9 +187,18 @@
       <div><a href="#">Срезанные елки</a></div>
       <div><a href="#">В горшках елки</a></div>
     </div>
+    <div class="menuTopContentMobile">
+      <div><a href="#"><img src="img/FiltersIconMobile.jpg" alt="FiltersIconMobile"></a></div>
+      <button class="btnMobile">Акции</button> 
+      <button class="btnMobile">Все для сада и огорода</button> 
+      <button class="btnMobile">Техника</button> 
+    </div>
     </div>
     <div class="contentColor">
     <div class="conteiner">
+      <div class="cardsMobile"><a a href="index3p.html">
+        <ul id="cards-listMobile">  </ul>
+      </a></div>
     <div class="menuTopContent1">
       <div><a href="#">Главная</a></div>
       <img src="img/Indicator1.png" alt="Arrow">
@@ -198,7 +230,7 @@
     <div id="pages"><div class="pages">Отображается 7 из 96</div></div>
   </div>
   </div>
-  </div>
+  
   <div class="footerColor">
   <div class="conteiner">
   <ul class="footerTop">
@@ -232,6 +264,75 @@
       <img src="img/appstore.jpg" alt="appstore">
     </li>
   </ul>
+  <div class="accordion" id="accordionMobile">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Услуги
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionMobile">
+        <div class="accordion-body">
+          <ul>
+            <li>Как сделать заказ</li>
+            <li>Способы оплаты</li>
+            <li>Доставка и самовывоз</li>
+            <li>Возврат товаров</li>
+            <li>Правила продажи</li>
+            <li>Возврат средств</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          О компании
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionMobile">
+        <div class="accordion-body">
+         <ul>
+          <li>О нас</li>
+          <li>Контакты</li>
+          <li>Вакансии</li>
+          <li>Пункты самовывоза</li>
+         </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Каталог
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionMobile">
+        <div class="accordion-body">
+         <ul>
+          <li>Все для сада и огорода</li>
+          <li>Техника</li>
+          <li>Инструменты</li>
+          <li>Хозяйственные товары</li>
+          <li>Акции</li>
+         </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+          Мобильное приложение
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionMobile">
+        <div class="accordion-body">
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <ul class="footerBottom">
     <li>
       <img src="img/instIcon.jpg" alt="inst">
@@ -241,8 +342,13 @@
     <li>2001-2021 © Ферма - интернет-магазин товаров для сада и огорода.</li>
     <li>Все права защищены.</li>
   </ul>
+  <div class="footerBottomMobile">
+    <img src="img/googleplay.png" alt="gpmob">
+    <img src="img/appstore.jpg" alt="appmob">
+  </div>
   </div>
 </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
