@@ -25,6 +25,9 @@ body
 {
   line-height: 1;
   font-family: 'Noto Sans', sans-serif;
+  *:hover {
+    color: $tekst
+  }
   
 }
 
@@ -1681,6 +1684,10 @@ a {
 }
 
 .accordion {
+  display: none;
+  @include onlySmoller(650px) {
+    display: block;
+  }
 .accordion-header {
   
   .accordion-button {

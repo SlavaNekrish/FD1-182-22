@@ -19,6 +19,8 @@ menu, nav, output, ruby, section, summary, time, mark, audio, video {
 body {
   line-height: 1;
   font-family: 'Noto Sans', sans-serif; }
+  body *:hover {
+    color: #000000; }
 
 a {
   color: inherit;
@@ -1641,19 +1643,24 @@ a {
   .footerBottom li:nth-child(2) {
     margin-top: 15px; }
 
-.accordion .accordion-header .accordion-button {
-  background-color: #F0F0F0;
-  border: sold 2px #FFFFFF;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 19px; }
-.accordion .accordion-body {
-  background-color: #F0F0F0; }
-  .accordion .accordion-body ul li {
-    list-style-type: none;
-    font-weight: 400;
+.accordion {
+  display: none; }
+  @media (max-width: 650px) {
+    .accordion {
+      display: block; } }
+  .accordion .accordion-header .accordion-button {
+    background-color: #F0F0F0;
+    border: sold 2px #FFFFFF;
+    font-weight: 600;
     font-size: 14px;
-    line-height: 30px; }
+    line-height: 19px; }
+  .accordion .accordion-body {
+    background-color: #F0F0F0; }
+    .accordion .accordion-body ul li {
+      list-style-type: none;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 30px; }
 
 .footerBottomMobile {
   display: none; }
