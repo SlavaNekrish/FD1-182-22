@@ -1086,6 +1086,7 @@ a {
     display: flex;
     align-items: center;
   }
+ 
   button:nth-of-type(1).btnMobile {
     @include btnMobile(58px, $green, none, $white);
     margin-left: 31px;
@@ -1096,10 +1097,12 @@ a {
     margin-right: 15px;
   }
   button:nth-of-type(3).btnMobile {
-    @include btnMobile(50px, $white, solid 1px $green, $tekst);
+    @include btnMobile(60px, $white, solid 1px $green, $tekst);
     margin-right: 15px;
   }
 }
+
+
 
 .mobileBasket {
   display: none; 
@@ -1108,8 +1111,8 @@ a {
   }
   position: fixed;
   z-index: 1;
-  left: 280px;
-  top: 440px;
+  left: 290px;
+  top: 640px;
   img[alt="greenSquare"] {
     position: absolute;
     z-index: 1;
