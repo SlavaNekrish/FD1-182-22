@@ -1101,6 +1101,42 @@ a {
   }
 }
 
+.mobileBasket {
+  display: none; 
+  @include onlySmoller(650px) {
+    display: block;
+  }
+  position: fixed;
+  z-index: 1;
+  left: 280px;
+  top: 440px;
+  img[alt="greenSquare"] {
+    position: absolute;
+    z-index: 1;
+  }
+  img[alt="whiteBasket"] {
+    position: absolute;
+    z-index: 2;
+    left: 28px;
+    top: 28px;
+    
+  }
+  img[alt="whiteSquare"] {
+    position: absolute;
+    z-index: 2;
+    right: -80px;
+    top: -9px;
+  }
+  span {
+    position: absolute;
+    left: 50px;
+    top: 8px;
+    z-index: 3;
+    font-weight: 600;
+    font-size: $fz12;
+    line-height: 16px;
+  }
+}
 
 .cards1p {
   @include onlySmoller(650px) {
