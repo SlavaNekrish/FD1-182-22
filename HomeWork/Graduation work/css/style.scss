@@ -2192,6 +2192,12 @@ a {
   display: flex;
   margin-top: 20px;
   margin-bottom: 63px;
+  @include onlySmoller(1100px) {
+    margin-left: 20px;
+  }
+  @include onlySmoller(1000px) {
+    margin-left: 10px;
+  }
   .picture {
     width: 515px;
     height: 488px;
@@ -2200,11 +2206,27 @@ a {
     justify-content: space-around;
     position: relative;
     margin-right: 60px;
+    @include onlySmoller(1000px) {
+      margin-right: 10px;
+    }
+  
     img[alt="rotate"] {
       position: absolute;
       bottom: 20px;
       left: 210px;
     }
+    img[alt="bigTree"] {
+      @include onlySmoller(900px) {
+        width: 350px;
+        height: 400px;
+      }
+    }
+    img[alt="right"] {
+      @include onlySmoller(900px) {
+       margin-left: -20px;
+      }
+    }
+   
   }
   .bigInfo {
    width: 460px;
@@ -2227,6 +2249,9 @@ a {
       font-weight: 600;
       font-size: $fz28;
       line-height: 160%;
+      @include onlySmoller(900px) {
+        font-size: $fz24;
+      }
     }
     h1:last-child {
       font-weight: 700;
@@ -2296,6 +2321,17 @@ a {
       margin-bottom: 49px;
       h5:nth-of-type(1) {
         margin-left: -30px;
+        @include onlySmoller(1000px) {
+          margin-left: -5px;
+        }
+        @include onlySmoller(900px) {
+          margin-left: 10px;
+        }
+      }
+      img {
+        width: 25px;
+        height: 25px;
+        align-self: center;
       }
     }
     .pricebtn  {
@@ -2303,6 +2339,9 @@ a {
       justify-content: space-between;
     button.btn {
       @include btn(240px, $green, none, $white);
+      @include onlySmoller(900px) {
+        @include btn(200px, $green, none, $white);
+      }
       position: relative;
       img {
         position: absolute;
@@ -2336,18 +2375,49 @@ a {
     font-size: 16px;
     line-height: 22px;
   }
+  @include onlySmoller(1100px) {
+    margin-top: 120px;
+  }
+  @include onlySmoller(900px) {
+    margin-top: 160px;
+  }
 }
 .swiper-container.image-slider {
   width: 1200px;
   overflow: hidden;
   position: relative;
   min-width: 0;
+  @include onlySmoller(1250px) {
+    width: 1100px;
+  }
+  @include onlySmoller(1100px) {
+    width: 1000px;
+  }
+  @include onlySmoller(1000px) {
+    width: 900px;
+   
+  }
+  @include onlySmoller(900px) {
+    width: 768px;
+  }
 .cards3p.swiper-wrapper.image-slider_wrapper {
   display: flex;
   min-width: 0;
   width: 1200px;
   justify-content: space-between;
   position: relative;
+  @include onlySmoller(1250px) {
+    width: 1100px;
+  }
+  @include onlySmoller(1100px) {
+    width: 1000px;
+  }
+  @include onlySmoller(1000px) {
+    width: 900px;
+  }
+  @include onlySmoller(900px) {
+    width: 768px;
+  }
   .cardColor {
     background-color: $white;
 
@@ -2363,16 +2433,26 @@ a {
       justify-content: space-between;
       position: relative;
       margin-bottom: 16px;
-    
+   
       
 
-      .cardPicture {
+     .cardPicture {
         width: 232px;
         height: 253px;
         display: flex;
         align-items:center;
         justify-content: space-around;
         margin: 0 auto;
+        img {
+        @include onlySmoller(1000px) {
+          width: 200px;
+          height: 200px;
+        }
+        @include onlySmoller(900px) {
+          width: 160px;
+          height: 160px;
+        }
+      }
       }
       .stars{
         margin-top: 5px;
@@ -2420,6 +2500,15 @@ a {
         position: absolute;
         top: 330px;
         left: 210px;
+        @include onlySmoller(1100px) {
+          left: 205px;
+        }
+        @include onlySmoller(1000px) {
+          left: 183px;
+        }
+        @include onlySmoller(900px) {
+          left: 150px;
+        }
       }
       .like {
         width: 25px;
@@ -2506,6 +2595,9 @@ a {
     width: 365px;
     height: 380px;
     border-radius: 20px;
+    @include onlySmoller(1100px) {
+      margin-left: 50px;
+    }
     h1 {
       font-weight: 500;
       font-size: $fz48;

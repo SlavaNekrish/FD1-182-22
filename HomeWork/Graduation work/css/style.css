@@ -1036,7 +1036,7 @@ a {
   position: fixed;
   z-index: 1;
   left: 290px;
-  top: 640px; }
+  bottom: 50px; }
   @media (max-width: 650px) {
     .mobileBasket {
       display: block; } }
@@ -2095,6 +2095,12 @@ a {
   display: flex;
   margin-top: 20px;
   margin-bottom: 63px; }
+  @media (max-width: 1100px) {
+    .BigCard {
+      margin-left: 20px; } }
+  @media (max-width: 1000px) {
+    .BigCard {
+      margin-left: 10px; } }
   .BigCard .picture {
     width: 515px;
     height: 488px;
@@ -2108,10 +2114,20 @@ a {
         justify-content: space-around;
     position: relative;
     margin-right: 60px; }
+    @media (max-width: 1000px) {
+      .BigCard .picture {
+        margin-right: 10px; } }
     .BigCard .picture img[alt="rotate"] {
       position: absolute;
       bottom: 20px;
       left: 210px; }
+    @media (max-width: 900px) {
+      .BigCard .picture img[alt="bigTree"] {
+        width: 350px;
+        height: 400px; } }
+    @media (max-width: 900px) {
+      .BigCard .picture img[alt="right"] {
+        margin-left: -20px; } }
   .BigCard .bigInfo {
     width: 460px;
     height: 490px; }
@@ -2135,6 +2151,9 @@ a {
       font-weight: 600;
       font-size: 28px;
       line-height: 160%; }
+      @media (max-width: 900px) {
+        .BigCard .bigInfo h1 {
+          font-size: 24px; } }
     .BigCard .bigInfo h1:last-child {
       font-weight: 700; }
     .BigCard .bigInfo p {
@@ -2201,6 +2220,17 @@ a {
       margin-bottom: 49px; }
       .BigCard .bigInfo .Delivery h5:nth-of-type(1) {
         margin-left: -30px; }
+        @media (max-width: 1000px) {
+          .BigCard .bigInfo .Delivery h5:nth-of-type(1) {
+            margin-left: -5px; } }
+        @media (max-width: 900px) {
+          .BigCard .bigInfo .Delivery h5:nth-of-type(1) {
+            margin-left: 10px; } }
+      .BigCard .bigInfo .Delivery img {
+        width: 25px;
+        height: 25px;
+        -ms-flex-item-align: center;
+            align-self: center; }
     .BigCard .bigInfo .pricebtn {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2219,6 +2249,17 @@ a {
         line-height: 22px;
         color: #FFFFFF;
         position: relative; }
+        @media (max-width: 900px) {
+          .BigCard .bigInfo .pricebtn button.btn {
+            width: 200px;
+            height: 50px;
+            background: #81B43F;
+            border-radius: 8px;
+            border: none;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF; } }
         .BigCard .bigInfo .pricebtn button.btn img {
           position: absolute;
           left: 20px; }
@@ -2247,12 +2288,30 @@ a {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px; }
+  @media (max-width: 1100px) {
+    .otherGoods {
+      margin-top: 120px; } }
+  @media (max-width: 900px) {
+    .otherGoods {
+      margin-top: 160px; } }
 
 .swiper-container.image-slider {
   width: 1200px;
   overflow: hidden;
   position: relative;
   min-width: 0; }
+  @media (max-width: 1250px) {
+    .swiper-container.image-slider {
+      width: 1100px; } }
+  @media (max-width: 1100px) {
+    .swiper-container.image-slider {
+      width: 1000px; } }
+  @media (max-width: 1000px) {
+    .swiper-container.image-slider {
+      width: 900px; } }
+  @media (max-width: 900px) {
+    .swiper-container.image-slider {
+      width: 768px; } }
   .swiper-container.image-slider .cards3p.swiper-wrapper.image-slider_wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2263,6 +2322,18 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
     position: relative; }
+    @media (max-width: 1250px) {
+      .swiper-container.image-slider .cards3p.swiper-wrapper.image-slider_wrapper {
+        width: 1100px; } }
+    @media (max-width: 1100px) {
+      .swiper-container.image-slider .cards3p.swiper-wrapper.image-slider_wrapper {
+        width: 1000px; } }
+    @media (max-width: 1000px) {
+      .swiper-container.image-slider .cards3p.swiper-wrapper.image-slider_wrapper {
+        width: 900px; } }
+    @media (max-width: 900px) {
+      .swiper-container.image-slider .cards3p.swiper-wrapper.image-slider_wrapper {
+        width: 768px; } }
     .swiper-container.image-slider .cards3p.swiper-wrapper.image-slider_wrapper .cardColor {
       background-color: #FFFFFF; }
     .swiper-container.image-slider .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide {
@@ -2294,6 +2365,14 @@ a {
         -ms-flex-pack: distribute;
             justify-content: space-around;
         margin: 0 auto; }
+        @media (max-width: 1000px) {
+          .swiper-container.image-slider .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide .cardPicture img {
+            width: 200px;
+            height: 200px; } }
+        @media (max-width: 900px) {
+          .swiper-container.image-slider .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide .cardPicture img {
+            width: 160px;
+            height: 160px; } }
       .swiper-container.image-slider .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide .stars {
         margin-top: 5px;
         margin-left: 20px;
@@ -2337,6 +2416,15 @@ a {
         position: absolute;
         top: 330px;
         left: 210px; }
+        @media (max-width: 1100px) {
+          .swiper-container.image-slider .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide button {
+            left: 205px; } }
+        @media (max-width: 1000px) {
+          .swiper-container.image-slider .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide button {
+            left: 183px; } }
+        @media (max-width: 900px) {
+          .swiper-container.image-slider .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide button {
+            left: 150px; } }
       .swiper-container.image-slider .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide .like {
         width: 25px;
         height: 25px;
@@ -2434,6 +2522,9 @@ a {
     width: 365px;
     height: 380px;
     border-radius: 20px; }
+    @media (max-width: 1100px) {
+      .viewsContent .viewResults {
+        margin-left: 50px; } }
     .viewsContent .viewResults h1 {
       font-weight: 500;
       font-size: 48px;
