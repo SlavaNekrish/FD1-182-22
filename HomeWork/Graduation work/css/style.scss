@@ -1602,9 +1602,7 @@ a {
         background: url('../img/FavoriteIconGreyRedMobile.png') no-repeat;
         }
       }
-}
-  
-   
+}   
 
 .contentBottom {
   margin-top: 20px;
@@ -2942,7 +2940,7 @@ a {
 .otherGoodsMobile {
   display: none;
   @include onlySmoller(650px) {
-    display: flex;
+    display: none;
     justify-content: flex-start;
     margin-top: 45px;
     padding-top: 20px;
