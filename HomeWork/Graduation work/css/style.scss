@@ -1112,7 +1112,7 @@ a {
   }
   position: fixed;
   z-index: 1;
-  left: 340px;
+  left: 320px;
   bottom: 90px;
   img[alt="greenSquare"] {
     position: absolute;
@@ -1780,12 +1780,33 @@ a {
   @include onlySmoller(1000px) {
     margin-top: -10px;
   }
+  @include onlySmoller(650px) {
+    padding-top: 33px;
+    padding-bottom: 13px;
+    margin-top: 0px;
+    background-color: $wContent;
+    width: 375px;
+    margin-left: 0px;
+    padding-left: 10px;
+  }
+ 
+ 
+  .first {
+    display: flex;
+    align-items:baseline;
   div:first-child {
     font-weight: 700;
     font-size: $fz36;
     line-height: 49px;
     color: $tekst;
     margin-right: 24px;
+    @include onlySmoller(650px) {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 160%;
+      margin-right: 10px;
+      margin-left: 5px;
+    }
   }
 
   div:nth-of-type(2) {
@@ -1793,14 +1814,61 @@ a {
     font-size: $fz14;
     line-height: 19px;
     color: rgba(0, 0, 0, 0.5);
-    margin-right: 750px;
+    @include onlySmoller(650px) {
+      font-weight: 400;
+      font-size: $fz11;
+      line-height: 160%;
+    }
   }
 }
+.second {
+  display: flex;
+
+  div:nth-of-type(1) {
+    width: 161px;
+    margin-left: 8px;
+    margin-top: 14px;
+   
+    @include onlySmoller(650px) {
+      font-weight: 400;
+      font-size: $fz11;
+      line-height: 15px;
+      align-self: baseline;
+      padding-left: 20px;
+      
+    }
+  } 
+  .checkbox {
+    @include onlySmoller(650px) {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input + label {
+    background: url('../img/checkbox.png') no-repeat -29px 0px;
+    background-size: 59px;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+  }
+  input:checked + label {
+    background-position: 0px 0px;
+  }
+}
+  }
+}
+
 
 .checkbox {
   align-self: flex-end;
   margin-bottom: 3px;
   margin-top: 10px;
+  @include onlySmoller(650px) {
+    margin-top: 0px;
+  }
   input[type="checkbox"] {
     display: none;
   }
@@ -1818,6 +1886,9 @@ a {
 }
 .goods {
   margin-top: 28px;
+  @include onlySmoller(650px) {
+    display: none;
+  }
   li{
     list-style-type: none;
     display: flex;
@@ -1866,6 +1937,9 @@ a {
         font-size: $fz14;
         line-height: 19px;
         margin-bottom: 5px;
+        @include onlySmoller(900px) {
+          font-size: $fz13;
+        }
       }
 
       p {
@@ -1875,6 +1949,8 @@ a {
         color: rgba(0, 0, 0, 0.5);
       }
     }
+   
+  
     div:nth-of-type(3) {
       flex-basis: 165px;
     .count {
@@ -1885,15 +1961,26 @@ a {
       justify-content: space-around;
       align-items: center;
       background: $wContent;
+      @include onlySmoller(900px) {
+        justify-content: flex-start;
+      }
       
       img[ alt="minus"] {
         width: 9px;
         height: 1.5px;
+        @include onlySmoller(900px) {
+          margin-right: 5px;
+        }
       }
       img[ alt="plus"] {
         width: 11px;
         height: 12px;
+        @include onlySmoller(900px) {
+          margin-left: 5px;
+        }
       }
+    }
+
     }
     }
     h3 {
@@ -1901,7 +1988,14 @@ a {
       font-size: $fz;
       line-height: 22px;
       flex-basis: 145px;
+      @include onlySmoller(900px) {
+        font-size: $fz14;
+      }
+      @include onlySmoller(770px) {
+        font-size: $fz13;
+      }
     }
+  
     img[alt="delivery"] {
       margin-right: 20px;
     }
@@ -1911,6 +2005,9 @@ a {
       font-weight: 500;
       font-size: $fz14;
       line-height: 19px;
+      @include onlySmoller(900px) {
+        font-size: $fz13;
+      }
     }
   }
   .goodGrey {
@@ -1919,6 +2016,189 @@ a {
   h3.goodGrey {
     flex-basis: 458px;
   }
+  li.good:nth-of-type(3) {
+    @include onlySmoller(1000px) {
+      h4 {
+        font-size: $fz13;
+       }
+       .goodsInfo {
+        margin-left: 42px;
+       } 
+       img[alt="delivery"] {
+        margin-right: 5px;
+       }
+       .delivText {
+        margin-left: 10px;
+       }
+    }
+    @include onlySmoller(900px) {
+      img[alt="ground"] {
+        margin-left: 14px;
+      }
+    }
+    @include onlySmoller(770px) {
+        margin-top: 20px;
+      }
+   
+  }
+}
+
+.goodsMobile {
+  display: none; 
+  @include onlySmoller(650px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .goodMobile {
+    display: none; 
+    @include onlySmoller(650px) {
+      display: flex;
+      width: 345px;
+      height: 150px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      position: relative;
+      background-color: $white;
+      img:first-child {
+        width: 70px;
+        height: 70px;
+        margin-top: 11px;
+        margin-left: 10px;
+        margin-right: 8px;
+      }
+     div {
+      margin-top: 10px;
+      h4 {
+        font-weight: 600;
+        font-size: $fz11;
+        line-height: 15px;
+      }
+      p {
+        font-weight: 400;
+        font-size: $fz11;
+        line-height: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        margin-top: 6px;
+        margin-bottom: 9px;
+      }
+      h5 {
+        font-weight: 500;
+        font-size: $fz11;
+        line-height: 15px;
+        position: absolute;
+        top: 70px;
+        left: 120px;
+      }
+     }
+     
+      .countMobile {
+        display: flex;
+        align-items: center;
+        margin-top: 22px;
+        img:first-child {
+          width: 9px;
+          height: 1.5px;
+          align-self: flex-start;
+          margin-bottom: 10px;
+          margin-right: 3px;
+        }
+        img:last-child {
+          width: 10px;
+          height: 10px;
+        }
+        span {
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+      }
+      
+      h3 {
+        font-weight: 700;
+        font-size: $fz;
+        line-height: 22px;
+        position: absolute;
+        top: 120px;
+        left: 270px;
+      }
+      .checkbox {
+        position: absolute;
+        top: 10px;
+        left: 310px;
+      }
+      img[alt="trashMob"] {
+        position: absolute;
+        top: 120px;
+        left: 200px;
+      }
+    }
+  }
+  .goodMobile:nth-of-type(2) {
+    div {
+      margin-left: 15px;
+    }
+  }
+  .goodMobile:nth-of-type(3) {
+    height: 91px;
+    div {
+      width: 213px;
+      h4 {
+        color: rgba(0, 0, 0, 0.5);
+      }
+    }
+    img[alt="trashMob"] {
+      position: absolute;
+      top: 10px;
+      left: 310px;
+    }
+  }
+}
+
+.sumMobile {
+  display: none; 
+  @include onlySmoller(650px) {
+    display: flex;
+    flex-direction: column;
+    width: 345px;
+    height: 92px;
+    border-radius: 8px;
+    background-color: $white;
+    justify-content: center;
+    margin-left: 13px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      p {
+        font-weight: 500;
+        font-size: $fz14;
+        line-height: 160%;
+        margin-left: 10px;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: $fz20;
+        line-height: 160%;
+        margin-right: 10px;
+      }
+    }
+    button.btnCardMobile {
+      @include btnCardMobile1(345px, $green, none, $white);
+    }
+  }
+}
+.feeler {
+  display: none; 
+  @include onlySmoller(650px) {
+    display: flex;
+    width: 345px;
+    height: 20px;
+    background-color: $wContent;
   }
 }
 
@@ -1929,6 +2209,10 @@ a {
 .deliveryForm {
   display: flex;
   flex-flow:wrap;
+  @include onlySmoller(650px) {
+    display: none;
+  }
+ 
   margin-top: 25px;
   li {
     list-style-type: none;
@@ -1953,6 +2237,13 @@ a {
   li.lev1 {
     padding-top: 94px;
     padding-left: 50px;
+    @include onlySmoller(1100px) {
+      padding-left: 10px;
+    }
+    @include onlySmoller(770px) {
+      width: 325px;
+      padding-left: 0px;
+    }
     h4 {
       font-weight: 600;
       font-size: $fz;
@@ -1964,8 +2255,15 @@ a {
       display: flex;
       margin-top: 27px;
       margin-left: 26px;
+      @include onlySmoller(1100px) {
+        margin-left: 10px;
+      }
+      @include onlySmoller(1000px) {
+        flex-direction: column;
+      }
       li.lev2 {
         display: flex;
+        
         h4 {
           margin-bottom: 6px;
         }
@@ -1998,8 +2296,17 @@ a {
           height: 12.67px;
         }
       }
+      li.lev2:nth-of-type(2) {
+        margin-top: 20px;
+      }
       li.lev2:nth-of-type(2) form {
         margin-left: -15px;
+        @include onlySmoller(1100px) {
+          margin-left: -50px;
+        }
+        @include onlySmoller(1000px) {
+          margin-left: 0px;
+        }
       }
       .adress {
        width: 220px;
@@ -2018,6 +2325,17 @@ a {
     padding-top: 0px;
     padding-left: 50px;
     margin-top: -180px;
+    @include onlySmoller(1000px) {
+      padding-left: 20px;
+    }
+    @include onlySmoller(770px) {
+      margin-top: 20px;
+      padding-left: 40px;
+      margin-right: 0px;
+      margin-top: -217px;
+      width: 300px;
+    }
+   
     .payVariant {
       width:  600px;
       height: 138px;
@@ -2025,6 +2343,15 @@ a {
       margin-top: 27px;
       margin-left: 26px;
       position: relative;
+      @include onlySmoller(1000px) {
+        margin-left: 0px;
+        width:  300px;
+        flex-direction: column;
+      }
+      @include onlySmoller(770px) {
+        margin-top: 20px;
+       
+      }
       li {
         display: flex;
         img {
@@ -2032,12 +2359,17 @@ a {
           height: 25px;
           margin-right: 6px;
         }
+     
+      
         img[alt="pen"] {
           width: 12.67px;
           height: 12.67px;
           position: absolute;
           left: 375px;
           top: 5px;
+          @include onlySmoller(1000px) {
+            left: 150px;
+          }
         }
         label {
           margin-right: 5px;
@@ -2052,14 +2384,31 @@ a {
           color: #000000;
         }
       }
+      li:last-child {
+        @include onlySmoller(1000px) {
+          margin-top: 20px;
+        }
+      }
     }
   }
   .Actio {
-    flex-basis: 450px;
+    width: 450px;
     justify-self: flex-end;
     margin-left: 100px;
     padding-top: 94px;
     position: relative;
+    @include onlySmoller(1250px) {
+      margin-left: 20px;
+    }
+    @include onlySmoller(1100px) {
+      width: 380px;
+    }
+    @include onlySmoller(1000px) {
+      width: 325px;
+    }
+    @include onlySmoller(770px) {
+      padding-top: 40px;
+    }
     h4 {
       font-weight: 600;
       font-size: $fz;
@@ -2088,6 +2437,12 @@ a {
     img[alt="rightGreen"] {
       position: absolute;
       right: 189px;
+      @include onlySmoller(1100px) {
+        right: 118px;
+      }
+      @include onlySmoller(1000px) {
+        right: 60px;
+      }
     }
     h1 {
       font-weight: 800;
@@ -2097,11 +2452,18 @@ a {
       bottom: 240px;
       color: $white;
     }
+    li:last-child {
+      @include onlySmoller(1000px) {
+        margin-left: 20px;
+      }
+    }
   }
   ul {
   display: flex;
    margin-top: 56px;
    margin-bottom: 30px;
+
+ 
     li {
       div {
         font-weight: 400;
@@ -2122,6 +2484,11 @@ a {
         font-weight: 700;
         font-size: $fz24;
         line-height: 33px;
+      }
+      @include onlySmoller(1000px) {
+        margin-left: 0px;
+
+        
       }
     }
   }

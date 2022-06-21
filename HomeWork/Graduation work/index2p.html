@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Basket</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -34,6 +35,15 @@
         <img src="img/FavoriteIcon.jpg" alt="Hurt">
         <img src="img/PersonalIcon.jpg" alt="Personal">
         <div><a href="#">Войти</a></div>
+      </div>
+      <div class="menuTopHeaderMobile">
+        <img src="img/LogoMobile.png" alt="logoMobile">
+        <div>
+          <img src="img/BellIconMobile.jpg" alt="bellMobile">
+          <img src="img/FavoriteIconMobile.png" alt="favMobile">
+          <img src="img/PersonalIconMobile.jpg" alt="persMobile">
+        </div>
+        <button id="openMobile"><img src="img/MenuIconMobile.png" alt="MenuIconMob"></button>
       </div>
       <div class="searchHeader">
         <button id="open"><img src="img/MenuIcon.png" alt="MenuIcon1"></button>
@@ -102,13 +112,18 @@
         <div><a href="#">Акции</a></div>
       </div>  
       <div class="menuTopContent">
+        <div class="first">
         <div>Корзина</div>
         <div>3 товара</div>
+      </div>
+      <div class="second">
         <form class="checkbox">
           <input type="checkbox" id="check0">
-          <label for="check0"></label>
+          <label for="check0">
+          </label>
         </form>
         <div>Выбрать все товары</div>
+      </div>
       </div>
       <ul class="goods">
         <li>
@@ -184,6 +199,74 @@
           <img src="img/trash.jpg" alt="trash">
         </li>
       </ul>
+      <div class="contentColor">
+      <div class="goodsMobile">
+        <div class="goodMobile">
+          <img src="img/gloves3.png" alt="glovesMob">
+          <div>
+            <h4>Перчатки из ткани с прорезинеными<br>
+              пальцами 2 пары в наборе</h4>
+            <p>В наличии</p>
+            <img src="img/DeliveryIcon.jpg" alt="delivery">
+            <div class="delivTextMobile">
+            <h5>Бесплатная доставка<br>
+            14-16 января</h5>
+            </div>
+           <div class="countMobile">
+              <img src="img/minusMobile.png" alt="minusMob">
+              <span>1</span>
+              <img src="img/plusMobile.png" alt="plusMobile">
+            </div>
+            <img src="img/trashMobile.png" alt="trashMob">
+          </div>
+          <form class="checkbox">
+            <input type="checkbox" id="check22">
+            <label for="check22"></label>
+          </form>
+          <h3>10 руб.</h3>
+        </div>
+        <div class="goodMobile">
+          <img src="img/ground2.png" alt="groundMob">
+          <div>
+            <h4>Грунт Скорая помощь Универсаль с удобрением АВА, 2,5 л</h4>
+            <p>В наличии</p>
+            <img src="img/DeliveryIcon.jpg" alt="delivery">
+            <div class="delivTextMobile">
+            <h5>Бесплатная доставка<br>
+            14-16 января</h5>
+            </div>
+           <div class="countMobile">
+              <img src="img/minusMobile.png" alt="minusMob">
+              <span>1</span>
+              <img src="img/plusMobile.png" alt="plusMobile">
+            </div>
+            <img src="img/trashMobile.png" alt="trashMob">
+          </div>
+          <form class="checkbox">
+            <input type="checkbox" id="check23">
+            <label for="check23"></label>
+          </form>
+          <h3>26 руб.</h3>
+        </div>
+        <div class="goodMobile">
+          <img src="img/meds2.png" alt="medsMob">
+          <div>
+            <h4>Биопрепарат от насекомых Фитоверм (ампула)</h4>
+            <p>Нет на складе</p>
+            </div>
+            <img src="img/trashMobile.png" alt="trashMob">
+          </div>
+        </div>
+        <div class="sumMobile">
+          <div>
+          <p>Сумма заказа</p>
+          <h1>36,00 руб.</h1>
+        </div>
+        <button class="btnCardMobile" >Оформить заказ</button>
+        </div>
+        <div class="feeler"></div>
+      </div>
+      </div>
       </div>
       <div class="delivColor">
         <div class="conteiner">
@@ -307,6 +390,69 @@
           <img src="img/appstore.jpg" alt="appstore">
         </li>
       </ul>
+      <div class="accordion" id="accordionMobile">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Услуги
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionMobile">
+            <div class="accordion-body">
+              <ul>
+                <li>Как сделать заказ</li>
+                <li>Способы оплаты</li>
+                <li>Доставка и самовывоз</li>
+                <li>Возврат товаров</li>
+                <li>Правила продажи</li>
+                <li>Возврат средств</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              О компании
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionMobile">
+            <div class="accordion-body">
+             <ul>
+              <li>О нас</li>
+              <li>Контакты</li>
+              <li>Вакансии</li>
+              <li>Пункты самовывоза</li>
+             </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Каталог
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionMobile">
+            <div class="accordion-body">
+             <ul>
+              <li>Все для сада и огорода</li>
+              <li>Техника</li>
+              <li>Инструменты</li>
+              <li>Хозяйственные товары</li>
+              <li>Акции</li>
+             </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+              Мобильное приложение
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionMobile">
+            <div class="accordion-body">
       <ul class="footerBottom">
         <li>
           <img src="img/instIcon.jpg" alt="inst">
@@ -316,8 +462,17 @@
         <li>2001-2021 © Ферма - интернет-магазин товаров для сада и огорода.</li>
         <li>Все права защищены.</li>
       </ul>
+     
+    
+            
       </div>
+      
     </div>
+    <div class="footerColor footerBottomMobile">
+      <img src="img/googleplay.png" alt="gpmob">
+      <img src="img/appstore.jpg" alt="appmob">
+    </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
       <script src="js/scriptBasket.js"></script>
 </body>
 </html>

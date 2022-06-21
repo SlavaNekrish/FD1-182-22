@@ -66,6 +66,19 @@
   color: $tc;
 }
 
+@mixin btnCardMobile1($w, $clr, $brdr, $tc) {
+  width: $w;
+  height: 40px;
+  background: $clr;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: $brdr;
+  font-weight: 600;
+  font-size: $fz14;
+  line-height: 19px;
+  color: $tc;
+}
+
 @mixin btnBigCardMobile($w, $clr, $brdr, $tc) {
   width: $w;
   height: 37.45px;
