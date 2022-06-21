@@ -377,7 +377,7 @@ a {
       width: 300px;
     }
     @include onlySmoller(770px) {
-      width: 130px;
+      width: 200px;
       margin-right: -40px;
     }
    }
@@ -1103,7 +1103,8 @@ a {
 }
 
 
-
+.mobileBasketRelative {
+  position: relative;
 .mobileBasket {
   display: none; 
   @include onlySmoller(650px) {
@@ -1111,7 +1112,7 @@ a {
   }
   position: fixed;
   z-index: 1;
-  left: 290px;
+  left: 360px;
   bottom: 50px;
   img[alt="greenSquare"] {
     position: absolute;
@@ -1139,6 +1140,7 @@ a {
     font-size: $fz12;
     line-height: 16px;
   }
+}
 }
 
 .cards1p {
@@ -2142,8 +2144,11 @@ a {
   @include onlySmoller(1000px) {
     margin-top: -10px;
   }
+  @include onlySmoller(900px) {
+    padding-top: 1px;
+  }
   @include onlySmoller(770px) {
-    padding-top: 30px;
+    display: none;
   }
 
   div {
@@ -2197,6 +2202,9 @@ a {
   }
   @include onlySmoller(1000px) {
     margin-left: 10px;
+  }
+  @include onlySmoller(650px) {
+    display: none;
   }
   .picture {
     width: 515px;
@@ -2252,6 +2260,10 @@ a {
       @include onlySmoller(900px) {
         font-size: $fz24;
       }
+      @include onlySmoller(770px) {
+        font-size: $fz18;
+        align-self: center;
+      }
     }
     h1:last-child {
       font-weight: 700;
@@ -2287,6 +2299,9 @@ a {
         font-size: $fz14;
         line-height: 170%;
         color: rgba(0, 0, 0, 0.4);
+        @include onlySmoller(770px) {
+          font-size: $fz12;
+        }
       }
       div:first-child {
         color: $tekst;
@@ -2327,6 +2342,9 @@ a {
         @include onlySmoller(900px) {
           margin-left: 10px;
         }
+        @include onlySmoller(770px) {
+          margin-left: 0px;
+        }
       }
       img {
         width: 25px;
@@ -2342,6 +2360,10 @@ a {
       @include onlySmoller(900px) {
         @include btn(200px, $green, none, $white);
       }
+      @include onlySmoller(770px) {
+        @include btn(130px, $green, none, $white);
+      }
+    
       position: relative;
       img {
         position: absolute;
@@ -2361,10 +2383,173 @@ a {
   }
 }
 
+.BigCardMobile {
+  display: none;
+  @include onlySmoller(650px) {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+ 
+  .pictureMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $wContent;
+    width: 375px;
+    height: 319px;
+    position: relative;
+   
+    img[alt="TreeMob"] {
+      width: 236px;
+       height: 256px;
+    }
+
+    img[alt="ArrowMob"] {
+      position: absolute;
+      left: 13px;
+      top: 10px;
+    }
+    img[alt="shareMob"] {
+      position: absolute;
+      left: 335px;
+      top: 10px;
+    }
+    img[alt="FavCard"] {
+      position: absolute;
+      left: 305px;
+      top: 10px;
+    }
+  }
+  .points {
+    width: 50px;
+    align-self: center;
+
+  }
+  .bigInfoMobile {
+    display: none;
+    @include onlySmoller(650px) {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      width: 348px;
+      height: 396.45px;
+    }
+    h1:first-child {
+      font-weight: 600;
+      font-size: $fz21;
+      line-height: 160%;
+    }
+    h3 {
+      font-weight: 400;
+      font-size: $fz11;
+      line-height: 160%;
+      color: rgba(0, 0, 0, 0.2);
+    }
+    .starsMobile {
+      position: relative;
+      margin-top: 13px;
+      margin-bottom: 20px;
+      .ratingMobile {
+        position: absolute;
+        top: -2px;
+        left: 110px;
+        font-weight: 400;
+        font-size: $fz11;
+        line-height: 160%;
+        color: rgba(0, 0, 0, 0.5);
+      }
+      .reviewMobile {
+        position: absolute;
+        top: -2px;
+        left: 140px;
+        font-weight: 400;
+        font-size: $fz11;
+        line-height: 160%;
+        color: rgba(0, 0, 0, 0.5);
+      }
+    }
+    h5 {
+      font-weight: 600;
+      font-size: $fz12;
+      line-height: 160%;
+    }
+    .threeCharMobile {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-top: 17.43px;
+      margin-bottom: 12px;
+      div {
+        font-weight: 600;
+        font-size: $fz11;
+        line-height: 170%;
+        color: rgba(0, 0, 0, 0.4);
+      }
+      div:first-child {
+        color: $tekst;
+        border-bottom: solid 3px;
+      }
+    }
+    h6 {
+      font-weight: 400;
+      font-size: $fz11;
+      line-height: 150%;
+      color: rgba(0, 0, 0, 0.5);
+    }
+    .DeliveryMobile {
+      display: flex;
+      justify-content:space-between;
+      align-content: center;
+      margin-top: 18px;
+      margin-bottom: 25px;
+      h5 {
+        font-weight: 500;
+        font-size: $fz11;
+        line-height: 15px;
+        margin-top: 2px;
+      }
+      h5:nth-of-type(1) {
+        margin-left: -10px;
+      }
+      img {
+        width: 19px;
+        height: 19px;
+        align-self: center;
+      }
+    }
+    .pricebtnMobile  {
+      display: flex;
+      justify-content: space-between;
+      button.btnMobile {
+      @include btnBigCardMobile(179.76px, $green, none, $white);
+      position: relative;
+      img {
+        position: absolute;
+        left: 20px;
+      
+      }
+      span{
+        margin-left: 30px;
+      }
+      .price {
+        margin-top: 3px;
+      }
+
+    }
+  }
+  }
+}
+
+
 .otherGoods {
   display: flex;
   justify-content: space-between;
   margin-bottom: 26px;
+  @include onlySmoller(770px) {
+    display: none;
+  }
   h2 {
     font-weight: 600;
     font-size: 24px;
@@ -2374,6 +2559,7 @@ a {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
+    align-self: center;
   }
   @include onlySmoller(1100px) {
     margin-top: 120px;
@@ -2381,7 +2567,31 @@ a {
   @include onlySmoller(900px) {
     margin-top: 160px;
   }
+  @include onlySmoller(770px) {
+    margin-top: 220px;
+  }
 }
+
+.otherGoodsMobile {
+  display: none;
+  @include onlySmoller(650px) {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 45px;
+    padding-top: 20px;
+    padding-left: 13px;
+    width: 375px;
+    height: 350px;
+    background-color: $wContent;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: $fz;
+    line-height: 160%;
+  }
+}
+
 .swiper-container.image-slider {
   width: 1200px;
   overflow: hidden;
@@ -2400,6 +2610,13 @@ a {
   @include onlySmoller(900px) {
     width: 768px;
   }
+  @include onlySmoller(770px) {
+    width: 646px;
+    margin-top: 185px;
+  }
+  @include onlySmoller(650px) {
+    display: none;
+  }
 .cards3p.swiper-wrapper.image-slider_wrapper {
   display: flex;
   min-width: 0;
@@ -2417,6 +2634,9 @@ a {
   }
   @include onlySmoller(900px) {
     width: 768px;
+  }
+  @include onlySmoller(770px) {
+    width: 646px;
   }
   .cardColor {
     background-color: $white;
@@ -2451,6 +2671,11 @@ a {
         @include onlySmoller(900px) {
           width: 160px;
           height: 160px;
+        }
+        @include onlySmoller(770px) {
+          width: 110px;
+          height: 110px;
+          margin-left: -60px;
         }
       }
       }
@@ -2509,6 +2734,10 @@ a {
         @include onlySmoller(900px) {
           left: 150px;
         }
+        @include onlySmoller(770px) {
+          left: 110px;
+          top: 340px;
+        }
       }
       .like {
         width: 25px;
@@ -2532,6 +2761,9 @@ a {
   align-items:center;
   margin-top: 67px;
   margin-bottom: 30px;
+  @include onlySmoller(650px) {
+    display: none;
+  }
   h2 {
     font-weight: 600;
     font-size: $fz24;
@@ -2553,6 +2785,9 @@ a {
 
 .viewsContent {
   display: flex;
+  @include onlySmoller(650px) {
+    display: none;
+  }
   .textViews {
     display: flex;
     flex-direction: column;
@@ -2571,7 +2806,7 @@ a {
         }
       }
       .stars {
-        margin-bottom: 15.75px;
+        margin-bottom: 13.7px;
       }
       h6 {
         font-weight: 400;
@@ -2581,7 +2816,7 @@ a {
       }
     }
     button {
-      @include btn2(150px, $wContent, solid 1px, $tekst);
+      @include btn2(150px, $white, solid 1px, $tekst);
       justify-self: center;
       margin: 0 auto;
     }
@@ -2645,6 +2880,78 @@ a {
         line-height: 19px;
         margin-left: 8px;
       }
+    }
+  }
+}
+
+.leaveViewMobile {
+  display: none;
+  @include onlySmoller(650px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    width: 349px;
+    height: 39.2px;
+    border-radius: 8px;
+    background-color: $wContent;
+    margin-top: 32px;
+    margin-left: 13px;
+  }
+  h6 {
+    font-weight: 500;
+    font-size: $fz12;
+    line-height: 16px;
+    margin-left: 8.79px;
+  }
+  img {
+    width: 17.21px;
+    height: 17.21px;
+  }
+}
+
+.viewsContentMobile {
+  display: none;
+  @include onlySmoller(650px) {
+    display: flex;
+    margin-top: 22.8px;
+    margin-left: 13px;
+    margin-right: 13px;
+  }
+  .textViewsMobile {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+  
+    .theViewMobile {
+      p {
+        font-weight: 400;
+        font-size: $fz13;
+        line-height: 160%;
+        color: rgba(0, 0, 0, 0.5);
+        span {
+          font-weight: 500;
+          color: $tekst;
+          font-size: $fz13;
+        }
+      }
+      .starsMobile {
+        margin-bottom: 15.75px;
+      }
+      h6 {
+        font-weight: 400;
+        font-size: $fz13;
+        line-height: 160%;
+        margin-bottom: 22.73px;
+      }
+      h6:last-child {
+        margin-bottom: 0px;
+      }
+    }
+    button {
+      @include btn2(150px, $white, solid 1px, $tekst);
+      justify-self: center;
+      margin: 30px auto;
     }
   }
 }

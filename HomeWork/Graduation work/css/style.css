@@ -322,7 +322,7 @@ a {
         width: 300px; } }
     @media (max-width: 770px) {
       .searchHeader input {
-        width: 130px;
+        width: 200px;
         margin-right: -40px; } }
   .searchHeader .GreenButton {
     width: 156px;
@@ -1031,36 +1031,38 @@ a {
     color: #000000;
     margin-right: 15px; }
 
-.mobileBasket {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 290px;
-  bottom: 50px; }
-  @media (max-width: 650px) {
-    .mobileBasket {
-      display: block; } }
-  .mobileBasket img[alt="greenSquare"] {
-    position: absolute;
-    z-index: 1; }
-  .mobileBasket img[alt="whiteBasket"] {
-    position: absolute;
-    z-index: 2;
-    left: 28px;
-    top: 28px; }
-  .mobileBasket img[alt="whiteSquare"] {
-    position: absolute;
-    z-index: 2;
-    right: -80px;
-    top: -9px; }
-  .mobileBasket span {
-    position: absolute;
-    left: 50px;
-    top: 8px;
-    z-index: 3;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px; }
+.mobileBasketRelative {
+  position: relative; }
+  .mobileBasketRelative .mobileBasket {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 360px;
+    bottom: 50px; }
+    @media (max-width: 650px) {
+      .mobileBasketRelative .mobileBasket {
+        display: block; } }
+    .mobileBasketRelative .mobileBasket img[alt="greenSquare"] {
+      position: absolute;
+      z-index: 1; }
+    .mobileBasketRelative .mobileBasket img[alt="whiteBasket"] {
+      position: absolute;
+      z-index: 2;
+      left: 28px;
+      top: 28px; }
+    .mobileBasketRelative .mobileBasket img[alt="whiteSquare"] {
+      position: absolute;
+      z-index: 2;
+      right: -80px;
+      top: -9px; }
+    .mobileBasketRelative .mobileBasket span {
+      position: absolute;
+      left: 50px;
+      top: 8px;
+      z-index: 3;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px; }
 
 @media (max-width: 650px) {
   .cards1p {
@@ -2055,9 +2057,12 @@ a {
   @media (max-width: 1000px) {
     .menuTopContent3 {
       margin-top: -10px; } }
+  @media (max-width: 900px) {
+    .menuTopContent3 {
+      padding-top: 1px; } }
   @media (max-width: 770px) {
     .menuTopContent3 {
-      padding-top: 30px; } }
+      display: none; } }
   .menuTopContent3 div {
     font-weight: 400;
     font-size: 14px;
@@ -2101,6 +2106,9 @@ a {
   @media (max-width: 1000px) {
     .BigCard {
       margin-left: 10px; } }
+  @media (max-width: 650px) {
+    .BigCard {
+      display: none; } }
   .BigCard .picture {
     width: 515px;
     height: 488px;
@@ -2154,6 +2162,11 @@ a {
       @media (max-width: 900px) {
         .BigCard .bigInfo h1 {
           font-size: 24px; } }
+      @media (max-width: 770px) {
+        .BigCard .bigInfo h1 {
+          font-size: 18px;
+          -ms-flex-item-align: center;
+              align-self: center; } }
     .BigCard .bigInfo h1:last-child {
       font-weight: 700; }
     .BigCard .bigInfo p {
@@ -2189,6 +2202,9 @@ a {
         font-size: 14px;
         line-height: 170%;
         color: rgba(0, 0, 0, 0.4); }
+        @media (max-width: 770px) {
+          .BigCard .bigInfo .threeChar div {
+            font-size: 12px; } }
       .BigCard .bigInfo .threeChar div:first-child {
         color: #000000;
         border-bottom: solid 3px; }
@@ -2226,6 +2242,9 @@ a {
         @media (max-width: 900px) {
           .BigCard .bigInfo .Delivery h5:nth-of-type(1) {
             margin-left: 10px; } }
+        @media (max-width: 770px) {
+          .BigCard .bigInfo .Delivery h5:nth-of-type(1) {
+            margin-left: 0px; } }
       .BigCard .bigInfo .Delivery img {
         width: 25px;
         height: 25px;
@@ -2260,6 +2279,17 @@ a {
             font-size: 16px;
             line-height: 22px;
             color: #FFFFFF; } }
+        @media (max-width: 770px) {
+          .BigCard .bigInfo .pricebtn button.btn {
+            width: 130px;
+            height: 50px;
+            background: #81B43F;
+            border-radius: 8px;
+            border: none;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF; } }
         .BigCard .bigInfo .pricebtn button.btn img {
           position: absolute;
           left: 20px; }
@@ -2272,6 +2302,176 @@ a {
             .BigCard .bigInfo .pricebtn button.btn span {
               margin-left: 0px; } }
 
+.BigCardMobile {
+  display: none; }
+  @media (max-width: 650px) {
+    .BigCardMobile {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+  .BigCardMobile .pictureMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #F9F9F9;
+    width: 375px;
+    height: 319px;
+    position: relative; }
+    .BigCardMobile .pictureMobile img[alt="TreeMob"] {
+      width: 236px;
+      height: 256px; }
+    .BigCardMobile .pictureMobile img[alt="ArrowMob"] {
+      position: absolute;
+      left: 13px;
+      top: 10px; }
+    .BigCardMobile .pictureMobile img[alt="shareMob"] {
+      position: absolute;
+      left: 335px;
+      top: 10px; }
+    .BigCardMobile .pictureMobile img[alt="FavCard"] {
+      position: absolute;
+      left: 305px;
+      top: 10px; }
+  .BigCardMobile .points {
+    width: 50px;
+    -ms-flex-item-align: center;
+        align-self: center; }
+  .BigCardMobile .bigInfoMobile {
+    display: none; }
+    @media (max-width: 650px) {
+      .BigCardMobile .bigInfoMobile {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-item-align: center;
+            align-self: center;
+        width: 348px;
+        height: 396.45px; } }
+    .BigCardMobile .bigInfoMobile h1:first-child {
+      font-weight: 600;
+      font-size: 21px;
+      line-height: 160%; }
+    .BigCardMobile .bigInfoMobile h3 {
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 160%;
+      color: rgba(0, 0, 0, 0.2); }
+    .BigCardMobile .bigInfoMobile .starsMobile {
+      position: relative;
+      margin-top: 13px;
+      margin-bottom: 20px; }
+      .BigCardMobile .bigInfoMobile .starsMobile .ratingMobile {
+        position: absolute;
+        top: -2px;
+        left: 110px;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 160%;
+        color: rgba(0, 0, 0, 0.5); }
+      .BigCardMobile .bigInfoMobile .starsMobile .reviewMobile {
+        position: absolute;
+        top: -2px;
+        left: 140px;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 160%;
+        color: rgba(0, 0, 0, 0.5); }
+    .BigCardMobile .bigInfoMobile h5 {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 160%; }
+    .BigCardMobile .bigInfoMobile .threeCharMobile {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: baseline;
+          -ms-flex-align: baseline;
+              align-items: baseline;
+      margin-top: 17.43px;
+      margin-bottom: 12px; }
+      .BigCardMobile .bigInfoMobile .threeCharMobile div {
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 170%;
+        color: rgba(0, 0, 0, 0.4); }
+      .BigCardMobile .bigInfoMobile .threeCharMobile div:first-child {
+        color: #000000;
+        border-bottom: solid 3px; }
+    .BigCardMobile .bigInfoMobile h6 {
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 150%;
+      color: rgba(0, 0, 0, 0.5); }
+    .BigCardMobile .bigInfoMobile .DeliveryMobile {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -ms-flex-line-pack: center;
+          align-content: center;
+      margin-top: 18px;
+      margin-bottom: 25px; }
+      .BigCardMobile .bigInfoMobile .DeliveryMobile h5 {
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 15px;
+        margin-top: 2px; }
+      .BigCardMobile .bigInfoMobile .DeliveryMobile h5:nth-of-type(1) {
+        margin-left: -10px; }
+      .BigCardMobile .bigInfoMobile .DeliveryMobile img {
+        width: 19px;
+        height: 19px;
+        -ms-flex-item-align: center;
+            align-self: center; }
+    .BigCardMobile .bigInfoMobile .pricebtnMobile {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .BigCardMobile .bigInfoMobile .pricebtnMobile button.btnMobile {
+        width: 179.76px;
+        height: 37.45px;
+        background: #81B43F;
+        border-radius: 8px;
+        border: none;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        color: #FFFFFF;
+        position: relative; }
+        .BigCardMobile .bigInfoMobile .pricebtnMobile button.btnMobile img {
+          position: absolute;
+          left: 20px; }
+        .BigCardMobile .bigInfoMobile .pricebtnMobile button.btnMobile span {
+          margin-left: 30px; }
+        .BigCardMobile .bigInfoMobile .pricebtnMobile button.btnMobile .price {
+          margin-top: 3px; }
+
 .otherGoods {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2280,6 +2480,9 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 26px; }
+  @media (max-width: 770px) {
+    .otherGoods {
+      display: none; } }
   .otherGoods h2 {
     font-weight: 600;
     font-size: 24px;
@@ -2287,13 +2490,39 @@ a {
   .otherGoods span {
     font-weight: 400;
     font-size: 16px;
-    line-height: 22px; }
+    line-height: 22px;
+    -ms-flex-item-align: center;
+        align-self: center; }
   @media (max-width: 1100px) {
     .otherGoods {
       margin-top: 120px; } }
   @media (max-width: 900px) {
     .otherGoods {
       margin-top: 160px; } }
+  @media (max-width: 770px) {
+    .otherGoods {
+      margin-top: 220px; } }
+
+.otherGoodsMobile {
+  display: none; }
+  @media (max-width: 650px) {
+    .otherGoodsMobile {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      margin-top: 45px;
+      padding-top: 20px;
+      padding-left: 13px;
+      width: 375px;
+      height: 350px;
+      background-color: #F9F9F9; } }
+  .otherGoodsMobile h2 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%; }
 
 .swiper-container.image-slider {
   width: 1200px;
@@ -2312,6 +2541,13 @@ a {
   @media (max-width: 900px) {
     .swiper-container.image-slider {
       width: 768px; } }
+  @media (max-width: 770px) {
+    .swiper-container.image-slider {
+      width: 646px;
+      margin-top: 185px; } }
+  @media (max-width: 650px) {
+    .swiper-container.image-slider {
+      display: none; } }
   .swiper-container.image-slider .cards3p.swiper-wrapper.image-slider_wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2334,6 +2570,9 @@ a {
     @media (max-width: 900px) {
       .swiper-container.image-slider .cards3p.swiper-wrapper.image-slider_wrapper {
         width: 768px; } }
+    @media (max-width: 770px) {
+      .swiper-container.image-slider .cards3p.swiper-wrapper.image-slider_wrapper {
+        width: 646px; } }
     .swiper-container.image-slider .cards3p.swiper-wrapper.image-slider_wrapper .cardColor {
       background-color: #FFFFFF; }
     .swiper-container.image-slider .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide {
@@ -2373,6 +2612,11 @@ a {
           .swiper-container.image-slider .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide .cardPicture img {
             width: 160px;
             height: 160px; } }
+        @media (max-width: 770px) {
+          .swiper-container.image-slider .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide .cardPicture img {
+            width: 110px;
+            height: 110px;
+            margin-left: -60px; } }
       .swiper-container.image-slider .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide .stars {
         margin-top: 5px;
         margin-left: 20px;
@@ -2425,6 +2669,10 @@ a {
         @media (max-width: 900px) {
           .swiper-container.image-slider .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide button {
             left: 150px; } }
+        @media (max-width: 770px) {
+          .swiper-container.image-slider .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide button {
+            left: 110px;
+            top: 340px; } }
       .swiper-container.image-slider .cards3p.swiper-wrapper.image-slider_wrapper div.image-slider_slide.swiper-slide .like {
         width: 25px;
         height: 25px;
@@ -2447,6 +2695,9 @@ a {
           align-items: center;
   margin-top: 67px;
   margin-bottom: 30px; }
+  @media (max-width: 650px) {
+    .overviews {
+      display: none; } }
   .overviews h2 {
     font-weight: 600;
     font-size: 24px;
@@ -2468,6 +2719,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media (max-width: 650px) {
+    .viewsContent {
+      display: none; } }
   .viewsContent .textViews {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2488,7 +2742,7 @@ a {
         font-weight: 500;
         color: #000000; }
     .viewsContent .textViews .theView .stars {
-      margin-bottom: 15.75px; }
+      margin-bottom: 13.7px; }
     .viewsContent .textViews .theView h6 {
       font-weight: 400;
       font-size: 16px;
@@ -2497,7 +2751,7 @@ a {
     .viewsContent .textViews button {
       width: 150px;
       height: 50px;
-      background: #F9F9F9;
+      background: #FFFFFF;
       border-radius: 8px;
       border: solid 1px;
       font-weight: 600;
@@ -2567,5 +2821,84 @@ a {
         font-size: 14px;
         line-height: 19px;
         margin-left: 8px; }
+
+.leaveViewMobile {
+  display: none; }
+  @media (max-width: 650px) {
+    .leaveViewMobile {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      justify-self: center;
+      width: 349px;
+      height: 39.2px;
+      border-radius: 8px;
+      background-color: #F9F9F9;
+      margin-top: 32px;
+      margin-left: 13px; } }
+  .leaveViewMobile h6 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 8.79px; }
+  .leaveViewMobile img {
+    width: 17.21px;
+    height: 17.21px; }
+
+.viewsContentMobile {
+  display: none; }
+  @media (max-width: 650px) {
+    .viewsContentMobile {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 22.8px;
+      margin-left: 13px;
+      margin-right: 13px; } }
+  .viewsContentMobile .textViewsMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 375px; }
+    .viewsContentMobile .textViewsMobile .theViewMobile p {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 160%;
+      color: rgba(0, 0, 0, 0.5); }
+      .viewsContentMobile .textViewsMobile .theViewMobile p span {
+        font-weight: 500;
+        color: #000000;
+        font-size: 13px; }
+    .viewsContentMobile .textViewsMobile .theViewMobile .starsMobile {
+      margin-bottom: 15.75px; }
+    .viewsContentMobile .textViewsMobile .theViewMobile h6 {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 160%;
+      margin-bottom: 22.73px; }
+    .viewsContentMobile .textViewsMobile .theViewMobile h6:last-child {
+      margin-bottom: 0px; }
+    .viewsContentMobile .textViewsMobile button {
+      width: 150px;
+      height: 50px;
+      background: #FFFFFF;
+      border-radius: 8px;
+      border: solid 1px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      color: #000000;
+      justify-self: center;
+      margin: 30px auto; }
 
 /*# sourceMappingURL=style.css.map */
