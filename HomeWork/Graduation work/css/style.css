@@ -1037,7 +1037,7 @@ a {
     display: none;
     position: fixed;
     z-index: 1;
-    left: 370px;
+    left: 340px;
     bottom: 90px; }
     @media (max-width: 650px) {
       .mobileBasketRelative .mobileBasket {
