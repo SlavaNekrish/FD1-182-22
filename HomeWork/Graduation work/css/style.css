@@ -1037,8 +1037,8 @@ a {
     display: none;
     position: fixed;
     z-index: 1;
-    left: 360px;
-    bottom: 50px; }
+    left: 370px;
+    bottom: 90px; }
     @media (max-width: 650px) {
       .mobileBasketRelative .mobileBasket {
         display: block; } }
@@ -2874,6 +2874,7 @@ a {
       font-weight: 400;
       font-size: 13px;
       line-height: 160%;
+      margin-top: 22.8px;
       color: rgba(0, 0, 0, 0.5); }
       .viewsContentMobile .textViewsMobile .theViewMobile p span {
         font-weight: 500;

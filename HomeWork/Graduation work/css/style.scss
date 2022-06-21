@@ -1112,8 +1112,8 @@ a {
   }
   position: fixed;
   z-index: 1;
-  left: 360px;
-  bottom: 50px;
+  left: 370px;
+  bottom: 90px;
   img[alt="greenSquare"] {
     position: absolute;
     z-index: 1;
@@ -2928,6 +2928,7 @@ a {
         font-weight: 400;
         font-size: $fz13;
         line-height: 160%;
+        margin-top: 22.8px;
         color: rgba(0, 0, 0, 0.5);
         span {
           font-weight: 500;
